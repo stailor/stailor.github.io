@@ -10551,7 +10551,9 @@ p.ref-link {
     position: relative
 }
 
-.browser-update-bar-hide, .hide, #editComo button.btn.btn-secondary.ticked {
+.browser-update-bar-hide, 
+.hide, 
+#editComo button.btn.btn-secondary.ticked {
     display: none
 }
 .show{
@@ -10835,6 +10837,11 @@ span.badge.badge-bp.notification-number {
     opacity: 1;
     pointer-events: all
 }
+#editComo .modal-dialog button.close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
 /* POCE:: Treatment Algorithm */
 
 /* Wrapper */
@@ -10890,15 +10897,17 @@ span.badge.badge-bp.notification-number {
 }
 #como-1 .add-como-icon-and-text,
 #como-1 #comoselected-1,
-#como-1 #comoselected-1 button,
+#como-1 #comoselected-1 button.show,
 #como-1 #comoselected-1 span {
     display: inline-block
 }
-#como-1 #comoselected-1 span{
+#como-1 #comoselected-1 span,
+#como-2 #comoselected-2 span {
     position: relative;
     top:9px;
 }
-#como-1 #comoselected-1 button.hide{
+#como-1 #comoselected-1 button.hide, 
+#como-1 #comoselected-1 button {
     display: none
 }
 /* IF NO COMOS ARE CHECKED ICON CHANGES TO PINK BG */
@@ -10917,7 +10926,8 @@ span.badge.badge-bp.notification-number {
 }
 .modal-title .co-morbidity-icon-pink polygon, 
 #poce_drug_msg .co-morbidity-icon-pink polygon,
-.txtwrap .co-morbidity-icon-pink polygon {
+.txtwrap .co-morbidity-icon-pink polygon,
+#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
     fill: #fff;
 }
 /* IF COMOS ARE CHECKED THE ICON NEXT TO EDIT BUTTON IS PINK WHITE BG */
@@ -10976,7 +10986,8 @@ span.badge.badge-bp.notification-number {
 #poce_contents ul {
     list-style: disc inside;
     padding-top: 0;
-    margin: 0
+    margin: 0;
+    padding: inherit;
 }
 
 #poce_contents ul ul {
@@ -11145,7 +11156,7 @@ span.badge.badge-bp.notification-number {
 }
 
 #poce_contents .toggle:checked+.title+.content {
-    max-height: 500px;    
+    /* max-height: 500px;     */
     overflow: auto;
 }
 

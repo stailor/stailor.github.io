@@ -2749,6 +2749,7 @@ $(function() {
     //
     $('li.list-group-item').removeClass("selected", comorbidities.is(":checked"));
     // IF NO COMOS SELECTED, HIDE EDIT BUTTON
+    $('#comoselected-1 button').toggleClass("show", comorbidities.is(":checked"));
     $('#comoselected-1 button').removeClass("hide", comorbidities.is(":checked"));
 
     $('button.showalg.ticked').toggleClass("show", comorbidities.is(":checked"));
@@ -2762,7 +2763,6 @@ $(function() {
 });
 
 // If the drop down contains a cor-mob content, show the icon in the title
-
 $(function() {
     if ($('#poce_contents .panel-group').find('poce_drug_msg').lenghth !==0) {
         $(this).addClass('cor-mob-icon');
