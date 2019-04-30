@@ -10915,7 +10915,9 @@ span.badge.badge-bp.notification-number {
 .co-morbidity-icon-pink polygon {
     fill: #C50084;
 }
-.modal-title .co-morbidity-icon-pink polygon {
+.modal-title .co-morbidity-icon-pink polygon, 
+#poce_drug_msg .co-morbidity-icon-pink polygon,
+.txtwrap .co-morbidity-icon-pink polygon {
     fill: #fff;
 }
 /* IF COMOS ARE CHECKED THE ICON NEXT TO EDIT BUTTON IS PINK WHITE BG */
