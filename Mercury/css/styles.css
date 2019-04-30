@@ -4056,7 +4056,7 @@ html:lang(zh-cn) #feedbackForm .row:nth-child(8).smTxt .col-md-3:nth-child(2) {
     padding: 1.25rem 1.5rem 0
 }
 
-.modal-registration-form .modal-body p:first-of-type,
+/* .modal-registration-form .modal-body p:first-of-type, */
 .registration-form .modal-body p:first-of-type,
 .modal-registration-success .modal-body p:first-of-type,
 .login-form .modal-body p:first-of-type {
@@ -10551,7 +10551,7 @@ p.ref-link {
     position: relative
 }
 
-.browser-update-bar-hide, .hide {
+.browser-update-bar-hide, .hide, #editComo button.btn.btn-secondary.ticked {
     display: none
 }
 .show{
@@ -10811,7 +10811,7 @@ span.badge.badge-bp.notification-number {
     content:', '
 }
 #comoselected-1 button.btn {
-    
+    margin:0 0 0 1rem;
 }
 #como-1 .card-block b {
     vertical-align: -webkit-baseline-middle;
@@ -10825,7 +10825,9 @@ span.badge.badge-bp.notification-number {
     opacity: 1;
     pointer-events: none
 }
-
+#editComo button.btn.btn-secondary.ticked.show{
+    display:block
+}
 #editComo button.btn.btn-secondary {
     background-color: #a30054 !important;
     color: #fff !important;
@@ -10833,7 +10835,6 @@ span.badge.badge-bp.notification-number {
     opacity: 1;
     pointer-events: all
 }
-
 /* POCE:: Treatment Algorithm */
 
 /* Wrapper */
@@ -10887,6 +10888,48 @@ span.badge.badge-bp.notification-number {
     top: 3px;
     position: relative;
 }
+#como-1 .add-como-icon-and-text,
+#como-1 #comoselected-1,
+#como-1 #comoselected-1 button,
+#como-1 #comoselected-1 span {
+    display: inline-block
+}
+#como-1 #comoselected-1 span{
+    position: relative;
+    top:9px;
+}
+#como-1 #comoselected-1 button.hide{
+    display: none
+}
+/* IF NO COMOS ARE CHECKED ICON CHANGES TO PINK BG */
+.add-como-icon-and-text {
+    background-color: #c50084;
+    color: #fff;
+    padding: 1px 5px 6px;
+    border-radius: 5px;
+    float: left;
+}
+.add-como-icon-and-text path, .add-como-icon-and-text g g g circle {
+    fill: #fff;
+}
+.co-morbidity-icon-pink polygon {
+    fill: #C50084;
+}
+.modal-title .co-morbidity-icon-pink polygon {
+    fill: #fff;
+}
+/* IF COMOS ARE CHECKED THE ICON NEXT TO EDIT BUTTON IS PINK WHITE BG */
+.add-como-icon-and-text.checked {
+    background-color: #fff;
+    color: #000;
+}
+.add-como-icon-and-text.checked path, .add-como-icon-and-text.checked g g g circle {
+    fill: #c50084;
+}
+.add-como-icon-and-text.checked .co-morbidity-icon-pink polygon {
+    fill: #fff;
+}
+/* ENDS */
 #poce_drug_msg .material-icons svg.co-morbidity-icon-pink, 
 .material-icons svg.co-morbidity-icon-pink {
     height:30px;

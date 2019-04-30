@@ -2693,10 +2693,10 @@ $(function() {
 $(function() {
   
     // Enable/disable 'Show Treatment Algorithm' button
-    var comorbidities = $('#tmp.treatment-table').find("input[name='comorbidity']");
-    comorbidities.on('change', function () {
-        $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
-    });
+    // var comorbidities = $('#tmp.treatment-table').find("input[name='comorbidity']");
+    // comorbidities.on('change', function () {
+    //     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
+    // });
 
    
 
@@ -2743,7 +2743,14 @@ $(function() {
 $(function() {
   var comorbidities = $("input[name='comorbidity']");
   comorbidities.on('change', function () {
-    $('.showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
+
+    // Change como logo on the page if a como is checked
+    $('.add-como-icon-and-text').toggleClass("checked", comorbidities.is(":checked"));
+    //
+    $('li.list-group-item').removeClass("selected", comorbidities.is(":checked"));
+    // IF NO COMOS SELECTED, HIDE EDIT BUTTON
+    $('#comoselected-1 button').removeClass("hide", comorbidities.is(":checked"));
+
     $('button.showalg.ticked').toggleClass("show", comorbidities.is(":checked"));
     $('button.showalg.not-ticked').toggleClass("hide", comorbidities.is(":checked"));
     $(this).closest('li.list-group-item ').toggleClass("selected", comorbidities.is(":checked"));
@@ -2751,6 +2758,7 @@ $(function() {
   });
   // Grab the topic title from the H1 tag and drop it into the modal para
   $('#editComo').find('p span').append($('#topicMenuTop h1').html());
+
 });
 
 // If the drop down contains a cor-mob content, show the icon in the title
