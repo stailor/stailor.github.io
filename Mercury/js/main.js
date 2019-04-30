@@ -2715,8 +2715,8 @@ $(function() {
         $('#' + comochooser + '-como-content').css('display', 'block');
         
         // If section has the #-como-content, find the txtwrap class and add the c+ icon 
-        $('section.panel-group').has('#' + comochooser + '-como-content').find('.txtwrap').removeClass('no-icon');
-        
+        $('section.panel-group').has('#' + comochooser + '-como-content').find('.title-02').removeClass('no-icon');
+        $('section.panel-group').has('#' + comochooser + '-como-content').find('.poce_title').append(comochooser + ' ');
         // If comorbidities list has content, show the edit button
         $('#editComolist-1, #editComolist-2').show();
         
@@ -2731,7 +2731,7 @@ $(function() {
         $('#' + comochooser + '-como-content').css('display', 'none');
         
         // If section doesn't have the -como-content, find the txtwrap class and remove the c+ icon 
-        $('section.panel-group').has('#' + comochooser + '-como-content').find('.txtwrap').addClass('no-icon');
+        $('section.panel-group').has('#' + comochooser + '-como-content').find('.title-02').addClass('no-icon');
         
         // If comorbidities list hasn't got any content, hide the edit button
         $('#editComolist-1, #editComolist-2').hide();

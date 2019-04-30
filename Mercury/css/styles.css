@@ -5298,7 +5298,7 @@ span.reference span {
     }
 
     .treatment-table .title-04 {
-        width: 100%;
+        width: auto;
         position: relative;
         top: 7px
     }
@@ -8353,7 +8353,6 @@ table.responsive.table-striped.cell-border.dataTable.no-footer,
     top: 0;
     z-index: 1
 }
-
 #topicNav #menuLinks li span {
     opacity: 0;
     transition: opacity .25s ease-in-out
@@ -10707,7 +10706,6 @@ span.badge.badge-bp.notification-number {
 }
 
 #topicNav.stickme #como-2 {
-    position: fixed;
     top: 110px;
     width: 1116px;
     z-index: 1
@@ -10885,8 +10883,11 @@ span.badge.badge-bp.notification-number {
 #poce_drug_msg p {
     text-indent: initial;
 }
+#poce_drug_msg .material-icons {
+    vertical-align: top;
+}
 #poce_drug_msg .material-icons svg {
-    top:-14px;
+    top:0;
     left:-6px;
     position: relative;
 }
@@ -10927,6 +10928,7 @@ span.badge.badge-bp.notification-number {
 .modal-title .co-morbidity-icon-pink polygon, 
 #poce_drug_msg .co-morbidity-icon-pink polygon,
 .txtwrap .co-morbidity-icon-pink polygon,
+.title-02 .co-morbidity-icon-pink polygon,
 #topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
     fill: #fff;
 }
@@ -10949,21 +10951,33 @@ span.badge.badge-bp.notification-number {
 .modal-dialog svg.co-morbidity-icon-pink {
     height:40px
 }
+
+.panel-title .title-02 .material-icons{
+    position: relative;
+}
 .panel-title .txtwrap .material-icons {
     position: absolute;
     float: right;
-    top: -8px
+    top: -4px;
+    right:-29px;
 }
-
-.panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink {
+@media only screen and (max-width: 768px) {
+    .panel-title .txtwrap .material-icons {
+        position: absolute;
+        float: right;
+        top: -4px;
+        right:-29px;
+    }
+}
+.panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink,
+.panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
     display:none
 }
-.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink {
+.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink,
+.panel-title .title-02 .material-icons svg.co-morbidity-icon-pink {
     height: 20px;
-    top: 4px;
-    position: relative;
-    left: 15px    
 }
+
 #poce-contents div[id$='-como-content'] {
     padding: 1rem !important;
     border: 1px dashed #c50084;
@@ -11013,18 +11027,16 @@ span.badge.badge-bp.notification-number {
 }
 
 #poce_contents #tip_pitfall {
-    background-color: #f5f5f5;
+    background-color: #e5eef7;
     border: 1px solid #e9e9e9;
     color: #333;
     margin: 0 15% 1rem 15%;
-    box-shadow: none
 }
 
 #poce_contents #tip_pitfall .card-title {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     font-weight: bold;
-    color: #c50084
 }
 
 #poce_contents #tip_pitfall .card-block {
