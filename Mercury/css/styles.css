@@ -8349,7 +8349,7 @@ table.responsive.table-striped.cell-border.dataTable.no-footer,
 }
 
 #topicNav.stickme #topicMenuTop {
-    position: relative;
+    position: fixed;
     top: 0;
     z-index: 1
 }
