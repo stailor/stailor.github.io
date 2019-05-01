@@ -8349,7 +8349,7 @@ table.responsive.table-striped.cell-border.dataTable.no-footer,
 }
 
 #topicNav.stickme #topicMenuTop {
-    position: fixed;
+    position: relative;
     top: 0;
     z-index: 1
 }
@@ -11131,8 +11131,17 @@ span.badge.badge-bp.notification-number {
     background-color: #f8f8f8;
     padding: 0 0 0 2.5rem;
     display: block;
+}
+#poce_contents .title h3{
     color: #c50084;
-    font-weight: bold
+    font-weight: bold;
+    font-size: 1rem;
+}
+#poce_contents .title p {
+    color: #000;
+    font-size: 1rem;
+    font-weight: normal;
+    padding: 0
 }
 
 #poce_contents .title:after,
@@ -11168,7 +11177,7 @@ span.badge.badge-bp.notification-number {
 }
 
 #poce_contents .toggle:checked+.title+.content {
-    /* max-height: 500px;     */
+    max-height: 500px;    
     overflow: auto;
 }
 
