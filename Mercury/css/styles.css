@@ -8616,7 +8616,7 @@ table.responsive.table-striped.cell-border.dataTable.no-footer,
         width: 100%
     }
 
-    body #topicNav.stickme #topicMenuTopBg,
+    /* body #topicNav.stickme #topicMenuTopBg, */
     body #topicNav #topicMenuTopBg,
     body #topicNav #menuLinks,
     body #topicNav #topicMenuBottom.mUp,
@@ -9522,6 +9522,11 @@ table.responsive.table-striped.cell-border.dataTable.no-footer,
     .navbar-toggleable-sm .navbar-nav {
         -ms-flex-wrap: wrap
     }
+}
+#comoselected-1 button.btn{
+    position: absolute;
+    top:0;
+    right:0;
 }
 
 @media screen and (-ms-high-contrast: active) and (min-width: 768px),
@@ -10978,7 +10983,7 @@ span.badge.badge-bp.notification-number {
     height: 20px;
 }
 
-#poce-contents div[id$='-como-content'] {
+#poce-contents div[class*='-como-content'] {
     padding: 1rem !important;
     border: 1px dashed #c50084;
     background-color: #f8e0f0;
@@ -11117,7 +11122,6 @@ span.badge.badge-bp.notification-number {
 
 #poce_contents .option {
     position: relative;
-    margin-bottom: 1em
 }
 
 #poce_contents .title,
@@ -11130,7 +11134,7 @@ span.badge.badge-bp.notification-number {
 #poce_contents .title {
     background-color: #f8f8f8;
     padding: 0 0 0 2.5rem;
-    display: block;
+    display: inline-block;
 }
 #poce_contents .title h3{
     color: #c50084;
@@ -11149,7 +11153,7 @@ span.badge.badge-bp.notification-number {
     content: '';
     position: absolute;
     left: 1.25em;
-    top: .25rem;
+    top: .1rem;
     width: 2px;
     height: 0.75em;
     background-color: #c50084;
@@ -11163,7 +11167,8 @@ span.badge.badge-bp.notification-number {
 #poce_contents .content {
     max-height: 0;
     overflow: hidden;
-    background-color: #f8f8f8
+    background-color: #f8f8f8;
+    border-top: 1px solid #e4e4e4
 }
 
 #poce_contents .content p {

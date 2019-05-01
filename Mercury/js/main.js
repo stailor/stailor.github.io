@@ -2712,11 +2712,11 @@ $(function() {
         $list.append("<span data-value='" + value + "'>" + value + "</span>  ");
         
         // Show the relevant content on the page
-        $('#' + comochooser + '-como-content').css('display', 'block');
+        $('.' + comochooser + '-como-content').css('display', 'block');
         
-        // If section has the #-como-content, find the txtwrap class and add the c+ icon 
-        $('section.panel-group').has('#' + comochooser + '-como-content').find('.title-02').removeClass('no-icon');
-        $('section.panel-group').has('#' + comochooser + '-como-content').find('.poce_title').append(comochooser + ' ');
+        // If section has the .-como-content, find the txtwrap class and add the c+ icon 
+        $('section.panel-group').has('.' + comochooser + '-como-content').find('.title-02').removeClass('no-icon');
+        $('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title').append(comochooser + ' ');
         // If comorbidities list has content, show the edit button
         $('#editComolist-1, #editComolist-2').show();
         
@@ -2728,15 +2728,16 @@ $(function() {
         });
         
         // Hide the relevant content on the page
-        $('#' + comochooser + '-como-content').css('display', 'none');
+        $('.' + comochooser + '-como-content').css('display', 'none');
         
         // If section doesn't have the -como-content, find the txtwrap class and remove the c+ icon 
-        $('section.panel-group').has('#' + comochooser + '-como-content').find('.title-02').addClass('no-icon');
+        $('section.panel-group').has('.' + comochooser + '-como-content').find('.title-02').addClass('no-icon');
         
         // If comorbidities list hasn't got any content, hide the edit button
         $('#editComolist-1, #editComolist-2').hide();
     }
   });
+
 });
 
 // Modal button behaviour
@@ -2756,6 +2757,21 @@ $(function() {
     $('button.showalg.not-ticked').toggleClass("hide", comorbidities.is(":checked"));
     $(this).closest('li.list-group-item ').toggleClass("selected", comorbidities.is(":checked"));
 
+    // IF COMO JUST ASTHMA DONT SHOW, IF ASTHMA + COPD OR COPD SHOW            
+    // var copd = $('COPD-como-content');
+    // var asthma = $('Asthma-como-content');
+
+    // if ( ($(comorbidities).hasClass(copd)) && ($(comorbidities).hasClass(asthma)) || ($(comorbidities).hasClass(copd)) ) 
+    // {
+    //         // Show the relevant content on the page
+    //         $('.COPD-como-content.Asthma-como-content').css('display', 'block');
+    // }
+    // else ( ($(comorbidities).hasClass(asthma)) && ($(comorbidities).not(copd)) )
+    // {
+    //     // Hide the relevant content on the page
+    //     $('.COPD-como-content.Asthma-como-content').css('display', 'none');
+    // }
+    ///////
   });
   // Grab the topic title from the H1 tag and drop it into the modal para
   $('#editComo').find('p span').append($('#topicMenuTop h1').html());
