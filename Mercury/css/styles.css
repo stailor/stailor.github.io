@@ -9523,11 +9523,6 @@ table.responsive.table-striped.cell-border.dataTable.no-footer,
         -ms-flex-wrap: wrap
     }
 }
-#comoselected-1 button.btn{
-    position: absolute;
-    top:0;
-    right:0;
-}
 
 @media screen and (-ms-high-contrast: active) and (min-width: 768px),
 (-ms-high-contrast: none) and (min-width: 768px) {
@@ -10818,6 +10813,15 @@ span.badge.badge-bp.notification-number {
 #comoselected-1 button.btn {
     margin:0 0 0 1rem;
 }
+
+@media (max-width: 992px) {
+    #comoselected-1 button.btn{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+}
+
 #como-1 .card-block b {
     vertical-align: -webkit-baseline-middle;
     vertical-align: sub;
@@ -10865,6 +10869,21 @@ span.badge.badge-bp.notification-number {
 }
 #poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
     text-decoration: underline;
+}
+#tmp .treatment-box-cplus #poce_drug_msg h3.cplus_title {
+    color:#333;
+    display: inline;
+    float: left;
+    width: auto;
+}
+.treatment-box-cplus #poce_drug_msg .material-icons{
+    display: inline;
+    float:left;
+    text-indent: -30px
+
+}
+.treatment-box-cplus #poce_drug_msg .material-icons svg.co-morbidity-icon-pink {
+    height:40px
 }
 #poce_drug_msg {
     border: 1px dashed #c50084;
