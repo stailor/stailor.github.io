@@ -4045,10 +4045,10 @@ html:lang(zh-cn) #feedbackForm .row:nth-child(8).smTxt .col-md-3:nth-child(2) {
 .modal-registration-form #editComo .modal-body .list-group-flush .list-group-item{
     margin:0.1rem 0
 }
-.modal-registration-form #editComo .modal-body .list-group-flush .list-group-item.selected {
+/* .modal-registration-form #editComo .modal-body .list-group-flush .list-group-item.selected {
     border:1px dashed #c50084;
     background: #f8e0f0
-}
+} */
 .modal-registration-form .modal-body,
 .registration-form .modal-body,
 .modal-registration-success .modal-body,
@@ -5213,7 +5213,8 @@ span.reference span {
     }
 
     .treatment-table .title-04 {
-        margin-left: 0.5rem
+        margin-left: 0.5rem;
+        max-width: 88%;
     }
 
     .treatment-table .title-04 .material-icons {
