@@ -11042,10 +11042,13 @@ span.badge.badge-bp.notification-number {
     font-family: Arial, sans-serif;
     font-size: 1rem;
     font-weight: bold;
+    }
+#poce_contents #tip_pitfall .card-block .card-text {
+    padding:1rem 0 0 0rem;
 }
-
 #poce_contents #tip_pitfall .card-block {
-    padding: 1rem!important
+    padding: 1rem 1em 1rem 3rem!important;
+    background: url('../images/practical-tip-tack.png') 3px 12px no-repeat;
 }
 /* CHANGE PL VALUE IN SASS FILE */
 #poce_contents #tip_pitfall .card-block p+ul {
