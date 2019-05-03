@@ -466,6 +466,38 @@
 
                                     <div id="tip_pitfall" class="card card-inverse mb-4">
                                        <div class="card-block">
+                                          <svg version="1.1" id="pin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
+                                          <g>
+                                             <g>
+                                                <path fill="#333333" d="M42.694,51.942v30.413C42.694,83.816,44.174,85,46,85s3.306-1.184,3.306-2.645V51.942H42.694z"/>
+                                             </g>
+                                             <g>
+                                                <ellipse fill="#333333" cx="46" cy="47.645" rx="19.835" ry="12.231"/>
+                                             </g>
+                                             <g id="cylinder">
+                                                <polygon fill="#333333" points="55.256,9.628 46,9.628 36.744,9.628 34.099,47.975 46,47.975 57.901,47.975 		"/>
+                                             </g>
+                                             <g id="cylinder_highlight">
+                                                <polygon fill="#FFFFFF" points="54.595,46.653 50.628,47.975 49.306,13.595 53.273,13.595 		"/>
+                                             </g>
+                                             <g>
+                                                <ellipse fill="#333333" cx="46" cy="13.595" rx="15.207" ry="8.595"/>
+                                             </g>
+                                             <g id="highlight">
+                                                <path fill="#FFFFFF" d="M47.982,18.929c-0.67,0-1.245-0.508-1.313-1.19c-0.073-0.727,0.456-1.375,1.183-1.448
+                                                   c3.157-0.318,5.857-1.434,7.224-2.985c0.48-0.547,1.317-0.602,1.866-0.118c0.548,0.482,0.601,1.318,0.118,1.866
+                                                   c-1.822,2.069-5.082,3.479-8.942,3.868C48.072,18.927,48.027,18.929,47.982,18.929z"/>
+                                             </g>
+                                             <g>
+                                                <path fill="#333333" d="M46,49.54v-1.322c4.794,0,9.917-1.192,9.917-4.54h1.322C57.239,47.349,53.038,49.54,46,49.54z"/>
+                                             </g>
+                                             <g id="highlight_lower">
+                                                <path fill="#FFFFFF" d="M48.011,56.926c-0.032,0-0.064,0-0.098,0c-0.73-0.003-1.319-0.598-1.316-1.328
+                                                   c0.003-0.729,0.595-1.316,1.322-1.316c0.034,0,0.063,0,0.095,0c3.975,0,7.602-1.166,9.719-3.128
+                                                   c0.533-0.496,1.37-0.467,1.868,0.071c0.496,0.535,0.465,1.372-0.071,1.868C56.937,55.496,52.637,56.926,48.011,56.926z"/>
+                                             </g>
+                                          </g>
+                                          </svg>
                                           <h3 class="card-title">Practical tip / Pitfall panel</h3>
                                           <p class="card-text">
                                              <strong>Do not allow  supportive therapy to delay thrombolysis (as long as there are no contraindications) - it may quickly restore haemodynamic stability. </strong>
@@ -480,7 +512,7 @@
                                     <div class="evidence-accordion">
                                        <div class="option">
                                           <input type="checkbox" id="toggle1" class="toggle" />
-                                          <label class="title" for="toggle1"><h3>Evidence: Patients with high-risk PE are at significant risk of death</h3>
+                                          <label class="title" for="toggle1"><span class="material-icons"><span></span><span></span></span><h3>Evidence: Patients with high-risk PE are at significant risk of death</h3>
                                        </label>
                                           <div class="content">
                                              <ul>
@@ -730,8 +762,18 @@
                                                 <p>
                                                    <a href="#drugDbPop_4866ce04-4d68-4b50-83f4-66283ea52c07_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">heparin:</a> 
                                                 </p>
-                                                </p>For patients with renal impairment <a href="#">see dose in the Renal Drug Handbook
+                                                </p>For patients with renal impairment <a href="#" data-toggle="modal" data-target="#renal">see dose in the Renal Drug Handbook
                                                 </a></p>
+                                                <div class="modal fade" id="renal" tabindex="-1" role="dialog" aria-labelledby="renal" aria-hidden="true" style="display: none;">       
+                                                   <div class="modal-dialog" role="document" style="max-width: 50rem;">
+                                                      <div class="modal-content">
+                                                         <div class="modal-header" style="background: #fff; margin-top: 1rem;">
+                                                            <h3 class="modal-title" id="exampleModalLabel" style="color:#c50084;margin: 0 0 1.5rem 0;text-align: center;">The Renal Handbook<br/></h3>
+                                                         </div>
+                                                         <iframe width="100%" height="850" src="https://bestpractice.bmj.com/patient-leaflets/en-gb/pdf/1560902204230.pdf"></iframe>
+                                                      </div>
+                                                   </div>
+                                               </div> 
                                                 <p class="small-or">OR</p>
                                                 <p>
                                                    <a href="#drugDbPop_1f043ef5-6686-4b38-a018-9dea67de1e36_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">warfarin:</a>
