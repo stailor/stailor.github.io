@@ -2778,6 +2778,20 @@ $(function() {
 
 });
 
+$(function() {
+ // DRUG BOX ACCORDION ON CLICK DRUG TITLE1 SHOW DRUG CONTENT 2 ON CLICK DRUG TITLE2 SHOW DRUG CONTENT 1
+    $('.drug-title2').click(function(event) {
+        event.preventDefault();
+        $('.drug-content1').show();
+        $('.drug-content2').hide();
+    });
+    $('.drug-title1').click(function(event) {
+        event.preventDefault();
+        $('.drug-content2').show();
+        $('.drug-content1').hide();
+    });
+});
+
 // If the drop down contains a cor-mob content, show the icon in the title
 $(function() {
     if ($('#poce_contents .panel-group').find('poce_drug_msg').lenghth !==0) {
@@ -2807,27 +2821,6 @@ $(function() {
         return false;
     });
 });
-
-
-// DRUG BOX Accordion (nested)
-var acc = document.getElementsByClassName("drug-accordion");
-var i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    /* Toggle between adding and removing the "active" class,
-    to highlight the button that controls the panel */
-    this.classList.toggle("active");
-
-    /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
 
 // POCE Evidence Accordion (nested)
 var acc = document.getElementsByClassName("evidence-accordion");
