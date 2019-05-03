@@ -2714,9 +2714,13 @@ $(function() {
         // Show the relevant content on the page
         $('.' + comochooser + '-como-content').css('display', 'block');
         
-        // If section has the .-como-content, find the txtwrap class and add the c+ icon 
+        // If section has the .-como-content, find the txtwrap class and add the c+ icon and como title
         $('section.panel-group').has('.' + comochooser + '-como-content').find('.title-02').removeClass('no-icon');
-        $('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title').append(comochooser + ' ');
+        $('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title').append('<span>' + comochooser + '</span>');
+        // Add comma in if there is more than one como listed in the como content title
+        $(".poce_title span").not(":last-child").append(", ");
+        
+
         // If comorbidities list has content, show the edit button
         $('#editComolist-1, #editComolist-2').show();
         

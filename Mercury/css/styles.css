@@ -10876,25 +10876,25 @@ span.badge.badge-bp.notification-number {
 #poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
     text-decoration: underline;
 }
-#tmp .treatment-box-cplus #poce_drug_msg h3.cplus_title {
+#tmp .treatment-box-cplus .poce_drug_msg h3.cplus_title {
     color:#333;
     display: inline;
     float: left;
     width: auto;
 }
-.treatment-box-cplus #poce_drug_msg .material-icons {
+.treatment-box-cplus .poce_drug_msg .material-icons {
     display: inline;
     float:left;
     text-indent: -30px
 }
-.treatment-box-cplus #poce_drug_msg .material-icons svg.co-morbidity-icon-pink {
+.treatment-box-cplus .poce_drug_msg .material-icons svg.co-morbidity-icon-pink {
     height:40px
 }
 /* DRUG ACCORDION BOX STYLES */
 #tmp .treatment-box-cplus .drug-accordion {
     margin:1rem 0;
 }
-#tmp .treatment-box-cplus .drug-accordion #poce_drug_msg {
+#tmp .treatment-box-cplus .drug-accordion .poce_drug_msg {
     text-indent: 0;
     width: 100%
 }
@@ -10909,10 +10909,10 @@ span.badge.badge-bp.notification-number {
     color: #333;
     margin:0;
 }
-#tmp .treatment-box-cplus .drug-accordion .drug-content2 #poce_drug_msg {
+#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg {
     background-color: #f8e0f0;
 }
-#tmp .treatment-box-cplus .drug-accordion .drug-content2 #poce_drug_msg h3.cplus_title{
+#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg h3.cplus_title{
     font-size: 1.3rem;
     position: relative;
     top: 10px;
@@ -10920,32 +10920,32 @@ span.badge.badge-bp.notification-number {
 }
 /* DRUG STYLES ENDS  */
 
-#poce_drug_msg {
+.poce_drug_msg {
     border: 1px dashed #c50084;
     display: table-cell;
     margin-bottom: 1rem;
     padding: 1rem 1rem 1rem 3rem;
     text-indent: -16px;
 }
-#poce_drug_msg .poce_title {
+.poce_drug_msg .poce_title {
     padding-left: 3rem;
     color: #c50084;
     font-size: 1.125rem;
     margin: 0 0 1rem -3rem;
     display: inline-block;
 }
-#poce_drug_msg h3{
+.poce_drug_msg h3{
     padding:0;
     text-indent: 0;
     float: none!important;
 }
-#poce_drug_msg p {
+.poce_drug_msg p {
     text-indent: initial;
 }
-#poce_drug_msg .material-icons {
+.poce_drug_msg .material-icons {
     vertical-align: top;
 }
-#poce_drug_msg .material-icons svg {
+.poce_drug_msg .material-icons svg {
     top:0;
     left:-6px;
     position: relative;
@@ -10998,7 +10998,7 @@ span.badge.badge-bp.notification-number {
     fill: #C50084;
 }
 .modal-title .co-morbidity-icon-pink polygon, 
-#poce_drug_msg .co-morbidity-icon-pink polygon,
+.poce_drug_msg .co-morbidity-icon-pink polygon,
 .txtwrap .co-morbidity-icon-pink polygon,
 .title-02 .co-morbidity-icon-pink polygon,
 #topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
@@ -11016,7 +11016,7 @@ span.badge.badge-bp.notification-number {
     fill: #fff;
 }
 /* ENDS */
-#poce_drug_msg .material-icons svg.co-morbidity-icon-pink, 
+.poce_drug_msg .material-icons svg.co-morbidity-icon-pink, 
 .material-icons svg.co-morbidity-icon-pink {
     height:30px;
 }
