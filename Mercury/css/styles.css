@@ -8526,7 +8526,8 @@ table.responsive.table-striped.cell-border.dataTable.no-footer,
 
     #topicNav #topicMenuTopBg,
     #topicNav #menuLinks,
-    #topicNav #menus {
+    #topicNav #menus,
+    #topicNav #como-2 {
         width: 936px !important
     }
 
@@ -10707,6 +10708,7 @@ span.badge.badge-bp.notification-number {
 }
 
 #topicNav.stickme #como-2 {
+    position: fixed;
     top: 110px;
     width: 1116px;
     z-index: 1
@@ -10820,6 +10822,9 @@ span.badge.badge-bp.notification-number {
         position: absolute;
         top:0;
         right:0;
+    }
+    #topicNav.stickme #como-2 {
+        position: relative
     }
 }
 
