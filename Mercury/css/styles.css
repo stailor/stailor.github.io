@@ -10973,6 +10973,19 @@ span.badge.badge-bp.notification-number {
     border-radius: 5px;
     float: left;
 }
+/* SHOW/HIDE ADD ADDED COPY ON COMORBIDITIES EDIT BAR */
+.add-como-icon-and-text .add.unchecked,
+.add-como-icon-and-text .added.unchecked {
+    display: none;
+}
+.add-como-icon-and-text .add.checked,
+.add-como-icon-and-text .added.checked {
+    display: inline-block;
+}
+.add-como-icon-and-text .add:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
 .add-como-icon-and-text path, .add-como-icon-and-text g g g circle {
     fill: #fff;
 }

@@ -2747,6 +2747,11 @@ $(function() {
 
     // Change como logo on the page if a como is checked
     $('.add-como-icon-and-text').toggleClass("checked", comorbidities.is(":checked"));
+
+    // Change como copy from add to added when checkboxes un/checked
+    $('.add-como-icon-and-text .add').toggleClass("unchecked", comorbidities.is(":checked"));
+    $('.add-como-icon-and-text .added').toggleClass("checked", comorbidities.is(":checked"));
+
     //
     $('li.list-group-item').removeClass("selected", comorbidities.is(":checked"));
     // IF NO COMOS SELECTED, HIDE EDIT BUTTON
@@ -2757,21 +2762,22 @@ $(function() {
     $('button.showalg.not-ticked').toggleClass("hide", comorbidities.is(":checked"));
     $(this).closest('li.list-group-item ').toggleClass("selected", comorbidities.is(":checked"));
 
+    ///
     // IF COMO JUST ASTHMA DONT SHOW, IF ASTHMA + COPD OR COPD SHOW            
-    // var copd = $('COPD-como-content');
-    // var asthma = $('Asthma-como-content');
+    
+    // var asthma = $(comorbidities).val('Asthma'); 
+    // var copd = $(comorbidities).val('COPD');
 
-    // if ( ($(comorbidities).hasClass(copd)) && ($(comorbidities).hasClass(asthma)) || ($(comorbidities).hasClass(copd)) ) 
-    // {
-    //         // Show the relevant content on the page
-    //         $('.COPD-como-content.Asthma-como-content').css('display', 'block');
-    // }
-    // else ( ($(comorbidities).hasClass(asthma)) && ($(comorbidities).not(copd)) )
-    // {
-    //     // Hide the relevant content on the page
-    //     $('.COPD-como-content.Asthma-como-content').css('display', 'none');
-    // }
-    ///////
+    // if( $(asthma).prop("checked",true) ){
+    //         $('.COPD-como-content.Asthma-como-content').hide();
+    //     }
+    // else if ( $(copd).prop("checked",true) || $(asthma).prop("checked",true) && $(copd).prop("checked",true) ) {
+    //         $('.COPD-como-content.Asthma-como-content').show();
+    //     }
+
+    /////
+
+
   });
   // Grab the topic title from the H1 tag and drop it into the modal para
   $('#editComo').find('p span').append($('#topicMenuTop h1').html());
@@ -2779,7 +2785,7 @@ $(function() {
 });
 
 $(function() {
- // DRUG BOX ACCORDION ON CLICK DRUG TITLE1 SHOW DRUG CONTENT 2 ON CLICK DRUG TITLE2 SHOW DRUG CONTENT 1
+ // DRUG BOX ACCORDION ON CLICK DRUG TITLE1 SHOW DRUG CONTENT 2 ONE CLICK DRUG TITLE2 SHOW DRUG CONTENT 1
     $('.drug-title2').click(function(event) {
         event.preventDefault();
         $('.drug-content1').show();
