@@ -2730,6 +2730,8 @@ $(function() {
         $list.find('span[data-value="' + value + '"]').fadeOut("fast", function() {
             $(this).remove();
         });
+        // remove titles from como box content if checkbox is unchecked
+        $('section.panel-group .poce_title span').remove();
         
         // Hide the relevant content on the page
         $('.' + comochooser + '-como-content').css('display', 'none');
@@ -2766,20 +2768,13 @@ $(function() {
     $('button.showalg.not-ticked').toggleClass("hide", comorbidities.is(":checked"));
     $(this).closest('li.list-group-item ').toggleClass("selected", comorbidities.is(":checked"));
 
-    ///
-    // IF COMO JUST ASTHMA DONT SHOW, IF ASTHMA + COPD OR COPD SHOW            
-    
-    // var asthma = $(comorbidities).val('Asthma'); 
-    // var copd = $(comorbidities).val('COPD');
 
-    // if( $(asthma).prop("checked",true) ){
-    //         $('.COPD-como-content.Asthma-como-content').hide();
-    //     }
-    // else if ( $(copd).prop("checked",true) || $(asthma).prop("checked",true) && $(copd).prop("checked",true) ) {
-    //         $('.COPD-como-content.Asthma-como-content').show();
-    //     }
-
-    /////
+    // IF JUST ASTHMA DONT SHOW, IF ASTHMA + COPD OR JUST COPD SHOW    
+    if ($(copd).prop("checked") === true) {
+        $('.COPD-como-content.Asthma-como-content').show();
+    } else {
+        $('.COPD-como-content.Asthma-como-content').hide();
+    }
 
 
   });
@@ -2809,8 +2804,7 @@ $(function() {
     };
 });
 
-// Drug hyperlink to toggle between cplus & no cplus info (changes content)
-// (REFACTOR - prototype code)
+// Drug hyperlink show/hide drug content 
 $(function() {
     $('#como_link_1').click(function(event) {
         event.preventDefault();
@@ -2829,6 +2823,20 @@ $(function() {
             $('#drug_info_no_cplus').show();
         }
         return false;
+    });
+
+});
+// drop down arrows up and down on evidence accordion
+$(function () {
+    // $('.evidence-accordion .title h3').prepend('<span class=\"material-icons\">&#xE5CF;</span>');
+    $('.evidence-accordion .title').on('click', function () {
+        var $icon = $(this).find('.material-icons');
+        if ($icon.hasClass('open')) {
+            $icon.html('&#xE5CF;');
+        } else {
+            $icon.html('&#xE5CE;');
+        }
+        $icon.toggleClass('open');
     });
 });
 
