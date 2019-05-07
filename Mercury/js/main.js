@@ -2792,12 +2792,12 @@ $(function() {
  // DRUG BOX ACCORDION ON CLICK DRUG TITLE1 SHOW DRUG CONTENT 2 ONE CLICK DRUG TITLE2 SHOW DRUG CONTENT 1
     $('.drug-title2').click(function(event) {
         event.preventDefault();
-        $('.drug-content1').show();
+        $('.drug-content1').fadeIn(500);
         $('.drug-content2').hide();
     });
     $('.drug-title1').click(function(event) {
         event.preventDefault();
-        $('.drug-content2').show();
+        $('.drug-content2').fadeIn(500);
         $('.drug-content1').hide();
     });
 });
