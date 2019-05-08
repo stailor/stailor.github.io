@@ -11219,7 +11219,9 @@ span.badge.badge-bp.notification-number {
     margin: 2rem 0;
 }  
 .evidence-accordion .title h3 {
-    display: contents;
+    display: flex;
+    padding: 4px 0 0 2rem;
+    line-height: 1.5rem
 }
 
 #poce_contents .toggle {

@@ -2851,7 +2851,7 @@ for (i = 0; i < acc.length; i++) {
     this.classList.toggle("active");
 
     /* Toggle between hiding and showing the active panel */
-    var panel = this.nextElementSibling;
+    var panel = this.closest(".option .content");
     if (panel.style.display === "block") {
       panel.style.display = "none";
     } else {
