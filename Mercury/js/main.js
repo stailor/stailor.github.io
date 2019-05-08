@@ -2718,7 +2718,7 @@ $(function() {
         $('section.panel-group').has('.' + comochooser + '-como-content').find('.title-02').removeClass('no-icon');
         $('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title').append('<span>' + comochooser + '</span>');
         // Add comma in if there is more than one como listed in the como content title
-        $(".poce_title span").not(":last-child").append(", ");
+        $(".poce_title span").not(":last-child").append(" ");
         
 
         // If comorbidities list has content, show the edit button
