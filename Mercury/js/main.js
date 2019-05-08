@@ -2705,6 +2705,7 @@ $(function() {
     var value = $(this).val(),
         $list = $("#comoselected-1, #comoselected-2");
         var comochooser = $(this).attr('id');
+        var comovalue = $(this).attr('value');
 
     if (this.checked) {
         
@@ -2716,10 +2717,12 @@ $(function() {
         
         // If section has the .-como-content, find the txtwrap class and add the c+ icon and como title
         $('section.panel-group').has('.' + comochooser + '-como-content').find('.title-02').removeClass('no-icon');
-        $('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title').append('<span>' + comochooser + '</span>');
+        $('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title').append('<span class="' + comochooser + '-title">' + comovalue + '</span>');
+        console.log($('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title'));
         // Add comma in if there is more than one como listed in the como content title
-        $(".poce_title span").not(":last-child").append(" ");
+        $(".poce_title span").not(":last-child").append(", ");
         
+console.log(comochooser);
 
         // If comorbidities list has content, show the edit button
         $('#editComolist-1, #editComolist-2').show();
@@ -2731,7 +2734,8 @@ $(function() {
             $(this).remove();
         });
         // remove titles from como box content if checkbox is unchecked
-        $('section.panel-group .poce_title span').remove();
+        // remove span element where title is comochooser + '-title'
+        $('.' + comochooser + '-title').remove();
         
         // Hide the relevant content on the page
         $('.' + comochooser + '-como-content').css('display', 'none');
@@ -2770,6 +2774,7 @@ $(function() {
 
 
     // IF JUST ASTHMA DONT SHOW, IF ASTHMA + COPD OR JUST COPD SHOW    
+    var copd = $("input[id='COPD']");
     if ($(copd).prop("checked") === true) {
         $('.COPD-como-content.Asthma-como-content').show();
     } else {
