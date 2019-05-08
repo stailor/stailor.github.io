@@ -2720,7 +2720,7 @@ $(function() {
         $('.' + comochooser + '-como-content').find('.poce_title').append('<span class="' + comochooser + '-title">' + comovalue + '</span>');
         console.log($('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title'));
         // Add comma in if there is more than one como listed in the como content title
-        $(".poce_title span").not(":last-child").append(", ");
+        $(".poce_title span").not(":last-child").append(" ");
         
 console.log(comochooser);
 
