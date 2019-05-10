@@ -443,18 +443,53 @@
                                     <ul>
                                     <li>Patients with suspected or confirmed PE who present with<strong> shock or hypotension are at high risk of in-hospital death</strong>, particularly in the<strong> first few hours</strong> after presentation. [ESC]</li>
                                     </ul>
-                                    <p><strong>[PRACTICAL TIP/PITFALL PANEL]</strong></p>
-                                    <p><strong>Do not allow supportive therapy to delay thrombolysis (as long as there are no contraindications) - it may quickly restore haemodynamic stability. </strong></p>
-                                    <ul>
-                                    <li>It is common practice to give thrombolysis as first-line treatment for any patient who is in peri-arrest/cardiac arrest based on clinical suspicion of PE without waiting for results from investigations.</li>
-                                    <li>In these situations the decision to thrombolyse would be based on discussion between senior clinicians.</li>
-                                    </ul>
-
+                                    <div id="tip_pitfall" class="card card-inverse mb-4">
+                                       <div class="card-block">
+                                          <svg version="1.1" id="pin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
+                                          <g>
+                                          <g>
+                                             <path fill="#333333" d="M42.694,51.942v30.413C42.694,83.816,44.174,85,46,85s3.306-1.184,3.306-2.645V51.942H42.694z"></path>
+                                          </g>
+                                          <g>
+                                             <ellipse fill="#333333" cx="46" cy="47.645" rx="19.835" ry="12.231"></ellipse>
+                                          </g>
+                                          <g id="cylinder">
+                                             <polygon fill="#333333" points="55.256,9.628 46,9.628 36.744,9.628 34.099,47.975 46,47.975 57.901,47.975 		"></polygon>
+                                          </g>
+                                          <g id="cylinder_highlight">
+                                             <polygon fill="#FFFFFF" points="54.595,46.653 50.628,47.975 49.306,13.595 53.273,13.595 		"></polygon>
+                                          </g>
+                                          <g>
+                                             <ellipse fill="#333333" cx="46" cy="13.595" rx="15.207" ry="8.595"></ellipse>
+                                          </g>
+                                          <g id="highlight">
+                                             <path fill="#FFFFFF" d="M47.982,18.929c-0.67,0-1.245-0.508-1.313-1.19c-0.073-0.727,0.456-1.375,1.183-1.448
+                                                c3.157-0.318,5.857-1.434,7.224-2.985c0.48-0.547,1.317-0.602,1.866-0.118c0.548,0.482,0.601,1.318,0.118,1.866
+                                                c-1.822,2.069-5.082,3.479-8.942,3.868C48.072,18.927,48.027,18.929,47.982,18.929z"></path>
+                                          </g>
+                                          <g>
+                                             <path fill="#333333" d="M46,49.54v-1.322c4.794,0,9.917-1.192,9.917-4.54h1.322C57.239,47.349,53.038,49.54,46,49.54z"></path>
+                                          </g>
+                                          <g id="highlight_lower">
+                                             <path fill="#FFFFFF" d="M48.011,56.926c-0.032,0-0.064,0-0.098,0c-0.73-0.003-1.319-0.598-1.316-1.328
+                                                c0.003-0.729,0.595-1.316,1.322-1.316c0.034,0,0.063,0,0.095,0c3.975,0,7.602-1.166,9.719-3.128
+                                                c0.533-0.496,1.37-0.467,1.868,0.071c0.496,0.535,0.465,1.372-0.071,1.868C56.937,55.496,52.637,56.926,48.011,56.926z"></path>
+                                          </g>
+                                          </g>
+                                          </svg>
+                                          <h3 class="card-title"></h3>
+                                          <p><strong>Do not allow supportive therapy to delay thrombolysis (as long as there are no contraindications) - it may quickly restore haemodynamic stability. </strong></p>
+                                          <ul>
+                                          <li>It is common practice to give thrombolysis as first-line treatment for any patient who is in peri-arrest/cardiac arrest based on clinical suspicion of PE without waiting for results from investigations.</li>
+                                          <li>In these situations the decision to thrombolyse would be based on discussion between senior clinicians.</li>
+                                          </ul>
+                                       </div>
+                                    </div>
                                     
                                     <div class="evidence-accordion">
                                           <div class="option">
-                                             <input type="checkbox" id="toggle13" class="toggle" />
-                                             <label class="title" for="toggle13">                                             
+                                             <input type="checkbox" id="toggle1" class="toggle" />
+                                             <label class="title" for="toggle1">                                             
                                                 <span class="material-icons"><span></span></span>
                                                 <h3>Evidence: Patients with high-risk PE are at significant risk of death</h3>
                                                </label>
@@ -469,6 +504,54 @@
                                              </div>
                                           </div>
                                        </div>
+
+
+                                         
+                                    <!-- CONDITIONAL COMO CONTENT -->
+                                    <div class="COPD-como-content Asthma-como-content" style="display: none;">
+                                          <div class="poce_drug_msg">
+                                                <span class="material-icons">
+                                                      <svg version="1.1" class="co-morbidity-icon-pink" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 30 30" enable-background="new 0 0 30 30" xml:space="preserve">
+                                                         <g>
+                                                            <g>
+                                                               <path fill="#C50084" d="M13.403,11.642c1.223-2.384,3.7-4.019,6.564-4.019c2.285,0,4.326,1.039,5.679,2.669l4.119-4.119
+                                                                  c-2.416-2.68-5.905-4.375-9.798-4.375c-4.644,0-8.721,2.404-11.074,6.029C10.865,8.429,12.489,9.826,13.403,11.642z"></path>
+                                                               <path fill="#C50084" d="M19.967,22.378c-2.864,0-5.341-1.635-6.564-4.019c-0.914,1.815-2.538,3.212-4.511,3.815
+                                                                  c2.353,3.626,6.43,6.029,11.074,6.029c3.893,0,7.381-1.695,9.798-4.375l-4.119-4.119C24.293,21.339,22.251,22.378,19.967,22.378z"></path>
+                                                               <g>
+                                                                  <circle fill="#C50084" cx="6.736" cy="15" r="6.5"></circle>
+                                                               </g>
+                                                            </g>
+                                                            <polygon fill="#FFFFFF" points="11.207,14 7.707,14 7.707,10.5 5.707,10.5 5.707,14 2.207,14 2.207,16 5.707,16 5.707,19.5 
+                                                               7.707,19.5 7.707,16 11.207,16 	"></polygon>
+                                                         </g>
+                                                         </svg>
+                                                </span> 
+                                                <h3 class="poce_title"></h3>
+                                                <h3>Oxygen therapy (in COPD)</h3>
+                                                <p><strong>Oxygen therapy may be required in patients with COPD who are hypoxic, to maintain saturations. </strong></p>
+                                                <ul>
+                                                <li><strong><strong>Measure resting oxygen saturations</strong> in all acutely unwell patients. <em>(O'Driscoll BR, et al, 2017)</em></strong></li>
+                                                </ul>
+                                                <p><strong>Use the same initial target oxygen saturation of 94% to 98% for a patient with a critical illness (e.g., shock, sepsis, major trauma) and comorbid COPD as for patients without COPD, pending the results of arterial blood gas (ABG) results. </strong><em>(O'Driscoll BR, et al, 2017)</em></p>
+                                                <ul>
+                                                <li><strong>Subsequently, depending on ABG results, controlled oxygen therapy with a target oxygen saturation range of 88% to 92% may be needed. </strong></li>
+                                                </ul>
+                                                <ul>
+                                                <li>If the patient is severely hypoxaemic and/or has hypercapnia with respiratory acidosis, consider ventilation support.</li>
+                                                </ul>
+                                                <p><strong>Use an initial target oxygen saturation of 88% to 92% in patients with an acute but not immediately critical medical condition who have comorbid COPD or other risk factors for hypercapnia and no history of respiratory acidosis. </strong><em>(O'Driscoll BR, et al, 2017)</em></p>
+                                                <ul>
+                                                <li><strong>Measure ABG</strong>, and if the <strong>pCO</strong><strong>2</strong> is in the <strong>normal range</strong>, adjust the oxygen saturation <strong>target to 94% to 98%</strong>, unless the patient has a history of hypercapnic respiratory failure requiring ventilatory support.</li>
+                                                <li>Some patients with COPD who are <strong>acidotic</strong>, or who have a <strong>history of hypercapnic respiratory failure,</strong> or who are particularly <strong>sensitive to oxygen therapy</strong> may need a <strong>lower target oxygen saturation range.</strong> Check to see if they carry an &lsquo;<strong>alert card</strong>&rsquo; which may guide therapy based on previous blood gas results. <em>(O'Driscoll BR, et al, 2017)</em></li>
+                                                <li>If there is no alert card to guide therapy, use target oxygen saturations of <strong>88% to 92% and check arterial blood gases urgently.</strong></li>
+                                                <li>Some patients with COPD have a usual <strong>oxygen saturation of &lt;92% when clinically stable</strong>. Target oxygen saturations in these patients should be <strong>88% to 92%.</strong></li>
+                                                </ul>
+                                                <p><strong>Re-check </strong>ABG after 30 to 60 minutes.</p>
+                                             </div>
+                                       </div>
+                                       <!-- CONDITIONAL COMO CONTENT ends-->
+   
                               </div>
                               <!--/.panel-body -->
                            </section>
@@ -566,8 +649,8 @@
                                           
                                     <div class="evidence-accordion">
                                           <div class="option">
-                                             <input type="checkbox" id="toggle14" class="toggle" />
-                                             <label class="title" for="toggle14">                                             
+                                             <input type="checkbox" id="toggle2" class="toggle" />
+                                             <label class="title" for="toggle2">                                             
                                                 <span class="material-icons"><span></span></span>
                                                 <h3>Evidence: Aggressive volume expansion in patients with haemodynamically unstable PE is of no benefit and may even worsen RV function</h3>
                                                </label>
@@ -584,8 +667,7 @@
                                                          <p><strong>The 2014 ESC guideline states that evidence to date indicates that aggressive volume expansion is of no benefit and may even worsen RV function.</strong> [ESC]</p>
                                              </div>
                                           </div>
-                                       </div>
-
+                                    </div>
                                        
                                     <!-- CONDITIONAL COMO CONTENT -->
                                     <div class="HeartFailure-como-content CKD-como-content" style="display: none;">
@@ -631,17 +713,13 @@
                                                       </li>
                                                       </ul>
                                              </div>
-                                       </div>
-                                       <!-- CONDITIONAL COMO CONTENT ends-->
-
-                                       
-
+                                    </div>
+                                    <!-- CONDITIONAL COMO CONTENT ends-->
 
                               </div>
                               <!--/.panel-body -->
-                           </section>
-                           
-                           <section class="panel-group HeartFailure-como-content CKD-como-content Stroke-como-content CAD-como-content Hypertension-como-content">
+                           </section>                           
+                           <section style="display: none;" class="panel-group HeartFailure-como-content CKD-como-content Stroke-como-content CAD-como-content Hypertension-como-content">
                               <div class="panel-header">
                                  <p class="panel-title"> 
                                     <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#" role="tab header" id="tab_1_0_0" aria-controls="panel_1_0_0" aria-expanded="false">
@@ -838,8 +916,8 @@
    
                                        <div class="evidence-accordion">
                                              <div class="option">
-                                                <input type="checkbox" id="toggle1" class="toggle" />
-                                                <label class="title" for="toggle1">                                             
+                                                <input type="checkbox" id="toggle3" class="toggle" />
+                                                <label class="title" for="toggle3">                                             
                                                    <span class="material-icons"><span></span></span>
                                                    <h3>Evidence: There is insufficient evidence to support use of LMWH in haemodynamically unstable (high-risk) PE</h3>
                                              </label>
@@ -918,8 +996,8 @@
    
                                        <div class="evidence-accordion">
                                           <div class="option">
-                                             <input type="checkbox" id="toggle2" class="toggle" />
-                                             <label class="title" for="toggle2">                                             
+                                             <input type="checkbox" id="toggle4" class="toggle" />
+                                             <label class="title" for="toggle4">                                             
                                                 <span class="material-icons"><span></span></span>
                                                 <h3>Evidence: Most patients with high-risk PE respond to early thrombolysis</h3>
                                           </label>
@@ -1006,8 +1084,8 @@
    
                                           <div class="evidence-accordion">
                                              <div class="option">
-                                                <input type="checkbox" id="toggle3" class="toggle" />
-                                                <label class="title" for="toggle3">                                             
+                                                <input type="checkbox" id="toggle5" class="toggle" />
+                                                <label class="title" for="toggle5">                                             
                                                    <span class="material-icons"><span></span></span>
                                                    <h3>Evidence: Thrombolysis carries a significant risk of major bleeding, including  intracranial bleeding</h3>
                                              </label>
@@ -1033,8 +1111,8 @@
    
                                           <div class="evidence-accordion">
                                              <div class="option">
-                                                <input type="checkbox" id="toggle4" class="toggle" />
-                                                <label class="title" for="toggle4">                                             
+                                                <input type="checkbox" id="toggle6" class="toggle" />
+                                                <label class="title" for="toggle6">                                             
                                                    <span class="material-icons"><span></span></span>
                                                    <h3>Evidence does not support the routine use of thrombolysis in patients with intermediate-risk PE</h3>
                                              </label>
@@ -1450,8 +1528,8 @@
    <!-- DRUG CONTENT BOX ENDS -->
    <div class="evidence-accordion">
          <div class="option">
-            <input type="checkbox" id="toggle5" class="toggle" />
-            <label class="title" for="toggle5">                                             
+            <input type="checkbox" id="toggle7" class="toggle" />
+            <label class="title" for="toggle7">                                             
                <span class="material-icons"><span></span></span>
                <h3>Evidence: Choice of vasopressor is based on limited evidence</h3>
          </label>
@@ -1574,8 +1652,8 @@
                                        
                                        <div class="evidence-accordion">
                                           <div class="option">
-                                             <input type="checkbox" id="toggle6" class="toggle" />
-                                             <label class="title" for="toggle6">                                             
+                                             <input type="checkbox" id="toggle8" class="toggle" />
+                                             <label class="title" for="toggle8">                                             
                                                 <span class="material-icons"><span></span></span>
                                                 <h3>Evidence: Surgical pulmonary embolectomy and catheter-directed therapy outcomes</h3>
                                           </label>
@@ -1817,8 +1895,8 @@
                                              </ul>
                                              <div class="evidence-accordion">
                                                 <div class="option">
-                                                   <input type="checkbox" id="toggle7" class="toggle" />
-                                                   <label class="title" for="toggle7">                                             
+                                                   <input type="checkbox" id="toggle9" class="toggle" />
+                                                   <label class="title" for="toggle9">                                             
                                                       <span class="material-icons"><span></span></span>
                                                       <h3>Evidence: patient outcomes associated with hyperglycaemia</h3>
                                                 </label>
@@ -1830,8 +1908,8 @@
                                              </div>
                                              <div class="evidence-accordion">
                                                 <div class="option">
-                                                   <input type="checkbox" id="toggle8" class="toggle" />
-                                                   <label class="title" for="toggle8">                                             
+                                                   <input type="checkbox" id="toggle10" class="toggle" />
+                                                   <label class="title" for="toggle10">                                             
                                                       <span class="material-icons"><span></span></span>
                                                       <h3>Evidence: blood glucose targets for people with diabetes in hospital</h3>
                                                 </label>
@@ -2321,8 +2399,8 @@
    
                                              <div class="evidence-accordion">
                                                    <div class="option">
-                                                      <input type="checkbox" id="toggle9" class="toggle" />
-                                                      <label class="title" for="toggle9">                                             
+                                                      <input type="checkbox" id="toggle11" class="toggle" />
+                                                      <label class="title" for="toggle11">                                             
                                                          <span class="material-icons"><span></span></span>
                                                          <h3>Evidence: risks and safe withdrawal of antipsychotics in the elderly</h3>
                                                         </label>
@@ -2348,8 +2426,8 @@
    
                                                 <div class="evidence-accordion">
                                                    <div class="option">
-                                                      <input type="checkbox" id="toggle10" class="toggle" />
-                                                      <label class="title" for="toggle10">                                             
+                                                      <input type="checkbox" id="toggle12" class="toggle" />
+                                                      <label class="title" for="toggle12">                                             
                                                          <span class="material-icons"><span></span></span>
                                                          <h3>Evidence: primary prevention of delirium: this may be the most effective treatment strategy</h3>
                                                         </label>
@@ -2705,8 +2783,8 @@
                                              
                                        <div class="evidence-accordion">
                                              <div class="option">
-                                                <input type="checkbox" id="toggle11" class="toggle" />
-                                                <label class="title" for="toggle11">                                             
+                                                <input type="checkbox" id="toggle13" class="toggle" />
+                                                <label class="title" for="toggle13">                                             
                                                    <span class="material-icons"><span></span></span>
                                                    <h3>Evidence: cardiovascular harm with beta2- agonists.</h3>
                                                   </label>
@@ -2719,8 +2797,8 @@
                                           
                                        <div class="evidence-accordion">
                                              <div class="option">
-                                                <input type="checkbox" id="toggle12" class="toggle" />
-                                                <label class="title" for="toggle12">                                             
+                                                <input type="checkbox" id="toggle14" class="toggle" />
+                                                <label class="title" for="toggle14">                                             
                                                    <span class="material-icons"><span></span></span>
                                                    <h3>Evidence: short duration vs longer duration of corticosteroids for acute exacerbation of COPD</h3>
                                                   </label>
@@ -2816,6 +2894,358 @@
                                           </div>
                                     </div>
                                     <!-- CONDITIONAL COMO CONTENT ENDS -->
+                                 </div>
+                                 <!--/.panel-body -->
+                              </section>
+                              <section class="panel-group">
+                                 <div class="panel-header">
+                                    <p class="panel-title"> 
+                                       <a href="#" role="tab header" id="nested-collapse_0_0_3" aria-controls="nested-collapse_0_0_3" aria-expanded="false" class="">
+                                       <span class="title-01">
+                                       <span>  
+                                          Contraindication to thrombolysis; and no contraindication to anticoagulation                                                                                                                                                         
+                                       </span>
+                                       <span class="noShow">&nbsp;–&nbsp;</span>
+                                       </span>
+                                       <span class="titles-wrap col-md-12">
+                                       <span class="title-02">
+                                       <span class="title-03 col-md-1">
+                                       1st line
+                                       <span class="noShow">&nbsp;–&nbsp;</span>
+                                       </span>
+                                       <span class="title-04">
+                                       <span class="material-icons"><span></span><span></span></span>
+                                       <span class="txtwrap">Start unfractionated heparin</span>
+                                       </span>
+                                       </span>
+                                       </span>
+                                       </a>
+                                    </p>
+                                 </div>
+                                 <div class="panel-content col-md-10" role="tabpanel" aria-labelledby="nested-collapse_0_0_3" id="nested-collapse_0_0_3" aria-expanded="false" style="display: none;">
+                              
+                                    <p><strong>Involve senior support and/or critical care in patients who are haemodynamically unstable (SBP &lt;90 mmHg or SBP drop of &ge;40 mmHg for &gt;15 minutes).</strong></p>
+                                    <p><strong>Start UFH in haemodynamically unstable patients prior to primary reperfusion.</strong></p>
+                                    <ul>
+                                    <li>UFH has a short half-life, is easy to monitor, and is readily reversed by protamine. [ESC]</li>
+                                    </ul>
+                                    <p><br /><strong>Check local guidelines and seek specialist advice when deciding how long to continue UFH for</strong>.[ESC] In the UK it is common practice to stop UFH within 24 hours but this will depend on the stability of the patient.</p>
+
+                                       <div id="tip_pitfall" class="card card-inverse mb-4">
+                                       <div class="card-block">
+                                          <svg version="1.1" id="pin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
+                                          <g>
+                                             <g>
+                                                <path fill="#333333" d="M42.694,51.942v30.413C42.694,83.816,44.174,85,46,85s3.306-1.184,3.306-2.645V51.942H42.694z"></path>
+                                             </g>
+                                             <g>
+                                                <ellipse fill="#333333" cx="46" cy="47.645" rx="19.835" ry="12.231"></ellipse>
+                                             </g>
+                                             <g id="cylinder">
+                                                <polygon fill="#333333" points="55.256,9.628 46,9.628 36.744,9.628 34.099,47.975 46,47.975 57.901,47.975 		"></polygon>
+                                             </g>
+                                             <g id="cylinder_highlight">
+                                                <polygon fill="#FFFFFF" points="54.595,46.653 50.628,47.975 49.306,13.595 53.273,13.595 		"></polygon>
+                                             </g>
+                                             <g>
+                                                <ellipse fill="#333333" cx="46" cy="13.595" rx="15.207" ry="8.595"></ellipse>
+                                             </g>
+                                             <g id="highlight">
+                                                <path fill="#FFFFFF" d="M47.982,18.929c-0.67,0-1.245-0.508-1.313-1.19c-0.073-0.727,0.456-1.375,1.183-1.448
+                                                   c3.157-0.318,5.857-1.434,7.224-2.985c0.48-0.547,1.317-0.602,1.866-0.118c0.548,0.482,0.601,1.318,0.118,1.866
+                                                   c-1.822,2.069-5.082,3.479-8.942,3.868C48.072,18.927,48.027,18.929,47.982,18.929z"></path>
+                                             </g>
+                                             <g>
+                                                <path fill="#333333" d="M46,49.54v-1.322c4.794,0,9.917-1.192,9.917-4.54h1.322C57.239,47.349,53.038,49.54,46,49.54z"></path>
+                                             </g>
+                                             <g id="highlight_lower">
+                                                <path fill="#FFFFFF" d="M48.011,56.926c-0.032,0-0.064,0-0.098,0c-0.73-0.003-1.319-0.598-1.316-1.328
+                                                   c0.003-0.729,0.595-1.316,1.322-1.316c0.034,0,0.063,0,0.095,0c3.975,0,7.602-1.166,9.719-3.128
+                                                   c0.533-0.496,1.37-0.467,1.868,0.071c0.496,0.535,0.465,1.372-0.071,1.868C56.937,55.496,52.637,56.926,48.011,56.926z"></path>
+                                             </g>
+                                             </g>
+                                             </svg>
+                                             <h3 class="card-title">In patients who are haemodynamically unstable, evidence of RV dysfunction on echocardiography is sufficient to warrant immediate anticoagulation.</h3>
+                                             <p><strong></strong></p>
+                                             <ul>
+                                             <li><strong>These patients are normally too unstable to undergo CTPA.</strong></li>
+                                             </ul>
+                                          </div>
+                                       </div>
+                                       
+                                       
+   
+                                       <div class="evidence-accordion">
+                                             <div class="option">
+                                                <input type="checkbox" id="toggle15" class="toggle" />
+                                                <label class="title" for="toggle15">                                             
+                                                   <span class="material-icons"><span></span></span>
+                                                   <h3>Evidence: There is insufficient evidence to support use of LMWH in haemodynamically unstable (high-risk) PE</h3>
+                                             </label>
+                                                <div class="content">
+                                                   <p><strong>There is some evidence that LMWH has a similar safety profile to UFH when used prior to thrombolysis.</strong></p>
+                                                   <ul>
+                                                   <li>A prospective, observational multicentre trial showed similar bleeding rates following thrombolysis in patients who had UFH or LMWH. However this evidence remains limited.</li>
+                                                   </ul>
+                                                   <p><strong>There is not enough evidence to recommend LMWH as a first-line option for patients with PE who are haemodynamically unstable. </strong>[UCAR]</p>
+                                                </div>
+                                             </div>
+                                          </div>
+   
+                                          <div id="tip_pitfall" class="card card-inverse mb-4">
+                                             <div class="card-block">
+                                                <svg version="1.1" id="pin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
+                                                <g>
+                                                   <g>
+                                                      <path fill="#333333" d="M42.694,51.942v30.413C42.694,83.816,44.174,85,46,85s3.306-1.184,3.306-2.645V51.942H42.694z"></path>
+                                                   </g>
+                                                   <g>
+                                                      <ellipse fill="#333333" cx="46" cy="47.645" rx="19.835" ry="12.231"></ellipse>
+                                                   </g>
+                                                   <g id="cylinder">
+                                                      <polygon fill="#333333" points="55.256,9.628 46,9.628 36.744,9.628 34.099,47.975 46,47.975 57.901,47.975 		"></polygon>
+                                                   </g>
+                                                   <g id="cylinder_highlight">
+                                                      <polygon fill="#FFFFFF" points="54.595,46.653 50.628,47.975 49.306,13.595 53.273,13.595 		"></polygon>
+                                                   </g>
+                                                   <g>
+                                                      <ellipse fill="#333333" cx="46" cy="13.595" rx="15.207" ry="8.595"></ellipse>
+                                                   </g>
+                                                   <g id="highlight">
+                                                      <path fill="#FFFFFF" d="M47.982,18.929c-0.67,0-1.245-0.508-1.313-1.19c-0.073-0.727,0.456-1.375,1.183-1.448
+                                                         c3.157-0.318,5.857-1.434,7.224-2.985c0.48-0.547,1.317-0.602,1.866-0.118c0.548,0.482,0.601,1.318,0.118,1.866
+                                                         c-1.822,2.069-5.082,3.479-8.942,3.868C48.072,18.927,48.027,18.929,47.982,18.929z"></path>
+                                                   </g>
+                                                   <g>
+                                                      <path fill="#333333" d="M46,49.54v-1.322c4.794,0,9.917-1.192,9.917-4.54h1.322C57.239,47.349,53.038,49.54,46,49.54z"></path>
+                                                   </g>
+                                                   <g id="highlight_lower">
+                                                      <path fill="#FFFFFF" d="M48.011,56.926c-0.032,0-0.064,0-0.098,0c-0.73-0.003-1.319-0.598-1.316-1.328
+                                                         c0.003-0.729,0.595-1.316,1.322-1.316c0.034,0,0.063,0,0.095,0c3.975,0,7.602-1.166,9.719-3.128
+                                                         c0.533-0.496,1.37-0.467,1.868,0.071c0.496,0.535,0.465,1.372-0.071,1.868C56.937,55.496,52.637,56.926,48.011,56.926z"></path>
+                                                   </g>
+                                                   </g>
+                                                   </svg>
+                                                   <h3 class="card-title">Seek haematology advice if a patient with high-risk PE who is haemodynamically unstable has any contraindications to thrombolysis.</h3>
+                                                   <ul>
+                                                      <li>In practice, almost any contraindication to thrombolysis should be considered only relative in high-risk patients who present with haemodynamic instability.</li>
+                                                      <li>This is because the mortality risk from high-risk PE is so high that it is likely to outweigh any bleeding risk from thrombolysis in this patient group. [ESC]</li>
+                                                      </ul>
+                                                      <p><strong>Absolute contraindications: [ESC]</strong></p>
+                                                      <ul>
+                                                      <li>haemorrhagic stroke or stroke of unknown origin at any time</li>
+                                                      <li>ischaemic stroke in the preceding 6 months</li>
+                                                      <li>central nervous system damage or neoplasms</li>
+                                                      <li>recent major trauma/surgery/head injury (in the preceding 3 weeks)</li>
+                                                      <li>gastrointestinal bleeding within the last month</li>
+                                                      <li>known bleeding risk.</li>
+                                                      </ul>
+                                                      <p><strong>Relative contraindications:</strong></p>
+                                                      <ul>
+                                                      <li>transient ischaemic attack in the preceding 6 months</li>
+                                                      <li>oral anticoagulant therapy</li>
+                                                      <li>pregnancy or within 1 week postnatally</li>
+                                                      <li>traumatic resuscitation (in relation to this episode of PE)</li>
+                                                      <li>refractory hypertension (SBP &gt;180 mmHg)</li>
+                                                      <li>advanced liver disease</li>
+                                                      <li>infective endocarditis</li>
+                                                      <li>active peptic ulcer</li>
+                                                      </ul>
+                                                </div>
+                                             </div>
+
+
+                                          <div class="treatment-wrap">
+                                             <h4>Primary options</h4>
+                                             <div class="treatment-box">
+                                                <p>
+                                                   <a href="#drugDbPop_4866ce04-4d68-4b50-83f4-66283ea52c07_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">heparin</a><span>: </span><span>10,000 units intravenously as a loading dose initially, followed by 18 units/kg/hour intravenous infusion, adjust dose according to aPTT</span>
+                                                </p>
+                                             </div>
+                                          </div>
+                                             
+                                 </div>
+                                 <!--/.panel-body -->
+                              </section>
+                              <section class="panel-group">
+                                 <div class="panel-header">
+                                    <p class="panel-title"> 
+                                       <a href="#" role="tab header" id="nested-collapse_0_0_3" aria-controls="nested-collapse_0_0_3" aria-expanded="false" class="">
+                                       <span class="titles-wrap col-md-12">
+                                       <span class="title-02">
+                                       <span class="title-03 col-md-1">
+                                       Plus
+                                       <span class="noShow">&nbsp;–&nbsp;</span>
+                                       </span>
+                                       <span class="title-04">
+                                       <span class="material-icons"><span></span><span></span></span>
+                                       <span class="txtwrap">Switch to alternative anticoagulant</span>
+                                       </span>
+                                       </span>
+                                       </span>
+                                       </a>
+                                    </p>
+                                 </div>
+                                 <div class="panel-content col-md-10" role="tabpanel" aria-labelledby="nested-collapse_0_0_3" id="nested-collapse_0_0_3" aria-expanded="false" style="display: none;">
+                              
+                                    <p><strong>Continue anticoagulation with UFH before switching to LMWH, fondaparinux, apixaban, or rivaroxaban</strong>.[ESC] <strong>Check local guidelines and seek specialist advice when deciding how long to continue UFH for</strong>. [ESC] In the UK it is common practice to stop UFH within 24 hours but this will depend on the stability of the patient.</p>
+                                    <ul>
+                                    <li><strong>If switching to LMWH </strong><strong>(e.g,. </strong><strong>dalteparin, enoxaparin) or fondaparinux, the total duration of treatment with UFH and then LMWH or fondaparinux should be at least 5 days.</strong>[NICE][ESC]</li>
+                                    <ul>
+                                    <li>If ongoing anticoagulation will be with warfarin, ensure overlap with UFH, LMWH, or fondaparinux for at least 5 days or until the INR is &ge;2 for at least 24 hours (whichever is the longer).[NICE] Seek specialist advice to decide when to start warfarin.</li>
+                                    </ul>
+                                    </ul>
+                                    <p><strong>OR</strong></p>
+                                    <ul>
+                                    <ul>
+                                    <li>If ongoing anticoagulation will be with edoxaban or dabigatran, at least 5 days of lead-in therapy with LMWH or fondaparinux is required first. Stop the LMWH or fondaparinux before starting dabigatran or edoxaban.[BTS]</li>
+                                    </ul>
+                                    <li><strong>If switching to rivaroxaban or apixaban, these drugs may be started after stopping UFH without the need for lead-in therapy</strong><strong>with </strong><strong>LMWH or fondaparinux </strong><strong>first</strong>.</li>
+                                    <ul>
+                                    <li>Acute-phase treatment consists of an increased dose of the oral anticoagulant over the first 3 weeks (for rivaroxaban), or over the first 7 days (for apixaban).</li>
+                                    </ul>
+                                    </ul>
+                                    <p><strong>Seek specialist advice when switching between anticoagulants</strong></p>
+                                    <ul>
+                                    <li>The protocol depends on which anticoagulant you are switching to and from. Haematology input is important.</li>
+                                    </ul>
+                                    <p><br /><strong>Be aware of special patient groups such as pregnancy, renal impairment, and active cancer</strong> as these groups will need a specific type/dose of anticoagulant. <strong>Seek haematology advice for all patients with hepatic impairment or who are at increased risk of bleeding.</strong></p>
+
+                                       <div id="tip_pitfall" class="card card-inverse mb-4">
+                                       <div class="card-block">
+                                          <svg version="1.1" id="pin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
+                                          <g>
+                                             <g>
+                                                <path fill="#333333" d="M42.694,51.942v30.413C42.694,83.816,44.174,85,46,85s3.306-1.184,3.306-2.645V51.942H42.694z"></path>
+                                             </g>
+                                             <g>
+                                                <ellipse fill="#333333" cx="46" cy="47.645" rx="19.835" ry="12.231"></ellipse>
+                                             </g>
+                                             <g id="cylinder">
+                                                <polygon fill="#333333" points="55.256,9.628 46,9.628 36.744,9.628 34.099,47.975 46,47.975 57.901,47.975 		"></polygon>
+                                             </g>
+                                             <g id="cylinder_highlight">
+                                                <polygon fill="#FFFFFF" points="54.595,46.653 50.628,47.975 49.306,13.595 53.273,13.595 		"></polygon>
+                                             </g>
+                                             <g>
+                                                <ellipse fill="#333333" cx="46" cy="13.595" rx="15.207" ry="8.595"></ellipse>
+                                             </g>
+                                             <g id="highlight">
+                                                <path fill="#FFFFFF" d="M47.982,18.929c-0.67,0-1.245-0.508-1.313-1.19c-0.073-0.727,0.456-1.375,1.183-1.448
+                                                   c3.157-0.318,5.857-1.434,7.224-2.985c0.48-0.547,1.317-0.602,1.866-0.118c0.548,0.482,0.601,1.318,0.118,1.866
+                                                   c-1.822,2.069-5.082,3.479-8.942,3.868C48.072,18.927,48.027,18.929,47.982,18.929z"></path>
+                                             </g>
+                                             <g>
+                                                <path fill="#333333" d="M46,49.54v-1.322c4.794,0,9.917-1.192,9.917-4.54h1.322C57.239,47.349,53.038,49.54,46,49.54z"></path>
+                                             </g>
+                                             <g id="highlight_lower">
+                                                <path fill="#FFFFFF" d="M48.011,56.926c-0.032,0-0.064,0-0.098,0c-0.73-0.003-1.319-0.598-1.316-1.328
+                                                   c0.003-0.729,0.595-1.316,1.322-1.316c0.034,0,0.063,0,0.095,0c3.975,0,7.602-1.166,9.719-3.128
+                                                   c0.533-0.496,1.37-0.467,1.868,0.071c0.496,0.535,0.465,1.372-0.071,1.868C56.937,55.496,52.637,56.926,48.011,56.926z"></path>
+                                             </g>
+                                             </g>
+                                             </svg>
+                                             <h3 class="card-title">Never give a DOAC simultaneously with parenteral anticoagulation</h3>
+                                             <ul>
+                                             <li>While warfarin is started at the same time as a parenteral anticoagulant and overlapped for at least 5 days or until the INR is &ge;2 for at least 24 hours (whichever is the longer), DOACs should never be overlapped or given at the same time as a parenteral anticoagulant.</li>
+                                             <li>Apixaban and rivaroxaban may be started without the need for lead-in therapy with a parenteral anticoagulant first. Either of these DOACs can be used as a single-drug approach; this is why BTS guidelines recommend them as the preferred DOAC options in any patient who might be suitable for early discharge. [BTS]</li>
+                                             <li>However, dabigatran and edoxaban require at least 5 days lead-in therapy with a parenteral anticoagulant before starting treatment. The parenteral anticoagulant should be stopped before dabigatran or edoxaban are started.</li>
+                                             </ul>
+
+                                          </div>
+                                       </div>
+                                       
+                                       
+   
+                                       <div class="evidence-accordion">
+                                             <div class="option">
+                                                <input type="checkbox" id="toggle16" class="toggle" />
+                                                <label class="title" for="toggle16">                                             
+                                                   <span class="material-icons"><span></span></span>
+                                                   <h3>Evidence: There is insufficient evidence to support use of LMWH in haemodynamically unstable (high-risk) PE</h3>
+                                             </label>
+                                                <div class="content">
+                                                   <p><strong>There is some evidence that LMWH has a similar safety profile to UFH when used prior to thrombolysis.</strong></p>
+                                                   <ul>
+                                                   <li>A prospective, observational multicentre trial showed similar bleeding rates following thrombolysis in patients who had UFH or LMWH. However this evidence remains limited.</li>
+                                                   </ul>
+                                                   <p><strong>There is not enough evidence to recommend LMWH as a first-line option for patients with PE who are haemodynamically unstable. </strong>[UCAR]</p>
+                                                </div>
+                                             </div>
+                                          </div>
+   
+                                          <div id="tip_pitfall" class="card card-inverse mb-4">
+                                             <div class="card-block">
+                                                <svg version="1.1" id="pin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 90 90" enable-background="new 0 0 90 90" xml:space="preserve">
+                                                <g>
+                                                   <g>
+                                                      <path fill="#333333" d="M42.694,51.942v30.413C42.694,83.816,44.174,85,46,85s3.306-1.184,3.306-2.645V51.942H42.694z"></path>
+                                                   </g>
+                                                   <g>
+                                                      <ellipse fill="#333333" cx="46" cy="47.645" rx="19.835" ry="12.231"></ellipse>
+                                                   </g>
+                                                   <g id="cylinder">
+                                                      <polygon fill="#333333" points="55.256,9.628 46,9.628 36.744,9.628 34.099,47.975 46,47.975 57.901,47.975 		"></polygon>
+                                                   </g>
+                                                   <g id="cylinder_highlight">
+                                                      <polygon fill="#FFFFFF" points="54.595,46.653 50.628,47.975 49.306,13.595 53.273,13.595 		"></polygon>
+                                                   </g>
+                                                   <g>
+                                                      <ellipse fill="#333333" cx="46" cy="13.595" rx="15.207" ry="8.595"></ellipse>
+                                                   </g>
+                                                   <g id="highlight">
+                                                      <path fill="#FFFFFF" d="M47.982,18.929c-0.67,0-1.245-0.508-1.313-1.19c-0.073-0.727,0.456-1.375,1.183-1.448
+                                                         c3.157-0.318,5.857-1.434,7.224-2.985c0.48-0.547,1.317-0.602,1.866-0.118c0.548,0.482,0.601,1.318,0.118,1.866
+                                                         c-1.822,2.069-5.082,3.479-8.942,3.868C48.072,18.927,48.027,18.929,47.982,18.929z"></path>
+                                                   </g>
+                                                   <g>
+                                                      <path fill="#333333" d="M46,49.54v-1.322c4.794,0,9.917-1.192,9.917-4.54h1.322C57.239,47.349,53.038,49.54,46,49.54z"></path>
+                                                   </g>
+                                                   <g id="highlight_lower">
+                                                      <path fill="#FFFFFF" d="M48.011,56.926c-0.032,0-0.064,0-0.098,0c-0.73-0.003-1.319-0.598-1.316-1.328
+                                                         c0.003-0.729,0.595-1.316,1.322-1.316c0.034,0,0.063,0,0.095,0c3.975,0,7.602-1.166,9.719-3.128
+                                                         c0.533-0.496,1.37-0.467,1.868,0.071c0.496,0.535,0.465,1.372-0.071,1.868C56.937,55.496,52.637,56.926,48.011,56.926z"></path>
+                                                   </g>
+                                                   </g>
+                                                   </svg>
+                                                   <h3 class="card-title">Seek haematology advice if a patient with high-risk PE who is haemodynamically unstable has any contraindications to thrombolysis.</h3>
+                                                   <ul>
+                                                      <li>In practice, almost any contraindication to thrombolysis should be considered only relative in high-risk patients who present with haemodynamic instability.</li>
+                                                      <li>This is because the mortality risk from high-risk PE is so high that it is likely to outweigh any bleeding risk from thrombolysis in this patient group. [ESC]</li>
+                                                      </ul>
+                                                      <p><strong>Absolute contraindications: [ESC]</strong></p>
+                                                      <ul>
+                                                      <li>haemorrhagic stroke or stroke of unknown origin at any time</li>
+                                                      <li>ischaemic stroke in the preceding 6 months</li>
+                                                      <li>central nervous system damage or neoplasms</li>
+                                                      <li>recent major trauma/surgery/head injury (in the preceding 3 weeks)</li>
+                                                      <li>gastrointestinal bleeding within the last month</li>
+                                                      <li>known bleeding risk.</li>
+                                                      </ul>
+                                                      <p><strong>Relative contraindications:</strong></p>
+                                                      <ul>
+                                                      <li>transient ischaemic attack in the preceding 6 months</li>
+                                                      <li>oral anticoagulant therapy</li>
+                                                      <li>pregnancy or within 1 week postnatally</li>
+                                                      <li>traumatic resuscitation (in relation to this episode of PE)</li>
+                                                      <li>refractory hypertension (SBP &gt;180 mmHg)</li>
+                                                      <li>advanced liver disease</li>
+                                                      <li>infective endocarditis</li>
+                                                      <li>active peptic ulcer</li>
+                                                      </ul>
+                                                </div>
+                                             </div>
+
+
+                                          <div class="treatment-wrap">
+                                             <h4>Primary options</h4>
+                                             <div class="treatment-box">
+                                                <p>
+                                                   <a href="#drugDbPop_4866ce04-4d68-4b50-83f4-66283ea52c07_en-gb" data-trigger="click focus" class="drugDbPop" data-toggle="popover" data-original-title="" title="">heparin</a><span>: </span><span>10,000 units intravenously as a loading dose initially, followed by 18 units/kg/hour intravenous infusion, adjust dose according to aPTT</span>
+                                                </p>
+                                             </div>
+                                          </div>
+                                             
                                  </div>
                                  <!--/.panel-body -->
                               </section>
