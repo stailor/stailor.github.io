@@ -5323,12 +5323,11 @@ span.reference span {
     }
     .evidence-accordion .title .material-icons {
         float: left;
-        clear: right;
         width: 32px;
         height: 24px;
         margin-bottom:-30px;
         cursor: pointer;
-        padding-top:5px
+        padding-top:8px
     }
     .treatment-table .txtwrap {
         display: block;
@@ -11080,6 +11079,13 @@ span.badge.badge-bp.notification-number {
     padding: 1rem !important;
     border: 1px dashed #c50084;
     background-color: #f8e0f0;
+    margin: 1rem 0;
+}
+#poce-contents div[class*='-como-content'] .poce_drug_msg .evidence-accordion .title {
+    position: relative
+}
+div[class*='-como-content'] {
+    margin: 1rem 0;
 }
 #poce_content .treatment-table .txtwrap::after {
     content: "\e90c";
@@ -11249,12 +11255,14 @@ span.badge.badge-bp.notification-number {
     padding: 0 0.5rem 1rem;
     margin: 0;
     display: inline-block;
-    background-color: transparent
+    background-color: transparent;
+    text-indent: 1rem
 }
 #poce_contents .title h3{
     color: #c50084;
     font-weight: bold;
     font-size: 1rem;
+    text-indent: 1rem;
 }
 #poce_contents .title p {
     color: #000;
