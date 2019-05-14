@@ -10970,7 +10970,9 @@ span.badge.badge-bp.notification-number {
     text-indent: initial;
 }
 .poce_drug_msg .material-icons {
-    vertical-align: top;
+    vertical-align: top;    
+    top: -5px;
+    position: relative;
 }
 .poce_drug_msg .material-icons svg {
     top:0;
