@@ -10949,8 +10949,7 @@ span.badge.badge-bp.notification-number {
     border: 1px dashed #c50084;
     display: table-cell;
     margin-bottom: 1rem;
-    padding: 1rem 1rem 1rem 3rem;
-    text-indent: -16px;
+    padding: 1rem;
 }
 .poce_drug_msg .poce_title {
     padding-left: 3rem;
@@ -11101,17 +11100,16 @@ div[class*='-como-content'] {
     content: " ";
 }
 
-#poce_contents ul {
-    list-style: disc inside;
+#poce_contents ul,#poce_contents ul ul ul {
+    list-style: disc inside!important;
     padding-top: 0;
-    margin: 0;
+    margin: auto;
     padding: inherit;
 }
 
 #poce_contents ul ul {
-    list-style: circle inside;
-    padding: 5px 0 0 24px;
-    margin: 0
+    list-style: circle inside!important;
+    margin:auto
 }
 
 #poce_contents ul li:before,
@@ -11120,16 +11118,14 @@ div[class*='-como-content'] {
 }
 
 #poce_contents ul li {
-    padding: 0 0 10px 32px;
+    padding: 0 0 7px 10px;
     text-indent: -22px
 }
-
-#poce_contents ul ul li {
-    padding: 0;
-    text-indent: -24px;
-    margin-bottom: 6px
+#poce_contents ul li ul li {
+    list-style: disc inside;
+    padding: 6px 0 0 0;
+    text-indent: inherit;
 }
-
 #poce_contents #tip_pitfall {
     background-color: #e5eef7;
     border: 1px solid #e9e9e9;
@@ -11256,7 +11252,6 @@ div[class*='-como-content'] {
     margin: 0;
     display: inline-block;
     background-color: transparent;
-    text-indent: 1rem
 }
 #poce_contents .title h3{
     color: #c50084;
