@@ -11109,7 +11109,6 @@ div[class*='-como-content'] {
 #poce_contents ul ul li {
     padding-top: 0;
     margin: auto;
-    padding: inherit;
 }
 #poce_contents ul li:before,
 #poce_contents ul ul li:before {
