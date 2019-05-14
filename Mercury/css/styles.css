@@ -5228,6 +5228,9 @@ span.reference span {
     .evidence-accordion .title .material-icons {
         margin-left: -4px
     }
+    #poce_contents .evidence-accordion .title .material-icons {
+        padding-top:0
+    }
     #poce_contents .evidence-accordion .title {
         padding:0 0 0 1.5rem
     }
@@ -5325,7 +5328,6 @@ span.reference span {
         float: left;
         width: 32px;
         height: 24px;
-        margin-bottom:-30px;
         cursor: pointer;
         padding-top:8px
     }
@@ -5336,8 +5338,9 @@ span.reference span {
         padding-left: 32px;
         cursor: pointer
     }    
-    .evidence-accordion .title h3 {
-        display: contents;
+    .evidence-accordion .title span.title {
+        display: inline-block;
+        cursor: pointer
     }
 }
 
@@ -10949,7 +10952,7 @@ span.badge.badge-bp.notification-number {
     border: 1px dashed #c50084;
     display: table-cell;
     margin-bottom: 1rem;
-    padding: 1rem;
+    padding: 2rem;
 }
 .poce_drug_msg .poce_title {
     padding-left: 3rem;
@@ -11100,31 +11103,32 @@ div[class*='-como-content'] {
     content: " ";
 }
 
-#poce_contents ul,#poce_contents ul ul ul {
-    list-style: disc inside!important;
+#poce_contents ul,
+#poce_contents ul ul li {
     padding-top: 0;
     margin: auto;
     padding: inherit;
 }
-
-#poce_contents ul ul {
-    list-style: circle inside!important;
-    margin:auto
-}
-
 #poce_contents ul li:before,
 #poce_contents ul ul li:before {
     content: none
 }
-
 #poce_contents ul li {
-    padding: 0 0 7px 10px;
-    text-indent: -22px
+    padding:3px 5px
 }
-#poce_contents ul li ul li {
-    list-style: disc inside;
-    padding: 6px 0 0 0;
+#poce_contents ul {
+    list-style: disc outside;
+    padding: 10px 0px 7px 15px;
     text-indent: inherit;
+}
+#poce_contents ul ul{
+    list-style: circle outside!important;
+    margin:auto;
+    padding:10px 0px 7px 10px
+}
+#poce_contents ul ul ul {
+    list-style: disc outside!important;
+    padding: 10px 0px 7px 10px
 }
 #poce_contents #tip_pitfall {
     background-color: #e5eef7;
@@ -11132,7 +11136,6 @@ div[class*='-como-content'] {
     color: #333;
     width: 90%
 }
-
 #poce_contents #tip_pitfall .card-title {
     font-family: Arial, sans-serif;
     font-size: 1rem;
@@ -11219,11 +11222,6 @@ div[class*='-como-content'] {
     border: 1px solid #e9e9e9;
     padding: 1rem 0 0 0;
     margin: 2rem 0;
-}  
-.evidence-accordion .title h3 {
-    display: flex;
-    padding: 4px 0 0 2rem;
-    line-height: 1.5rem
 }
 
 #poce_contents .toggle {
@@ -11253,12 +11251,6 @@ div[class*='-como-content'] {
     display: inline-block;
     background-color: transparent;
 }
-#poce_contents .title h3{
-    color: #c50084;
-    font-weight: bold;
-    font-size: 1rem;
-    text-indent: 1rem;
-}
 #poce_contents .title p {
     color: #000;
     font-size: 1rem;
@@ -11269,6 +11261,14 @@ div[class*='-como-content'] {
     display: inline-block;
     padding: 0 0 0 1rem;
     margin: 0
+}
+#poce_contents .evidence-accordion .title span.title,
+.evidence-accordion .title span.title {
+    display: initial;
+    padding:0;
+    color: #c50084;
+    font-weight: bold;
+    font-size: 1rem;
 }
 /* #poce_contents .title:after,
 #poce_contents .title:before {
