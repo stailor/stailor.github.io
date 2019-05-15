@@ -10919,12 +10919,30 @@ span.badge.badge-bp.notification-number {
     height:40px
 }
 /* DRUG ACCORDION BOX STYLES */
+#tmp .treatment-box-cplus h4{
+    color: #c50084;
+    font-weight: bold
+}
 #tmp .treatment-box-cplus .drug-accordion {
     margin:1rem 0;
 }
-#tmp .treatment-box-cplus .drug-accordion .poce_drug_msg {
+#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg,
+#tmp .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg {
     text-indent: 0;
+    padding:1rem;
     width: 100%
+}
+#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons,
+#tmp .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons {
+    text-indent: -10px;
+    top: 0;
+    padding:0 0.5rem 0 0
+}
+
+#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons svg,
+#tmp .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons svg {
+    top:0;
+    left:0
 }
 #tmp .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box,
 #tmp .treatment-box-cplus .drug-accordion .drug-content2 .treatment-box {
