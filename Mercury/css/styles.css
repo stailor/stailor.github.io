@@ -11125,7 +11125,7 @@ div[class*='-como-content'] {
 
 #poce_contents ul,
 #poce_contents ul ul li {
-    padding-top: 0;
+    padding: 0.3rem 0;
     margin: auto;
 }
 #poce_contents ul li:before,
@@ -11149,6 +11149,7 @@ div[class*='-como-content'] {
     list-style: disc outside!important;
     padding: 10px 0px 7px 10px
 }
+/* TIPS AND PITFALL BOX */
 #poce_contents #tip_pitfall {
     background-color: #e5eef7;
     border: 1px solid #e9e9e9;
@@ -11160,7 +11161,7 @@ div[class*='-como-content'] {
     font-size: 1rem;
     font-weight: bold;
     display:contents
-    }
+}
 #poce_contents #tip_pitfall .card-block .card-text {
     padding:1rem 0 0 0rem;
 }
@@ -11172,6 +11173,10 @@ div[class*='-como-content'] {
     position: relative;
     left: -5px;
     float: left;
+}
+#poce_contents #tip_pitfall li {
+    padding: 2px 5px;
+    margin: 0;
 }
 /* CHANGE PL VALUE IN SASS FILE */
 #poce_contents #tip_pitfall .card-block p+ul {
@@ -11263,7 +11268,9 @@ div[class*='-como-content'] {
     padding: 0 0 0 2.5rem;
     display: inline-block;
 }
-
+#poce_contents .evidence-accordion .content p {
+    padding:0
+}
 #poce_contents .evidence-accordion .title {
     padding: 0 0.5rem 1rem;
     margin: 0;
