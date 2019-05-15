@@ -11325,12 +11325,35 @@ div[class*='-como-content'] {
 #poce_contents .toggle:checked+.title+.content {
     max-height: 500px;    
     overflow: auto;
-    padding:1rem 0
+    padding:1rem
 }
 
 #poce_contents .toggle:checked+.title:before {
     transform: rotate(90deg) !important
 }
+/* LOOK OUT POP UP */
+#lookOutPopUp .modal-dialog {
+    max-width: 17rem;
+}
+#lookOutPopUp .modal-dialog .modal-content .modal-body {
+    background-color: #FFCFEF
+}
+#lookOutPopUp .modal-dialog .modal-content .modal-header {
+    background: #FFCFEF; 
+    display:block
+}
+#lookOutPopUp .co-morbidity-icon-pink polygon {
+    fill: #fff;
+}
+
+#lookOutPopUp .modal-dialog .modal-content .modal-body p {
+    font-weight: bold
+}
+#lookOutPopUp .modal-dialog .modal-content .modal-body .got-it{
+    margin-bottom: 0.75rem;
+    text-align: center
+}
+
 /************  NEW SASS CONTENT  ******************/
 /* Diagnosis - Investigations - CHANGE IN SASS FILE*/
 #poce_contents.invest .rowHead {

@@ -2698,7 +2698,10 @@ $(function() {
     //     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
     // });
 
-   
+   // If comorbidities ticked show 2nd pop up box look out
+    $('.modal#editComo .btn.ticked').click(function(event) {
+        $('#lookOutPopUp').modal('show');
+    });
 
     // Add / remove selected values to / from the 'Add comorbidities' panel
     $("input[name='comorbidity']").change(function() {
@@ -2725,8 +2728,7 @@ $(function() {
 console.log(comochooser);
 
         // If comorbidities list has content, show the edit button
-        $('#editComolist-1, #editComolist-2').show();
-        
+        $('#editComolist-1, #editComolist-2').show();        
     }
     else {
         // Remove from the comorbidities list
