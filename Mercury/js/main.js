@@ -2698,11 +2698,21 @@ $(function() {
     //     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
     // });
 
-   // If comorbidities ticked show 2nd pop up box look out
+    // SHOW "LOOK OUT FOR THIS ICON BOX" IF COMOS CHECKED AND SHOW TREATMENT ALGO BUTTON IS CLICKED
     $('.modal#editComo .btn.ticked').click(function(event) {
-        $('#lookOutPopUp').modal('show');
+        $('#lookOutPopUp').addClass("checked");
+        $('#lookOutPopUp').removeClass("unchecked");
     });
-
+    // HIDE "LOOK OUT FOR THIS ICON BOX" IF COMOS UNCHECKED AND CLOSE BUTTON IS CLICKED    
+    $('.modal#editComo .btn.btn-secondary.showalg.not-ticked').click(function(event) {
+        $('#lookOutPopUp').addClass("unchecked");
+        $('#lookOutPopUp').removeClass("checked");
+    });
+    $('.close-look-out').click(function(event) {
+        $('#lookOutPopUp').addClass("unchecked");
+        $('#lookOutPopUp').removeClass("checked");
+    });
+    
     // Add / remove selected values to / from the 'Add comorbidities' panel
     $("input[name='comorbidity']").change(function() {
     var value = $(this).val(),
@@ -2747,6 +2757,7 @@ console.log(comochooser);
         
         // If comorbidities list hasn't got any content, hide the edit button
         $('#editComolist-1, #editComolist-2').hide();
+
     }
   });
 
@@ -2764,7 +2775,9 @@ $(function() {
     $('.add-como-icon-and-text .add').toggleClass("unchecked", comorbidities.is(":checked"));
     $('.add-como-icon-and-text .added').toggleClass("checked", comorbidities.is(":checked"));
 
-    //
+    
+
+    
     $('li.list-group-item').removeClass("selected", comorbidities.is(":checked"));
     // IF NO COMOS SELECTED, HIDE EDIT BUTTON
     $('#comoselected-1 button').toggleClass("show", comorbidities.is(":checked"));

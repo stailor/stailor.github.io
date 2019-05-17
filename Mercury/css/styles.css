@@ -7111,6 +7111,13 @@ ul li hr.fw {
     .ebmCCA {
         text-align: center;
         margin: 1.5rem 0
+    }    
+    .evidence-accordion .title .material-icons {
+        float: left;
+        width: 32px;
+        height: 24px;
+        cursor: pointer;
+        padding-top:8px
     }
 }
 
@@ -11026,12 +11033,17 @@ span.badge.badge-bp.notification-number {
     float: left;
 }
 /* SHOW/HIDE ADD ADDED COPY ON COMORBIDITIES EDIT BAR */
+#lookOutPopUp.checked{
+    width: 100%;
+}
 .add-como-icon-and-text .add.unchecked,
-.add-como-icon-and-text .added.unchecked {
+.add-como-icon-and-text .added.unchecked,
+#lookOutPopUp.unchecked {
     display: none;
 }
 .add-como-icon-and-text .add.checked,
-.add-como-icon-and-text .added.checked {
+.add-como-icon-and-text .added.checked,
+#lookOutPopUp.checked {
     display: inline-block;
 }
 .add-como-icon-and-text .add:hover{
@@ -11339,24 +11351,18 @@ div[class*='-como-content'] {
     transform: rotate(90deg) !important
 }
 /* LOOK OUT POP UP */
-#lookOutPopUp .modal-dialog {
-    max-width: 17rem;
-}
-#lookOutPopUp .modal-dialog .modal-content .modal-body {
-    background-color: #FFCFEF
-}
-#lookOutPopUp .modal-dialog .modal-content .modal-header {
-    background: #FFCFEF; 
-    display:block
+#lookOutPopUp {
+    background-color: #FFCFEF;
+    padding:1rem;
 }
 #lookOutPopUp .co-morbidity-icon-pink polygon {
     fill: #fff;
 }
 
-#lookOutPopUp .modal-dialog .modal-content .modal-body p {
+#lookOutPopUp p {
     font-weight: bold
 }
-#lookOutPopUp .modal-dialog .modal-content .modal-body .got-it{
+#lookOutPopUp .got-it{
     margin-bottom: 0.75rem;
     text-align: center
 }
