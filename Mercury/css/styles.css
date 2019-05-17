@@ -11286,7 +11286,7 @@ div[class*='-como-content'] {
 #poce_contents .evidence-accordion .title {
     padding: 0 0.5rem 1rem;
     margin: 0;
-    display: inline-block;
+    display: block;
     background-color: transparent;
 }
 #poce_contents .title p {
