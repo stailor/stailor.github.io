@@ -10945,7 +10945,9 @@ span.badge.badge-bp.notification-number {
     top: 0;
     padding:0 0.5rem 0 0
 }
-
+.diffDiagnosis>.card>.card-block, .diffDiagnosis2>.card>.card-block, .histExam>.card>.card-block, .diagGuidelines>.card>.card-block, .complications>.card>.card-block, .invest>.card>.card-block, .htmlTable>.card>.card-block, .details>.card>.card-block, .treatment-table>.card>.card-block, #differ>.card>.card-block{
+    padding:0
+}
 #tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons svg,
 #tmp .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons svg {
     top:0;
