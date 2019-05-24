@@ -3709,10 +3709,9 @@ ul li p+ul li:first-child {
 }
 
 .tmp .card-block ul {
-    list-style-type: none;
+    list-style-type: none!important;
     margin: 0;
-    margin: 0 0 1rem 0;
-    padding-top: 1rem;
+    margin: 0.5rem 0;
     width: auto
 }
 
@@ -3723,8 +3722,9 @@ ul li p+ul li:first-child {
 .tmp .card-block ul>li:before {
     color: #c50084;
     content: "\2022";
-    padding-right: 0.3rem;
-    vertical-align: top
+    padding: 0 0.5rem 0 0;
+    vertical-align: middle;
+    font-size: 1.8rem;
 }
 
 .tmp .card-block ul li p {
@@ -5228,10 +5228,10 @@ span.reference span {
     .evidence-accordion .title .material-icons {
         margin-left: -4px
     }
-    #poce_contents .evidence-accordion .title .material-icons {
+    .poce_contents .evidence-accordion .title .material-icons {
         padding-top:0
     }
-    #poce_contents .evidence-accordion .title {
+    .poce_contents .evidence-accordion .title {
         padding:0 0 0 1.5rem
     }
     .treatment-table .panel-content {
@@ -10893,22 +10893,22 @@ span.badge.badge-bp.notification-number {
 /* POCE:: Treatment Algorithm */
 
 /* Wrapper */
-#poce_contents.treatment-algorithm .card-block {
+.poce_contents.treatment-algorithm .card-block {
     padding: 0 !important;
 }
-#poce_contents.treatment-algorithm .treatment-wrap {   
+.poce_contents.treatment-algorithm .treatment-wrap {   
 }
-#poce_contents.treatment-algorithm .treatment-box-cplus {
+.poce_contents.treatment-algorithm .treatment-box-cplus {
     border: 1px solid #c50084;
     background: none;
     padding: 1rem  2rem;
     margin-bottom: 1rem;
 }
-#poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a {
+.poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a {
     color: #c50084;
     text-decoration: none;
 }
-#poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
+.poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
     text-decoration: underline;
 }
 #tmp .treatment-box-cplus .poce_drug_msg h3.cplus_title {
@@ -11150,29 +11150,29 @@ div[class*='-como-content'] {
     content: " ";
 }
 
-#poce_contents ul,
-#poce_contents ul ul li {
+.poce_contents ul,
+.poce_contents ul ul li {
     padding: 0.3rem 0;
     margin: auto;
 }
-#poce_contents ul li:before,
-#poce_contents ul ul li:before {
+.poce_contents ul li:before,
+.poce_contents ul ul li:before {
     content: none
 }
-#poce_contents ul li {
+.poce_contents ul li {
     padding:3px 5px
 }
-#poce_contents ul {
+.poce_contents ul {
     list-style: disc outside;
     padding: 10px 0px 7px 20px;
     text-indent: inherit;
 }
-#poce_contents ul ul{
+.poce_contents ul ul{
     list-style: circle outside!important;
     margin:auto;
-    padding:10px 0px 7px 10px
+    padding:0px 0px 0px 10px
 }
-#poce_contents ul ul ul {
+.poce_contents ul ul ul {
     list-style: disc outside!important;
     padding: 10px 0px 7px 10px
 }
@@ -11212,17 +11212,17 @@ div[class*='-como-content'] {
     margin-bottom: 0 !important
 }
 
-#poce_contents #rfs .accordion-toggle {
+.poce_contents #rfs .accordion-toggle {
     margin-left: 20px;
     text-indent: -15px;
     line-height: 1.25
 }
 
-#poce_contents #rfs .accordion-toggle h3 {
+.poce_contents #rfs .accordion-toggle h3 {
     line-height: 1.5
 }
 
-#poce_contents #allrfs .table thead th {
+.poce_contents #allrfs .table thead th {
     background-color: #bf007c;
     color: #fff;
     font-size: 1rem;
@@ -11232,21 +11232,21 @@ div[class*='-como-content'] {
     height: 36px
 }
 
-#poce_contents #allrfs .table tbody td,
-#poce_contents #allrfs .table tbody th {
+.poce_contents #allrfs .table tbody td,
+.poce_contents #allrfs .table tbody th {
     font-size: inherit
 }
 
-#poce_contents #allrfs .table tbody td ul,
-#poce_contents #allrfs .table tbody th ul {
+.poce_contents #allrfs .table tbody td ul,
+.poce_contents #allrfs .table tbody th ul {
     margin-bottom: 1rem !important
 }
 
-#poce_contents #allrfs .table th {
+.poce_contents #allrfs .table th {
     border-right: 1px solid #e1e1e1
 }
 
-#poce_contents .alt-table {
+.poce_contents .alt-table {
     border: solid 1px #e9e9e9;
     border-collapse: collapse;
     border-spacing: 0;
@@ -11254,7 +11254,7 @@ div[class*='-como-content'] {
     margin: 0 10% 0 10%
 }
 
-#poce_contents .alt-table thead th {
+.poce_contents .alt-table thead th {
     background-color: #f5f5f5;
     border: solid 1px #e9e9e9;
     color: #333;
@@ -11262,13 +11262,13 @@ div[class*='-como-content'] {
     text-align: left
 }
 
-#poce_contents .alt-table tbody td {
+.poce_contents .alt-table tbody td {
     border: solid 1px #e9e9e9;
     color: #333;
     padding: 10px
 }
 
-#poce_contents .evidence-accordion {
+.poce_contents .evidence-accordion {
     width:90%;
     background-color: #f8f8f8;
     border: 1px solid #e9e9e9;
@@ -11276,47 +11276,47 @@ div[class*='-como-content'] {
     margin: 2rem 0;
 }
 
-#poce_contents .toggle {
+.poce_contents .toggle {
     display: none
 }
 
-#poce_contents .option {
+.poce_contents .option {
     position: relative;
 }
 
-#poce_contents .title,
-#poce_contents .content {
+.poce_contents .title,
+.poce_contents .content {
     backface-visibility: hidden;
     transform: translateZ(0);
     transition: all 0.2s
 }
 
-#poce_contents .title {
+.poce_contents .title {
     background-color: #f8f8f8;
     padding: 0 0 0 2.5rem;
     display: inline-block;
 }
-#poce_contents .evidence-accordion .content p {
+.poce_contents .evidence-accordion .content p {
     padding:0
 }
-#poce_contents .evidence-accordion .title {
+.poce_contents .evidence-accordion .title {
     padding: 0 0.5rem 1rem;
     margin: 0;
     display: block;
     background-color: transparent;
 }
-#poce_contents .title p {
+.poce_contents .title p {
     color: #000;
     font-size: 1rem;
     font-weight: normal;
     padding: 0
 }
-#poce_contents .evidence-accordion .title p{
+.poce_contents .evidence-accordion .title p{
     display: inline-block;
     padding: 0 0 0 1rem;
     margin: 0
 }
-#poce_contents .evidence-accordion .title span.title,
+.poce_contents .evidence-accordion .title span.title,
 .evidence-accordion .title span.title {
     display: initial;
     padding:0;
@@ -11324,8 +11324,8 @@ div[class*='-como-content'] {
     font-weight: bold;
     font-size: 1rem;
 }
-/* #poce_contents .title:after,
-#poce_contents .title:before {
+/* .poce_contents .title:after,
+.poce_contents .title:before {
     content: '';
     position: absolute;
     left: 1.25em;
@@ -11336,34 +11336,34 @@ div[class*='-como-content'] {
     transition: all 0.2s
 }
 
-#poce_contents .title:after {
+.poce_contents .title:after {
     transform: rotate(90deg)
 } */
 
-#poce_contents .content {
+.poce_contents .content {
     max-height: 0;
     overflow: hidden;
     background-color: #f8f8f8;
     border-top: 1px solid #e4e4e4
 }
 
-#poce_contents .content p {
+.poce_contents .content p {
     margin: 0;
     padding: 0.5em 2.5em 1em;
     line-height: 1.5
 }
 
-#poce_contents .content ul {
+.poce_contents .content ul {
     padding-left: 1.5rem
 }
 
-#poce_contents .toggle:checked+.title+.content {
+.poce_contents .toggle:checked+.title+.content {
     max-height: 500px;    
     overflow: auto;
     padding:1rem
 }
 
-#poce_contents .toggle:checked+.title:before {
+.poce_contents .toggle:checked+.title:before {
     transform: rotate(90deg) !important
 }
 /* LOOK OUT POP UP */
@@ -11385,7 +11385,7 @@ div[class*='-como-content'] {
 
 /************  NEW SASS CONTENT  ******************/
 /* Diagnosis - Investigations - CHANGE IN SASS FILE*/
-#poce_contents.invest .rowHead {
+.poce_contents.invest .rowHead {
     margin-bottom: 16px;
 }
 .poce_urgent {
@@ -11399,8 +11399,8 @@ div[class*='-como-content'] {
 }
 
 /* Diag Recommendations - alignment fix */
-#poce_contents #kpoints .card .card-block p,
-#poce_contents #diagrecs .card .card-block p {
+.poce_contents #kpoints .card .card-block p,
+.poce_contents #diagrecs .card .card-block p {
     margin-left: -7px;
 }
 

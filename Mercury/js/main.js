@@ -2828,7 +2828,7 @@ $(function() {
 
 // If the drop down contains a cor-mob content, show the icon in the title
 $(function() {
-    if ($('#poce_contents .panel-group').find('poce_drug_msg').lenghth !==0) {
+    if ($('.poce_contents .panel-group').find('poce_drug_msg').lenghth !==0) {
         $(this).addClass('cor-mob-icon');
     };
 });
