@@ -11388,7 +11388,8 @@ div[class*='-como-content'] {
 .poce_contents.invest .rowHead {
     margin-bottom: 16px;
 }
-.poce_urgent {
+.poce_urgent,
+.invest .card .card-block.poce_urgent {
     padding: 1rem !important;
     border: 1px dashed #c50084;
     /* background-color: #f8e0f0; */
