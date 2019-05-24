@@ -10973,6 +10973,18 @@ span.badge.badge-bp.notification-number {
     top: 10px;
     font-weight: normal;
 }
+.treatment-box-cplus .drug-content1 .treatment-box .modal .modal-dialog {
+	max-width: 50rem;
+}
+.treatment-box-cplus .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header {
+	background: #fff; 
+	margin-top: 1rem
+}
+.treatment-box-cplus .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header .modal-title {
+	color:#c50084;
+	margin: 0 0 1.5rem 0;
+	text-align: center;
+}
 /* DRUG STYLES ENDS  */
 
 .poce_drug_msg {
@@ -11040,7 +11052,8 @@ span.badge.badge-bp.notification-number {
 }
 .add-como-icon-and-text .add.unchecked,
 .add-como-icon-and-text .added.unchecked,
-#lookOutPopUp.unchecked {
+#lookOutPopUp.unchecked,
+.non-como-content.hide {
     display: none;
 }
 .add-como-icon-and-text .add.checked,
@@ -11168,7 +11181,8 @@ div[class*='-como-content'] {
     background-color: #e5eef7;
     border: 1px solid #e9e9e9;
     color: #333;
-    width: 90%
+    width: 90%;
+    padding: 1rem;
 }
 #tip_pitfall .card-title {
     font-family: Arial, sans-serif;

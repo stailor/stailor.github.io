@@ -2702,11 +2702,20 @@ $(function() {
     $('.modal#editComo .btn.ticked').click(function(event) {
         $('#lookOutPopUp').addClass("checked");
         $('#lookOutPopUp').removeClass("unchecked");
+        $('.non-como-content').addClass("hide");
+        $('.non-como-content').removeClass("show");
+        $('.como-content').addClass("show");
+        $('.como-content').removeClass("hide");
+        
     });
     // HIDE "LOOK OUT FOR THIS ICON BOX" IF COMOS UNCHECKED AND CLOSE BUTTON IS CLICKED    
     $('.modal#editComo .btn.btn-secondary.showalg.not-ticked').click(function(event) {
         $('#lookOutPopUp').addClass("unchecked");
         $('#lookOutPopUp').removeClass("checked");
+        $('.non-como-content').addClass("show");
+        $('.non-como-content').removeClass("hide");
+        $('.como-content').addClass("hide");
+        $('.como-content').removeClass("show");
     });
     $('.close-look-out').click(function(event) {
         $('#lookOutPopUp').addClass("unchecked");
