@@ -3723,8 +3723,8 @@ ul li p+ul li:first-child {
     color: #c50084;
     content: "\2022";
     padding: 0 0.5rem 0 0;
-    vertical-align: middle;
-    font-size: 1.8rem;
+    vertical-align: top;
+    font-size: 1.1rem;
 }
 
 .tmp .card-block ul li p {
@@ -11384,6 +11384,59 @@ div[class*='-como-content'] {
 }
 
 /************  NEW SASS CONTENT  ******************/
+
+/* BLUE H3 PANEL HEADING ACCORDION TITLE & CONTENT */
+.blue-accordion h3 a:hover>span>span:first-child:hover,
+.blue-accordion h3 a:hover>span>span:first-child {
+    text-decoration: none
+}
+.blue-accordion .panel-heading {
+    padding: 0;    
+}
+.blue-accordion .panel-heading .panel-title,
+.blue-accordion .panel-body {
+    float:initial;
+}
+.blue-accordion .panel-heading h3 a {
+    float: left;
+    width: auto
+}
+.blue-accordion .panel-heading h3 a.view-hide-all {
+    float: right;
+    width: auto;
+}
+.blue-accordion .panel-heading h3 a .title-04 {
+    top:0
+}
+.treatment-table .blue-accordion {
+    padding:0;
+}
+.treatment-table .blue-accordion .panel-heading .txtwrap{
+    padding:4px 0 0 32px
+}
+/* CHILD ACCORDION TITLE & CONTENT */
+.treatment-table .panel-content.child-accordion {
+    float:initial
+} 
+.treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
+    display: inherit;
+}
+.treatment-table .panel-header.child-accordion .title-01 span {
+    padding-left: 3rem;
+    font-size: 1rem
+}
+.treatment-table .panel-header.child-accordion .title-01 span:before {
+    left:-42px;
+    width: 19px
+}
+.treatment-table .panel-header.child-accordion .title-04 .material-icons {
+    position: absolute;
+    left: 49px;
+    top: 16px;
+    padding-top: 3px
+}
+/* CHILD ACCORDION TITLE & CONTENT ENDS */
+
 /* Diagnosis - Investigations - CHANGE IN SASS FILE*/
 .poce_contents.invest .rowHead {
     margin-bottom: 16px;
