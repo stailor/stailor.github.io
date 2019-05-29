@@ -5226,7 +5226,8 @@ span.reference span {
 
     .treatment-table .title-04 .material-icons,
     .evidence-accordion .title .material-icons {
-        margin-left: -4px
+        margin-left: -4px;
+        padding-top: 0
     }
     .poce_contents .evidence-accordion .title .material-icons {
         padding-top:0
@@ -11384,13 +11385,14 @@ div[class*='-como-content'] {
 }
 
 /************  NEW SASS CONTENT  ******************/
-@media (min-width: 1024px) {
 
-    /* BLUE H3 PANEL HEADING ACCORDION TITLE & CONTENT */
-    .blue-accordion h3 a:hover>span>span:first-child:hover,
-    .blue-accordion h3 a:hover>span>span:first-child {
-        text-decoration: none
-    }
+/* BLUE H3 PANEL HEADING ACCORDION TITLE & CONTENT */
+.blue-accordion h3 a:hover>span>span:first-child:hover,
+.blue-accordion h3 a:hover>span>span:first-child {
+    text-decoration: none
+}
+@media (min-width: 1024px) {   
+    
     .blue-accordion .panel-heading {
         padding: 0;    
     }
@@ -11408,6 +11410,9 @@ div[class*='-como-content'] {
     }
     .blue-accordion .panel-heading h3 a .title-04 {
         top:0
+    }
+    .blue-accordion .panel-heading h3 a span.msg{
+        font-size: 0.875rem;
     }
     .treatment-table .blue-accordion {
         padding:0;
