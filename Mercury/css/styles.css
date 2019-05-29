@@ -11419,7 +11419,8 @@ div[class*='-como-content'] {
     float:initial
 } 
 .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-    display: inherit;
+    display: inline-block;
+    min-width: 95px
 }
 .treatment-table .panel-header.child-accordion .title-01 span {
     padding-left: 3rem;
