@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="pin" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 15 30" style="enable-background:new 0 0 15 30;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#333333;}
+	.st1{fill:#FFFFFF;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M6.3,17.5v10.8c0,0.5,0.5,0.9,1.2,0.9s1.2-0.4,1.2-0.9V17.5H6.3z"/>
+	</g>
+	<g>
+		<ellipse class="st0" cx="7.5" cy="15.9" rx="7.1" ry="4.4"/>
+	</g>
+	<g id="cylinder">
+		<polygon class="st0" points="10.8,2.4 7.5,2.4 4.2,2.4 3.3,16.1 7.5,16.1 11.7,16.1 		"/>
+	</g>
+	<g id="cylinder_highlight">
+		<polygon class="st1" points="10.6,15.6 9.1,16.1 8.7,3.8 10.1,3.8 		"/>
+	</g>
+	<g>
+		<ellipse class="st0" cx="7.5" cy="3.8" rx="5.4" ry="3.1"/>
+	</g>
+	<g id="highlight">
+		<path class="st1" d="M8.2,5.7C8,5.7,7.8,5.5,7.7,5.3c0-0.3,0.2-0.5,0.4-0.5c1.1-0.1,2.1-0.5,2.6-1.1c0.2-0.2,0.5-0.2,0.7,0
+			c0.2,0.2,0.2,0.5,0,0.7C10.8,5.1,9.6,5.6,8.2,5.7C8.2,5.7,8.2,5.7,8.2,5.7z"/>
+	</g>
+	<g>
+		<path class="st0" d="M7.5,16.6v-0.5c1.7,0,3.5-0.4,3.5-1.6h0.5C11.5,15.8,10,16.6,7.5,16.6z"/>
+	</g>
+	<g id="highlight_lower">
+		<path class="st1" d="M8.2,19.2C8.2,19.2,8.2,19.2,8.2,19.2c-0.3,0-0.5-0.2-0.5-0.5c0-0.3,0.2-0.5,0.5-0.5c0,0,0,0,0,0
+			c1.4,0,2.7-0.4,3.5-1.1c0.2-0.2,0.5-0.2,0.7,0c0.2,0.2,0.2,0.5,0,0.7C11.4,18.7,9.9,19.2,8.2,19.2z"/>
+	</g>
+</g>
+</svg>
