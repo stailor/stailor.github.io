@@ -5239,7 +5239,50 @@ span.reference span {
         padding-left: 1.5rem !important
     }
 }
+/*   */
+.warning-asthma  {
+    border: 2px solid #c50084;
+    padding: 1rem;
+    border-radius: 4px;
+    position: absolute;
+    background: #fff;
+    width: 300px;
+    z-index: 5;
+    left:-300px;
+    top:-19px;
+    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 
+    /* position: relative; */
+	background: #fff;
+	border: 2px solid #c50084;
+}
+.warning-asthma:after, .warning-asthma:before {
+	left: 100%;
+	top: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+}
+.warning-asthma:after {
+	border-color: rgba(255, 255, 255, 0);
+	border-left-color: #fff;
+	border-width: 10px;
+	margin-top: -10px;
+}
+.warning-asthma:before {
+	border-color: rgba(197, 0, 132, 0);
+	border-left-color: #c50084;
+	border-width: 13px;
+	margin-top: -13px;
+}
+#editComo .modal-dialog .warning-asthma button.close {
+    top: 2px;
+    right: 5px;
+    position: absolute;
+}
 .treatment-table .panel-content {
     display: none;
     padding: 0 1rem;
@@ -10890,6 +10933,9 @@ span.badge.badge-bp.notification-number {
     position: absolute;
     top: 1rem;
     right: 1rem;
+}
+#editComo .modal-body .disable-checkbox {
+    background:#ddd;
 }
 /* POCE:: Treatment Algorithm */
 

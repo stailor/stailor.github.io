@@ -16915,12 +16915,20 @@
                                     <span class="custom-control-description">Diabetes</span>
                                  </label>
                               </li>
-                              <li class="list-group-item"><label for="Asthma" class="custom-control custom-checkbox">
-                                    <input type="checkbox" name="comorbidity" id="Asthma"
-                                       class="comotype custom-control-input" value="Asthma">
+                              <li class="list-group-item">
+                                 <label for="Asthma" class="custom-control custom-checkbox">
+                                    <input type="checkbox" name="comorbidity" id="Asthma" class="comotype custom-control-input" value="Asthma">
                                     <span class="custom-control-indicator"></span>
                                     <span class="custom-control-description">Asthma</span>
                                  </label>
+                                 <!-- WARNING BOX FOR ASTHMA & COPD -->
+                                 <div class="warning-asthma" style="display:none">
+                                    <button type="button" class="close" data-dismiss="warning-asthma" aria-label="Close">
+                                       <span aria-hidden="true" style="color: #333 !important; font-size: 28px;">×</span>
+                                    </button>   
+                                    <p>If your patient has <strong>both</strong> Asthma <strong>and</strong> COPD, select the <strong>predominant condition</strong> and tailor your management to the individual.</p>
+                                 </div>
+                                 <!-- WARNING BOX FOR ASTHMA & COPD ENDS -->
                               </li>
                               <li class="list-group-item"><label for="COPD"
                                     class="comotype custom-control custom-checkbox">

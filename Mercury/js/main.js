@@ -2799,10 +2799,28 @@ $(function() {
 
     // IF JUST ASTHMA DONT SHOW, IF ASTHMA + COPD OR JUST COPD SHOW    
     var copd = $("input[id='COPD']");
+    var asthma = $("input[id='Asthma']");
+
     if ($(copd).prop("checked") === true) {
         $('.COPD-como-content.Asthma-como-content').show();
     } else {
         $('.COPD-como-content.Asthma-como-content').hide();
+    }
+
+
+    if (($(copd).prop("checked") === true) && ($(asthma).prop("checked") === true)) {
+        $('.warning-asthma').show();
+        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'line-through');
+        $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-description').css('text-decoration', 'line-through');
+        $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-indicator').addClass('disable-checkbox');
+        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-indicator').addClass('disable-checkbox');
+        
+    } else {
+        $('.warning-asthma').hide();
+        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'none');
+        $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-description').css('text-decoration', 'none');
+        $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-indicator').removeClass('disable-checkbox');
+        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-indicator').removeClass('disable-checkbox');
     }
 
 
@@ -2811,6 +2829,7 @@ $(function() {
   $('#editComo').find('p span').append($('#topicMenuTop h1').html());
 
 });
+// WARNING BOX FOR ASTHMA & COPD
 
 $(function() {
  // DRUG BOX ACCORDION ON CLICK DRUG TITLE1 SHOW DRUG CONTENT 2 ONE CLICK DRUG TITLE2 SHOW DRUG CONTENT 1
