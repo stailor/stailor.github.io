@@ -1,44 +1,511 @@
-.warning-asthma  {
-    border: 2px solid #c50084;
+@media (max-width: 768px) {
+    .panel-title .txtwrap .material-icons {
+        position: absolute;
+        float: right;
+        top: -4px;
+        right:-29px;
+    }
+    .treatment-table .title-02 {
+        float: none;
+        max-width: 100%
+    }
+    .treatment-table .title-04 {
+        margin-left: 0.5rem;
+        max-width: 88%;
+    }
+    .treatment-table .title-04 .material-icons,
+    .evidence-accordion .title .material-icons {
+        margin-left: -4px;
+        padding-top: 0
+    }
+    .poce_contents .evidence-accordion .title .material-icons {
+        padding-top:0
+    }
+    .poce_contents .evidence-accordion .title {
+        padding:0 0 0 1.5rem
+    }
+    .treatment-table .panel-content {
+        padding-left: 1.5rem !important
+    }    
+}
+@media (max-width: 991px) {
+.treatment-table .panel-heading h3 .txtwrap {
+        max-width: 470px;
+        display: inline-block;
+    }
+    .treatment-table .panel-content.child-accordion .panel-content {
+        float:left;
+        left: 2.7rem;
+    }
+    .treatment-table .panel-content.child-accordion .panel-header .title-02 {
+        left:2rem
+    }
+    .evidence-accordion .title .material-icons {
+        float: left;
+        width: 32px;
+        height: 24px;
+        cursor: pointer;
+        padding-top:8px
+    }
+    #comoselected-1 button.btn{
+        position: absolute;
+        top:0;
+        right:0;
+    }
+    #topicNav.stickme #como-2 {
+        position: relative
+    }    
+}
+@media (max-width: 1023px) {
+/* BLUE H3 PANEL HEADING ACCORDION TITLE & CONTENT */
+    .blue-accordion h3 a:hover>span>span:first-child:hover,
+    .blue-accordion h3 a:hover>span>span:first-child {
+        text-decoration: none
+    }
+    .blue-accordion .panel-heading {
+        padding: 0;    
+    }
+    .blue-accordion .panel-heading .panel-title,
+    .blue-accordion .panel-body {
+        float:initial;
+    }
+    .blue-accordion .panel-heading h3 a {
+        float: left;
+        width: auto
+    }
+    .blue-accordion .panel-heading h3 a.view-hide-all {
+        float: right;
+        width: auto;
+    }
+    .blue-accordion .panel-heading h3 a .title-04 {
+        top:0
+    }
+    .treatment-table .blue-accordion {
+        padding:0;
+    }
+    .treatment-table .blue-accordion .panel-heading .txtwrap {
+        padding:0;
+        display: inline
+    }
+/* CHILD ACCORDION TITLE & CONTENT */
+    .treatment-table .panel-content.child-accordion {
+        float:initial
+    } 
+    .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
+        display: inline-block;
+        min-width: 95px
+    }
+    .treatment-table .panel-header.child-accordion .title-01 span {
+        padding-left: 3rem;
+        font-size: 1rem
+    }
+    .treatment-table .panel-header.child-accordion .title-01 span:before {
+        left:-65px;
+        width: 19px
+    }
+    .treatment-table .panel-header.child-accordion .title-04 {
+        position: relative;
+    }
+    .treatment-table .panel-header.child-accordion .title-04 .material-icons {
+        position: absolute;
+        left: 49px;
+        top: 16px;
+        padding-top: 3px
+    }
+}
+@media (max-width: 1199px) {
+    #topicNav #topicMenuTopBg,
+    #topicNav #menuLinks,
+    #topicNav #menus,
+    #topicNav #como-2 {
+        width: 936px !important
+    }
+}
+@media (min-width: 1024px) {   
+    .treatment-table .title-04 {
+        max-width: 900px
+    }
+    .treatment-table .title-04 {
+        width: auto;
+        position: relative;
+        top: 7px
+    }
+    .treatment-table .title-04 .material-icons {
+        float: left;
+        clear: right;
+        width: 24px;
+        height: 24px;
+        margin-bottom: -24px
+    }
+    .evidence-accordion .title .material-icons {
+        float: left;
+        width: 32px;
+        height: 24px;
+        cursor: pointer;
+        padding-top:8px
+    }
+    .treatment-table .txtwrap {
+        /* display: block;
+        float: right; */
+        width: 100% !important;
+        padding-left: 32px;
+        cursor: pointer
+    }    
+    .evidence-accordion .title span.title {
+        display: inline-block;
+        cursor: pointer
+    }
+
+    .blue-accordion .panel-heading {
+        padding: 0;    
+    }
+    .blue-accordion .panel-heading .panel-title,
+    .blue-accordion .panel-body {
+        float:initial;
+    }
+    .blue-accordion .panel-heading h3 a {
+        float: left;
+        width: auto
+    }
+    .blue-accordion .panel-heading h3 a.view-hide-all {
+        float: right;
+        width: auto;
+    }
+    .blue-accordion .panel-heading h3 a .title-04 {
+        top:0
+    }
+    .blue-accordion .panel-heading h3 a span.msg{
+        font-size: 0.875rem;
+    }
+    .treatment-table .blue-accordion {
+        padding:0;
+    }
+    .treatment-table .blue-accordion .panel-heading .txtwrap{
+        padding:4px 0 0 32px
+    }
+/* CHILD ACCORDION TITLE & CONTENT */
+    .treatment-table .panel-content.child-accordion {
+        float:initial
+    } 
+    .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
+        display: inline-block;
+        min-width: 95px
+    }
+    .treatment-table .panel-header.child-accordion .title-01 span {
+        padding-left: 3rem;
+        font-size: 1rem
+    }
+    .treatment-table .panel-header.child-accordion .title-01 span:before {
+        left:-42px;
+        width: 19px
+    }
+    .treatment-table .panel-header.child-accordion .title-04 .material-icons {
+        position: absolute;
+        left: 49px;
+        top: 16px;
+        padding-top: 3px
+    }
+/* CHILD ACCORDION TITLE & CONTENT ENDS */
+}
+.modal-registration-form {
+    #editComo {
+        .modal-body {
+            padding: 1.25rem 1.5rem;
+
+            ul li label.custom-checkbox {
+                margin-bottom: 0;
+            }
+            .list-group-flush {
+                &:first-child .list-group-item:last-child {
+                    margin:0;
+                }
+                .list-group-item {
+                    margin:0.1rem 0;
+                }
+            }
+            
+        }
+    }
+}
+#editComo {
+    /* WARNING POPUP ON COMO POPUP FOR ASTHMA & COPD */
+    .warning-asthma  {
+        border: 2px solid #c50084;
+        padding: 1rem;
+        border-radius: 4px;
+        position: absolute;
+        background: #fff;
+        width: 300px;
+        z-index: 5;
+        left:-300px;
+        top:-19px;
+        box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        background: #fff;
+        border: 2px solid #c50084;
+
+        &:after, &:before {
+            left: 100%;
+            top: 50%;
+            border: solid transparent;
+            content: " ";
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+        }
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-left-color: #fff;
+            border-width: 10px;
+            margin-top: -10px;
+        }
+        &:before {
+            border-color: rgba(197, 0, 132, 0);
+            border-left-color: #c50084;
+            border-width: 13px;
+            margin-top: -13px;
+        }
+        button.close {
+            top: 2px;
+            right: 5px;
+            position: absolute;
+        }
+    }
+    button {
+        &.btn {
+            background-color: rgba(0, 0, 0, 0.12);
+            box-shadow: none;
+            color: rgba(0, 0, 0, 0.26);
+            cursor: not-allowed;
+            opacity: 1;
+            pointer-events: none;
+
+            &.btn-secondary {
+                background-color: #a30054 !important;
+                color: #fff !important;
+                cursor: pointer;
+                opacity: 1;
+                pointer-events: all;
+
+                &.ticked {
+                    display: none;
+                        &.show {
+                            display: block;
+                        }
+                    }
+            }
+        }
+        
+   }
+    .modal-dialog button.close {
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    .modal-body .disable-checkbox {
+        background:#ddd;
+    }
+}
+.poce_drug_msg {
+    border: 1px dashed #c50084;
+    display: table-cell;
+    margin-bottom: 1rem;
+    padding: 2rem;
+    .poce_title {
+        padding-left: 3rem;
+        color: #c50084;
+        font-size: 1.125rem;
+        margin: 0 0 1rem -3rem;
+        display: inline-block;
+    }
+    h3{
+        padding:0;
+        text-indent: 0;
+        float: none!important;
+    }
+    p {
+        text-indent: initial;
+    }
+    .material-icons {
+        vertical-align: top;    
+        top: -5px;
+        position: relative;
+        svg {
+            top:0;
+            left:-6px;
+            position: relative;
+        }
+    }
+}
+#como-1 {
+    
+    height: auto;
+    .material-icons {
+        font-size:30px;
+    }
+    svg.co-morbidity-icon-pink {
+        top: 3px;
+        position: relative;
+    }
+    .add-como-icon-and-text {
+        display: inline-block;
+    }
+    #comoselected-1 {
+        display: inline-block;
+        button.show,
+        span {
+            display: inline-block;
+            position: relative;
+            top:9px;
+        }
+        button.hide, 
+        button {
+            display: none
+        }
+        /* ADDS COMMAS AFTER EACH COMOBILITY IS SELECTED FROM MODAL */
+        span + span:before {
+            content:', '
+        }
+    }   
+    .card-block b {
+        vertical-align: -webkit-baseline-middle;
+        vertical-align: sub;
+    }
+    .card {
+        border-radius: 0;
+        padding: 1.125rem 1.5rem;
+    
+        p {
+            display: inline-block;
+            font-weight: bold;
+            span {
+                color: #c50084
+            }
+        }
+        button {
+            float: right;
+            background-color: #fff;
+            color: #c50084;
+            border: 3px solid #c50084;
+            border-radius: 4px;
+
+            &:hover:{
+                background-color: #c50084;
+                color: #fff;
+                outline: none
+            }
+            &:focus:{
+                background-color: #c50084;
+                color: #fff;
+                outline: none
+            }
+            &:hover, &:focus {
+                background-color: #c50084;
+                color: #fff;
+                outline: none
+            }
+        }
+    }
+}
+#como-2 {
+    height: auto;
+    border-bottom: 3px solid #c50084;
+    
+    &.card {
+        border-radius: 0;
+        padding: 1.125rem 1.5rem;
+        p {
+            display: inline-block;
+            font-weight: bold;
+            span {
+                color: #c50084
+            }
+        }
+        button {
+            float: right;
+            background-color: #fff;
+            color: #c50084;
+            border: 3px solid #c50084;
+            border-radius: 4px;
+            &:hover,
+            &:focus {
+                background-color: #c50084;
+                color: #fff;
+                outline: none
+            }
+        }
+    }
+    .material-icons {
+        font-size: 50px
+    }
+    #comoselected-2 span {
+        position: relative;
+        top:9px;
+    }
+}
+/* TIPS AND PITFALL BOX */
+#tip_pitfall {
+    background-color: #e5eef7;
+    border: 1px solid #e9e9e9;
+    color: #333;
+    width: 90%;
     padding: 1rem;
-    border-radius: 4px;
-    position: absolute;
-    background: #fff;
-    width: 300px;
-    z-index: 5;
-    left:-300px;
-    top:-19px;
-    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-	background: #fff;
-	border: 2px solid #c50084;
+
+    .card-title {
+        font-family: Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        display:contents;
+    }
+    .card-block {
+        padding: 1rem 1em 1rem 2rem!important;
+        background: url('../images/pin.svg') no-repeat 5px 15px;
+        background-size: 15px;
+
+        p+ul {
+            padding-left: 1rem !important;
+            margin-bottom: 0 !important
+        }
+        .card-text {
+            padding:1rem 0 0 0rem;
+        }
+        svg#pin {
+            height: 30px;
+            position: relative;
+            left: -5px;
+            float: left;
+        }
+    } 
+    li {
+        padding: 2px 5px;
+        margin: 0;
+    }
 }
-.warning-asthma:after, .warning-asthma:before {
-	left: 100%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
+/* LOOK OUT POP UP */
+#lookOutPopUp {
+    background-color: #FFCFEF;
+    padding:1rem;
+
+    /* SHOW/HIDE ADD ADDED COPY ON COMORBIDITIES EDIT BAR */
+    &.checked {
+        width: 100%;
+        display: inline-block;
+    }
+    &.unchecked {
+        display: none;
+    }
+    .co-morbidity-icon-pink polygon {
+        fill: #fff;
+    }
+    p {
+        font-weight: bold
+    }
+    .got-it {
+        margin-bottom: 0.75rem;
+        text-align: center
+    }
 }
-.warning-asthma:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-left-color: #fff;
-	border-width: 10px;
-	margin-top: -10px;
-}
-.warning-asthma:before {
-	border-color: rgba(197, 0, 132, 0);
-	border-left-color: #c50084;
-	border-width: 13px;
-	margin-top: -13px;
-}
-#editComo .modal-dialog .warning-asthma button.close {
-    top: 2px;
-    right: 5px;
-    position: absolute;
-}
+
 .treatment-table .panel-content {
     display: none;
     padding: 0 1rem;
@@ -140,60 +607,18 @@
 	margin: 0 0 1.5rem 0;
 	text-align: center;
 }
-/* DRUG STYLES ENDS  */
-
-.poce_drug_msg {
-    border: 1px dashed #c50084;
-    display: table-cell;
-    margin-bottom: 1rem;
-    padding: 2rem;
+#comoselected-1 button.btn {
+    margin:0 0 0 1rem;
 }
-.poce_drug_msg .poce_title {
-    padding-left: 3rem;
-    color: #c50084;
-    font-size: 1.125rem;
-    margin: 0 0 1rem -3rem;
-    display: inline-block;
+#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
+    fill: #fff;
 }
-.poce_drug_msg h3{
-    padding:0;
-    text-indent: 0;
-    float: none!important;
+#topicNav.stickme #como-2 {
+    position: fixed;
+    top: 110px;
+    width: 1116px;
+    z-index: 1
 }
-.poce_drug_msg p {
-    text-indent: initial;
-}
-.poce_drug_msg .material-icons {
-    vertical-align: top;    
-    top: -5px;
-    position: relative;
-}
-.poce_drug_msg .material-icons svg {
-    top:0;
-    left:-6px;
-    position: relative;
-}
-#como-1 .material-icons{font-size:30px;}
-#como-1 svg.co-morbidity-icon-pink {
-    top: 3px;
-    position: relative;
-}
-#como-1 .add-como-icon-and-text,
-#como-1 #comoselected-1,
-#como-1 #comoselected-1 button.show,
-#como-1 #comoselected-1 span {
-    display: inline-block
-}
-#como-1 #comoselected-1 span,
-#como-2 #comoselected-2 span {
-    position: relative;
-    top:9px;
-}
-#como-1 #comoselected-1 button.hide, 
-#como-1 #comoselected-1 button {
-    display: none
-}
-
 /* IF NO COMOS ARE CHECKED ICON CHANGES TO PINK BG */
 .add-como-icon-and-text {
     background-color: #c50084;
@@ -204,18 +629,13 @@
 }
 
 /* SHOW/HIDE ADD ADDED COPY ON COMORBIDITIES EDIT BAR */
-#lookOutPopUp.checked{
-    width: 100%;
-}
 .add-como-icon-and-text .add.unchecked,
 .add-como-icon-and-text .added.unchecked,
-#lookOutPopUp.unchecked,
 .non-como-content.hide {
     display: none;
 }
 .add-como-icon-and-text .add.checked,
-.add-como-icon-and-text .added.checked,
-#lookOutPopUp.checked {
+.add-como-icon-and-text .added.checked {
     display: inline-block;
 }
 .add-como-icon-and-text .add:hover{
@@ -231,8 +651,7 @@
 .modal-title .co-morbidity-icon-pink polygon, 
 .poce_drug_msg .co-morbidity-icon-pink polygon,
 .txtwrap .co-morbidity-icon-pink polygon,
-.title-02 .co-morbidity-icon-pink polygon,
-#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
+.title-02 .co-morbidity-icon-pink polygon{
     fill: #fff;
 }
 
@@ -306,44 +725,6 @@ div[class*='-como-content'] {
 .poce_contents ul ul ul {
     list-style: disc outside!important;
     padding: 10px 0px 7px 10px
-}
-
-/* TIPS AND PITFALL BOX */
-#tip_pitfall {
-    background-color: #e5eef7;
-    border: 1px solid #e9e9e9;
-    color: #333;
-    width: 90%;
-    padding: 1rem;
-}
-#tip_pitfall .card-title {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    display:contents;
-}
-#tip_pitfall .card-block .card-text {
-    padding:1rem 0 0 0rem;
-}
-#tip_pitfall .card-block {
-    padding: 1rem 1em 1rem 2rem!important;
-    background: url('../images/pin.svg') no-repeat 5px 15px;
-    background-size: 15px;
-}
-#tip_pitfall .card-block svg#pin {
-    height: 30px;
-    position: relative;
-    left: -5px;
-    float: left;
-}
-#tip_pitfall li {
-    padding: 2px 5px;
-    margin: 0;
-}
-/* CHANGE PL VALUE IN SASS FILE */
-#tip_pitfall .card-block p+ul {
-    padding-left: 1rem !important;
-    margin-bottom: 0 !important
 }
 .poce_contents #rfs .accordion-toggle {
     margin-left: 20px;
@@ -471,22 +852,7 @@ div[class*='-como-content'] {
 .poce_contents .toggle:checked+.title:before {
     transform: rotate(90deg) !important
 }
-/* LOOK OUT POP UP */
-#lookOutPopUp {
-    background-color: #FFCFEF;
-    padding:1rem;
-}
-#lookOutPopUp .co-morbidity-icon-pink polygon {
-    fill: #fff;
-}
 
-#lookOutPopUp p {
-    font-weight: bold
-}
-#lookOutPopUp .got-it{
-    margin-bottom: 0.75rem;
-    text-align: center
-}
 
 /* BLUE H3 PANEL HEADING ACCORDION TITLE & CONTENT */
 .blue-accordion h3 a:hover>span>span:first-child:hover,
@@ -509,65 +875,6 @@ div[class*='-como-content'] {
 .poce_contents #kpoints .card .card-block p,
 .poce_contents #diagrecs .card .card-block p {
     margin-left: -7px;
-}
-
-.modal-registration-form #editComo .modal-body {
-    padding: 1.25rem 1.5rem    
-}
-.modal-registration-form #editComo .modal-body ul li label.custom-checkbox {
-    margin-bottom: 0
-}
-.modal-registration-form #editComo .modal-body .list-group-flush:first-child .list-group-item:last-child {
-    margin:0
-}
-.modal-registration-form #editComo .modal-body .list-group-flush .list-group-item{
-    margin:0.1rem 0
-}
-.browser-update-bar-hide, 
-.hide, 
-#editComo button.btn.btn-secondary.ticked {
-    display: none
-}
-#como-1,
-#como-2 {
-    height: auto
-}
-#como-1.card,
-#como-2.card {
-    border-radius: 0;
-    padding: 1.125rem 1.5rem
-}
-#como-1.card p,
-#como-2.card p {
-    display: inline-block;
-    font-weight: bold
-}
-#como-1.card p span,
-#como-2.card p span {
-    color: #c50084
-}
-#como-1.card button,
-#como-2.card button {
-    float: right;
-    background-color: #fff;
-    color: #c50084;
-    border: 3px solid #c50084;
-    border-radius: 4px
-}
-#como-1.card button:hover,
-#como-1.card button:focus,
-#como-2.card button:hover,
-#como-2.card button:focus {
-    background-color: #c50084;
-    color: #fff;
-    outline: none
-}
-#como-1 .material-icons,
-#como-2 .material-icons {
-    font-size: 50px
-}
-#como-2 {
-    border-bottom: 3px solid #c50084
 }
 #comoselected-1,
 #comoselected-2 {
@@ -600,49 +907,11 @@ div[class*='-como-content'] {
     background-color: #369
 }
 
-/* ADDS COMMAS AFTER EACH COMOBILITY IS SELECTED FROM MODAL */
-#como-1 #comoselected-1 span + span:before {
-    content:', '
-}
-#comoselected-1 button.btn {
-    margin:0 0 0 1rem;
-}
-#como-1 .card-block b {
-    vertical-align: -webkit-baseline-middle;
-    vertical-align: sub;
-}
-#editComo button.btn {
-    background-color: rgba(0, 0, 0, 0.12);
-    box-shadow: none;
-    color: rgba(0, 0, 0, 0.26);
-    cursor: not-allowed;
-    opacity: 1;
-    pointer-events: none
-}
-#editComo button.btn.btn-secondary.ticked.show{
-    display:block
-}
-#editComo button.btn.btn-secondary {
-    background-color: #a30054 !important;
-    color: #fff !important;
-    cursor: pointer;
-    opacity: 1;
-    pointer-events: all
-}
-#editComo .modal-dialog button.close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
-}
-#editComo .modal-body .disable-checkbox {
-    background:#ddd;
-}
-#topicNav.stickme #como-2 {
-    position: fixed;
-    top: 110px;
-    width: 1116px;
-    z-index: 1
-}
+
+.browser-update-bar-hide, 
+.hide, 
+
+
 .treatment-table .title-04,
 .evidence-accordion .title {
     display: inline-block;
@@ -710,226 +979,4 @@ div[class*='-como-content'] {
 }
 .treatment-box .material-icons {
     color: #2a6ebb
-}
-
-@media (max-width: 992px) {
-    #comoselected-1 button.btn{
-        position: absolute;
-        top:0;
-        right:0;
-    }
-    #topicNav.stickme #como-2 {
-        position: relative
-    }
-}
-@media only screen and (max-width: 768px) {
-    .panel-title .txtwrap .material-icons {
-        position: absolute;
-        float: right;
-        top: -4px;
-        right:-29px;
-    }
-}
-@media (max-width: 991px) {
-    .evidence-accordion .title .material-icons {
-        float: left;
-        width: 32px;
-        height: 24px;
-        cursor: pointer;
-        padding-top:8px
-    }
-}
-@media (min-width: 1024px) {
-    .treatment-table .title-04 {
-        max-width: 900px
-    }
-
-    .treatment-table .title-04 {
-        width: auto;
-        position: relative;
-        top: 7px
-    }
-
-    .treatment-table .title-04 .material-icons {
-        float: left;
-        clear: right;
-        width: 24px;
-        height: 24px;
-        margin-bottom: -24px
-    }
-    .evidence-accordion .title .material-icons {
-        float: left;
-        width: 32px;
-        height: 24px;
-        cursor: pointer;
-        padding-top:8px
-    }
-    .treatment-table .txtwrap {
-        /* display: block;
-        float: right; */
-        width: 100% !important;
-        padding-left: 32px;
-        cursor: pointer
-    }    
-    .evidence-accordion .title span.title {
-        display: inline-block;
-        cursor: pointer
-    }
-}
-@media only screen and (max-width: 1199px) {
-    #topicNav #topicMenuTopBg,
-    #topicNav #menuLinks,
-    #topicNav #menus,
-    #topicNav #como-2 {
-        width: 936px !important
-    }
-}
-@media (max-width: 991px) {
-.treatment-table .panel-heading h3 .txtwrap {
-        max-width: 470px;
-        display: inline-block;
-    }
-    .treatment-table .panel-content.child-accordion .panel-content {
-        float:left;
-        left: 2.7rem;
-    }
-    .treatment-table .panel-content.child-accordion .panel-header .title-02 {
-        left:2rem
-    }
-}
-@media (min-width: 1024px) {   
-    
-    .blue-accordion .panel-heading {
-        padding: 0;    
-    }
-    .blue-accordion .panel-heading .panel-title,
-    .blue-accordion .panel-body {
-        float:initial;
-    }
-    .blue-accordion .panel-heading h3 a {
-        float: left;
-        width: auto
-    }
-    .blue-accordion .panel-heading h3 a.view-hide-all {
-        float: right;
-        width: auto;
-    }
-    .blue-accordion .panel-heading h3 a .title-04 {
-        top:0
-    }
-    .blue-accordion .panel-heading h3 a span.msg{
-        font-size: 0.875rem;
-    }
-    .treatment-table .blue-accordion {
-        padding:0;
-    }
-    .treatment-table .blue-accordion .panel-heading .txtwrap{
-        padding:4px 0 0 32px
-    }
-/* CHILD ACCORDION TITLE & CONTENT */
-    .treatment-table .panel-content.child-accordion {
-        float:initial
-    } 
-    .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-        display: inline-block;
-        min-width: 95px
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span {
-        padding-left: 3rem;
-        font-size: 1rem
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span:before {
-        left:-42px;
-        width: 19px
-    }
-    .treatment-table .panel-header.child-accordion .title-04 .material-icons {
-        position: absolute;
-        left: 49px;
-        top: 16px;
-        padding-top: 3px
-    }
-/* CHILD ACCORDION TITLE & CONTENT ENDS */
-}
-@media (max-width: 1023px) {
-/* BLUE H3 PANEL HEADING ACCORDION TITLE & CONTENT */
-    .blue-accordion h3 a:hover>span>span:first-child:hover,
-    .blue-accordion h3 a:hover>span>span:first-child {
-        text-decoration: none
-    }
-    .blue-accordion .panel-heading {
-        padding: 0;    
-    }
-    .blue-accordion .panel-heading .panel-title,
-    .blue-accordion .panel-body {
-        float:initial;
-    }
-    .blue-accordion .panel-heading h3 a {
-        float: left;
-        width: auto
-    }
-    .blue-accordion .panel-heading h3 a.view-hide-all {
-        float: right;
-        width: auto;
-    }
-    .blue-accordion .panel-heading h3 a .title-04 {
-        top:0
-    }
-    .treatment-table .blue-accordion {
-        padding:0;
-    }
-    .treatment-table .blue-accordion .panel-heading .txtwrap {
-        padding:0;
-        display: inline
-    }
-/* CHILD ACCORDION TITLE & CONTENT */
-    .treatment-table .panel-content.child-accordion {
-        float:initial
-    } 
-    .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-        display: inline-block;
-        min-width: 95px
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span {
-        padding-left: 3rem;
-        font-size: 1rem
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span:before {
-        left:-65px;
-        width: 19px
-    }
-    .treatment-table .panel-header.child-accordion .title-04 {
-        position: relative;
-    }
-    .treatment-table .panel-header.child-accordion .title-04 .material-icons {
-        position: absolute;
-        left: 49px;
-        top: 16px;
-        padding-top: 3px
-    }
-}
-@media only screen and (max-width: 768px) {
-    .treatment-table .title-02 {
-        float: none;
-        max-width: 100%
-    }
-
-    .treatment-table .title-04 {
-        margin-left: 0.5rem;
-        max-width: 88%;
-    }
-
-    .treatment-table .title-04 .material-icons,
-    .evidence-accordion .title .material-icons {
-        margin-left: -4px;
-        padding-top: 0
-    }
-    .poce_contents .evidence-accordion .title .material-icons {
-        padding-top:0
-    }
-    .poce_contents .evidence-accordion .title {
-        padding:0 0 0 1.5rem
-    }
-    .treatment-table .panel-content {
-        padding-left: 1.5rem !important
-    }
 }
