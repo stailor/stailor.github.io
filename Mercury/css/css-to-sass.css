@@ -1,935 +1,1228 @@
-.warning-asthma  {
-    border: 2px solid #c50084;
-    padding: 1rem;
-    border-radius: 4px;
-    position: absolute;
-    background: #fff;
-    width: 300px;
-    z-index: 5;
-    left:-300px;
-    top:-19px;
-    box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-	background: #fff;
-	border: 2px solid #c50084;
-}
-.warning-asthma:after, .warning-asthma:before {
-	left: 100%;
-	top: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-}
-.warning-asthma:after {
-	border-color: rgba(255, 255, 255, 0);
-	border-left-color: #fff;
-	border-width: 10px;
-	margin-top: -10px;
-}
-.warning-asthma:before {
-	border-color: rgba(197, 0, 132, 0);
-	border-left-color: #c50084;
-	border-width: 13px;
-	margin-top: -13px;
-}
-#editComo .modal-dialog .warning-asthma button.close {
-    top: 2px;
-    right: 5px;
-    position: absolute;
-}
-.treatment-table .panel-content {
-    display: none;
-    padding: 0 1rem;
-    margin: 0;
-    float: right;
-    clear: both
-}
-/* POCE:: Treatment Algorithm */
-.poce_contents.treatment-algorithm .card-block {
-    padding: 0 !important;
-}
-.poce_contents.treatment-algorithm .treatment-wrap {   
-}
-.poce_contents.treatment-algorithm .treatment-box-cplus {
-    border: 1px solid #c50084;
-    background: none;
-    padding: 1rem  2rem;
-    margin-bottom: 1rem;
-}
-.poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a {
-    color: #c50084;
-    text-decoration: none;
-}
-.poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
-    text-decoration: underline;
-}
-#tmp .treatment-box-cplus .poce_drug_msg h3.cplus_title {
-    color:#333;
-    display: inline;
-    float: left;
-    width: auto;
-}
-.treatment-box-cplus .poce_drug_msg .material-icons {
-    display: inline;
-    float:left;
-    text-indent: -30px
-}
-.treatment-box-cplus .poce_drug_msg .material-icons svg.co-morbidity-icon-pink {
-    height:40px
-}
-
-/* DRUG ACCORDION BOX STYLES */
-#tmp .treatment-box-cplus h4{
-    color: #c50084;
-    font-weight: bold
-}
-#tmp .treatment-box-cplus .drug-accordion {
-    margin:1rem 0;
-}
-#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg,
-#tmp .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg {
-    text-indent: 0;
-    padding:1rem;
-    width: 100%
-}
-#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons,
-#tmp .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons {
-    text-indent: -10px;
-    top: 0;
-    padding:0 0.5rem 0 0
-}
-.diffDiagnosis>.card>.card-block, .diffDiagnosis2>.card>.card-block, .histExam>.card>.card-block, .diagGuidelines>.card>.card-block, .complications>.card>.card-block, .invest>.card>.card-block, .htmlTable>.card>.card-block, .details>.card>.card-block, .treatment-table>.card>.card-block, #differ>.card>.card-block{
-    padding:0
-}
-#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons svg,
-#tmp .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons svg {
-    top:0;
-    left:0
-}
-#tmp .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box,
-#tmp .treatment-box-cplus .drug-accordion .drug-content2 .treatment-box {
-    background-color: #fff;
-    padding: 0.9rem 0;
-    margin: 1rem 0;
-    border: none;
-}
-#tmp .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .small-or {
-    color: #333;
-    margin:0;
-}
-#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg {
-    background-color: #f8e0f0;
-}
-#tmp .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg h3.cplus_title{
-    font-size: 1.3rem;
-    position: relative;
-    top: 10px;
-    font-weight: normal;
-}
-.treatment-box-cplus .drug-content1 .treatment-box .modal .modal-dialog {
-	max-width: 50rem;
-}
-.treatment-box-cplus .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header {
-	background: #fff; 
-	margin-top: 1rem
-}
-.treatment-box-cplus .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header .modal-title {
-	color:#c50084;
-	margin: 0 0 1.5rem 0;
-	text-align: center;
-}
-/* DRUG STYLES ENDS  */
-
-.poce_drug_msg {
-    border: 1px dashed #c50084;
-    display: table-cell;
-    margin-bottom: 1rem;
-    padding: 2rem;
-}
-.poce_drug_msg .poce_title {
-    padding-left: 3rem;
-    color: #c50084;
-    font-size: 1.125rem;
-    margin: 0 0 1rem -3rem;
-    display: inline-block;
-}
-.poce_drug_msg h3{
-    padding:0;
-    text-indent: 0;
-    float: none!important;
-}
-.poce_drug_msg p {
-    text-indent: initial;
-}
-.poce_drug_msg .material-icons {
-    vertical-align: top;    
-    top: -5px;
-    position: relative;
-}
-.poce_drug_msg .material-icons svg {
-    top:0;
-    left:-6px;
-    position: relative;
-}
-#como-1 .material-icons{font-size:30px;}
-#como-1 svg.co-morbidity-icon-pink {
-    top: 3px;
-    position: relative;
-}
-#como-1 .add-como-icon-and-text,
-#como-1 #comoselected-1,
-#como-1 #comoselected-1 button.show,
-#como-1 #comoselected-1 span {
-    display: inline-block
-}
-#como-1 #comoselected-1 span,
-#como-2 #comoselected-2 span {
-    position: relative;
-    top:9px;
-}
-#como-1 #comoselected-1 button.hide, 
-#como-1 #comoselected-1 button {
-    display: none
-}
-
-/* IF NO COMOS ARE CHECKED ICON CHANGES TO PINK BG */
-.add-como-icon-and-text {
-    background-color: #c50084;
-    color: #fff;
-    padding: 1px 5px 6px;
-    border-radius: 5px;
-    float: left;
-}
-
-/* SHOW/HIDE ADD ADDED COPY ON COMORBIDITIES EDIT BAR */
-#lookOutPopUp.checked{
-    width: 100%;
-}
-.add-como-icon-and-text .add.unchecked,
-.add-como-icon-and-text .added.unchecked,
-#lookOutPopUp.unchecked,
-.non-como-content.hide {
-    display: none;
-}
-.add-como-icon-and-text .add.checked,
-.add-como-icon-and-text .added.checked,
-#lookOutPopUp.checked {
-    display: inline-block;
-}
-.add-como-icon-and-text .add:hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
-.add-como-icon-and-text path, .add-como-icon-and-text g g g circle {
-    fill: #fff;
-}
-.co-morbidity-icon-pink polygon {
-    fill: #C50084;
-}
-.modal-title .co-morbidity-icon-pink polygon, 
-.poce_drug_msg .co-morbidity-icon-pink polygon,
-.txtwrap .co-morbidity-icon-pink polygon,
-.title-02 .co-morbidity-icon-pink polygon,
-#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
-    fill: #fff;
-}
-
-/* IF COMOS ARE CHECKED THE ICON NEXT TO EDIT BUTTON IS PINK WHITE BG */
-.add-como-icon-and-text.checked {
-    background-color: #fff;
-    color: #000;
-}
-.add-como-icon-and-text.checked path, .add-como-icon-and-text.checked g g g circle {
-    fill: #c50084;
-}
-.add-como-icon-and-text.checked .co-morbidity-icon-pink polygon {
-    fill: #fff;
-}
-/* ENDS */
-
-.poce_drug_msg .material-icons svg.co-morbidity-icon-pink, 
-.material-icons svg.co-morbidity-icon-pink {
-    height:30px;
-}
-.modal-dialog svg.co-morbidity-icon-pink {
-    height:40px
-}
-#poce-contents div[class*='-como-content'] {
-    padding: 1rem !important;
-    border: 1px dashed #c50084;
-    background-color: #f8e0f0;
-    margin: 1rem 0;
-}
-#poce-contents div[class*='-como-content'] .poce_drug_msg .evidence-accordion .title {
-    position: relative
-}
-div[class*='-como-content'] {
-    margin: 1rem 0;
-}
-#poce_content .treatment-table .txtwrap::after {
-    content: "\e90c";
-    font-family: 'Material Icons';
-    font-size: 30px;
-    position: absolute;
-    top: -3px;
-    margin-left: 10px;
-    color: #c50084;
-}
-
-#poce_content .treatment-table .txtwrap.no-icon::after {
-    content: " ";
-}
-.poce_contents ul,
-.poce_contents ul ul li {
-    padding: 0.3rem 0;
-    margin: auto;
-}
-.poce_contents ul li:before,
-.poce_contents ul ul li:before {
-    content: none
-}
-.poce_contents ul li {
-    padding:3px 5px
-}
-.poce_contents ul {
-    list-style: disc outside;
-    padding: 10px 0px 7px 20px;
-    text-indent: inherit;
-}
-.poce_contents ul ul{
-    list-style: circle outside!important;
-    margin:auto;
-    padding:0px 0px 0px 10px
-}
-.poce_contents ul ul ul {
-    list-style: disc outside!important;
-    padding: 10px 0px 7px 10px
-}
-
-/* TIPS AND PITFALL BOX */
-#tip_pitfall {
-    background-color: #e5eef7;
-    border: 1px solid #e9e9e9;
-    color: #333;
-    width: 90%;
-    padding: 1rem;
-}
-#tip_pitfall .card-title {
-    font-family: Arial, sans-serif;
-    font-size: 1rem;
-    font-weight: bold;
-    display:contents;
-}
-#tip_pitfall .card-block .card-text {
-    padding:1rem 0 0 0rem;
-}
-#tip_pitfall .card-block {
-    padding: 1rem 1em 1rem 2rem!important;
-    background: url('../images/pin.svg') no-repeat 5px 15px;
-    background-size: 15px;
-}
-#tip_pitfall .card-block svg#pin {
-    height: 30px;
-    position: relative;
-    left: -5px;
-    float: left;
-}
-#tip_pitfall li {
-    padding: 2px 5px;
-    margin: 0;
-}
-/* CHANGE PL VALUE IN SASS FILE */
-#tip_pitfall .card-block p+ul {
-    padding-left: 1rem !important;
-    margin-bottom: 0 !important
-}
-.poce_contents #rfs .accordion-toggle {
-    margin-left: 20px;
-    text-indent: -15px;
-    line-height: 1.25
-}
-.poce_contents #rfs .accordion-toggle h3 {
-    line-height: 1.5
-}
-.poce_contents #allrfs .table thead th {
-    background-color: #bf007c;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    padding-top: 8px;
-    padding-bottom: 0;
-    height: 36px
-}
-.poce_contents #allrfs .table tbody td,
-.poce_contents #allrfs .table tbody th {
-    font-size: inherit
-}
-.poce_contents #allrfs .table tbody td ul,
-.poce_contents #allrfs .table tbody th ul {
-    margin-bottom: 1rem !important
-}
-.poce_contents #allrfs .table th {
-    border-right: 1px solid #e1e1e1
-}
-.poce_contents .alt-table {
-    border: solid 1px #e9e9e9;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font: normal 16px Arial, sans-serif;
-    margin: 0 10% 0 10%
-}
-.poce_contents .alt-table thead th {
-    background-color: #f5f5f5;
-    border: solid 1px #e9e9e9;
-    color: #333;
-    padding: 10px;
-    text-align: left
-}
-.poce_contents .alt-table tbody td {
-    border: solid 1px #e9e9e9;
-    color: #333;
-    padding: 10px
-}
-.poce_contents .evidence-accordion {
-    width:90%;
-    background-color: #f8f8f8;
-    border: 1px solid #e9e9e9;
-    padding: 1rem 0 0 0;
-    margin: 2rem 0;
-}
-.poce_contents .toggle {
-    display: none
-}
-.poce_contents .option {
-    position: relative;
-}
-
-.poce_contents .title,
-.poce_contents .content {
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: all 0.2s
-}
-.poce_contents .title {
-    background-color: #f8f8f8;
-    padding: 0 0 0 2.5rem;
-    display: inline-block;
-}
-.poce_contents .evidence-accordion .content p {
-    padding:0
-}
-.poce_contents .evidence-accordion .title {
-    padding: 0 0.5rem 1rem;
-    margin: 0;
-    display: block;
-    background-color: transparent;
-}
-.poce_contents .title p {
-    color: #000;
-    font-size: 1rem;
-    font-weight: normal;
-    padding: 0
-}
-.poce_contents .evidence-accordion .title p{
-    display: inline-block;
-    padding: 0 0 0 1rem;
-    margin: 0
-}
-.poce_contents .evidence-accordion .title span.title,
-.evidence-accordion .title span.title {
-    display: initial;
-    padding:0;
-    color: #c50084;
-    font-weight: bold;
-    font-size: 1rem;
-}
-.poce_contents .content {
-    max-height: 0;
-    overflow: hidden;
-    background-color: #f8f8f8;
-    border-top: 1px solid #e4e4e4
-}
-
-.poce_contents .content p {
-    margin: 0;
-    padding: 0.5em 2.5em 1em;
-    line-height: 1.5
-}
-
-.poce_contents .content ul {
-    padding-left: 1.5rem
-}
-
-.poce_contents .toggle:checked+.title+.content {
-    max-height: 500px;    
-    overflow: auto;
-    padding:1rem
-}
-
-.poce_contents .toggle:checked+.title:before {
-    transform: rotate(90deg) !important
-}
-/* LOOK OUT POP UP */
-#lookOutPopUp {
-    background-color: #FFCFEF;
-    padding:1rem;
-}
-#lookOutPopUp .co-morbidity-icon-pink polygon {
-    fill: #fff;
-}
-
-#lookOutPopUp p {
-    font-weight: bold
-}
-#lookOutPopUp .got-it{
-    margin-bottom: 0.75rem;
-    text-align: center
-}
-
-/* BLUE H3 PANEL HEADING ACCORDION TITLE & CONTENT */
-.blue-accordion h3 a:hover>span>span:first-child:hover,
-.blue-accordion h3 a:hover>span>span:first-child {
-    text-decoration: none
-}
-/* Diagnosis - Investigations - CHANGE IN SASS FILE*/
-.poce_contents.invest .rowHead {
-    margin-bottom: 16px;
-}
-.poce_urgent,
-.invest .card .card-block.poce_urgent {
-    padding: 1rem !important;
-    border: 1px dashed #c50084;
-}
-.poce_urgent h3 {
-    color: #c50084;
-}
-/* Diag Recommendations - alignment fix */
-.poce_contents #kpoints .card .card-block p,
-.poce_contents #diagrecs .card .card-block p {
-    margin-left: -7px;
-}
-
+/* line 4, ../sass/css-to-sass.scss */
 .modal-registration-form #editComo .modal-body {
-    padding: 1.25rem 1.5rem    
+  padding: 1.25rem 1.5rem;
 }
+/* line 6, ../sass/css-to-sass.scss */
 .modal-registration-form #editComo .modal-body ul li label.custom-checkbox {
-    margin-bottom: 0
+  margin-bottom: 0;
 }
+/* line 10, ../sass/css-to-sass.scss */
 .modal-registration-form #editComo .modal-body .list-group-flush:first-child .list-group-item:last-child {
-    margin:0
+  margin: 0;
 }
-.modal-registration-form #editComo .modal-body .list-group-flush .list-group-item{
-    margin:0.1rem 0
-}
-.browser-update-bar-hide, 
-.hide, 
-#editComo button.btn.btn-secondary.ticked {
-    display: none
-}
-#como-1,
-#como-2 {
-    height: auto
-}
-#como-1.card,
-#como-2.card {
-    border-radius: 0;
-    padding: 1.125rem 1.5rem
-}
-#como-1.card p,
-#como-2.card p {
-    display: inline-block;
-    font-weight: bold
-}
-#como-1.card p span,
-#como-2.card p span {
-    color: #c50084
-}
-#como-1.card button,
-#como-2.card button {
-    float: right;
-    background-color: #fff;
-    color: #c50084;
-    border: 3px solid #c50084;
-    border-radius: 4px
-}
-#como-1.card button:hover,
-#como-1.card button:focus,
-#como-2.card button:hover,
-#como-2.card button:focus {
-    background-color: #c50084;
-    color: #fff;
-    outline: none
-}
-#como-1 .material-icons,
-#como-2 .material-icons {
-    font-size: 50px
-}
-#como-2 {
-    border-bottom: 3px solid #c50084
-}
-#comoselected-1,
-#comoselected-2 {
-    font-weight: bold;
-    color: #c50084;
-    margin: 0 1rem
-}
-#comoselected-1 ul,
-#comoselected-2 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center
+/* line 13, ../sass/css-to-sass.scss */
+.modal-registration-form #editComo .modal-body .list-group-flush .list-group-item {
+  margin: 0.1rem 0;
 }
 
-#comoselected-1 ul li,
-#comoselected-2 ul li {
-    display: inline
+/* line 21, ../sass/css-to-sass.scss */
+#editComo .warning-asthma {
+  border: 2px solid #c50084;
+  padding: 1rem;
+  border-radius: 4px;
+  position: absolute;
+  background: #fff;
+  width: 300px;
+  z-index: 5;
+  left: -300px;
+  top: -19px;
+  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+  background: #fff;
+  border: 2px solid #c50084;
 }
-#comoselected-1 ul li a,
-#comoselected-2 ul li a {
-    text-decoration: none;
-    padding: .2em 1em;
-    color: #fff;
-    background-color: #036
+/* line 34, ../sass/css-to-sass.scss */
+#editComo .warning-asthma:after, #editComo .warning-asthma:before {
+  left: 100%;
+  top: 50%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
 }
-#comoselected-1 ul li a:hover,
-#comoselected-2 ul li a:hover {
-    color: #fff;
-    background-color: #369
+/* line 44, ../sass/css-to-sass.scss */
+#editComo .warning-asthma:after {
+  border-color: rgba(255, 255, 255, 0);
+  border-left-color: #fff;
+  border-width: 10px;
+  margin-top: -10px;
 }
-
-/* ADDS COMMAS AFTER EACH COMOBILITY IS SELECTED FROM MODAL */
-#como-1 #comoselected-1 span + span:before {
-    content:', '
+/* line 50, ../sass/css-to-sass.scss */
+#editComo .warning-asthma:before {
+  border-color: rgba(197, 0, 132, 0);
+  border-left-color: #c50084;
+  border-width: 13px;
+  margin-top: -13px;
 }
-#comoselected-1 button.btn {
-    margin:0 0 0 1rem;
+/* line 56, ../sass/css-to-sass.scss */
+#editComo .warning-asthma button.close {
+  top: 2px;
+  right: 5px;
+  position: absolute;
 }
-#como-1 .card-block b {
-    vertical-align: -webkit-baseline-middle;
-    vertical-align: sub;
-}
+/* line 63, ../sass/css-to-sass.scss */
 #editComo button.btn {
-    background-color: rgba(0, 0, 0, 0.12);
-    box-shadow: none;
-    color: rgba(0, 0, 0, 0.26);
-    cursor: not-allowed;
-    opacity: 1;
-    pointer-events: none
+  background-color: rgba(0, 0, 0, 0.12);
+  box-shadow: none;
+  color: rgba(0, 0, 0, 0.26);
+  cursor: not-allowed;
+  opacity: 1;
+  pointer-events: none;
 }
-#editComo button.btn.btn-secondary.ticked.show{
-    display:block
-}
+/* line 70, ../sass/css-to-sass.scss */
 #editComo button.btn.btn-secondary {
-    background-color: #a30054 !important;
-    color: #fff !important;
-    cursor: pointer;
-    opacity: 1;
-    pointer-events: all
+  background-color: #a30054 !important;
+  color: #fff !important;
+  cursor: pointer;
+  opacity: 1;
+  pointer-events: all;
 }
+/* line 76, ../sass/css-to-sass.scss */
+#editComo button.btn.btn-secondary.ticked {
+  display: none;
+}
+/* line 78, ../sass/css-to-sass.scss */
+#editComo button.btn.btn-secondary.ticked.show {
+  display: block;
+}
+/* line 85, ../sass/css-to-sass.scss */
 #editComo .modal-dialog button.close {
-    position: absolute;
-    top: 1rem;
-    right: 1rem;
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
+/* line 90, ../sass/css-to-sass.scss */
 #editComo .modal-body .disable-checkbox {
-    background:#ddd;
+  background: #ddd;
 }
-#topicNav.stickme #como-2 {
-    position: fixed;
-    top: 110px;
-    width: 1116px;
-    z-index: 1
+
+/* line 94, ../sass/css-to-sass.scss */
+.poce_drug_msg {
+  border: 1px dashed #c50084;
+  display: table-cell;
+  margin-bottom: 1rem;
+  padding: 2rem;
 }
-.treatment-table .title-04,
+/* line 99, ../sass/css-to-sass.scss */
+.poce_drug_msg .poce_title {
+  padding-left: 3rem;
+  color: #c50084;
+  font-size: 1.125rem;
+  margin: 0 0 1rem -3rem;
+  display: inline-block;
+}
+/* line 106, ../sass/css-to-sass.scss */
+.poce_drug_msg h3 {
+  padding: 0;
+  text-indent: 0;
+  float: none !important;
+}
+/* line 111, ../sass/css-to-sass.scss */
+.poce_drug_msg p {
+  text-indent: initial;
+}
+/* line 114, ../sass/css-to-sass.scss */
+.poce_drug_msg .material-icons {
+  vertical-align: top;
+  top: -5px;
+  position: relative;
+}
+/* line 118, ../sass/css-to-sass.scss */
+.poce_drug_msg .material-icons svg {
+  top: 0;
+  left: -6px;
+  position: relative;
+}
+
+/* line 126, ../sass/css-to-sass.scss */
+#como-1 {
+  height: auto;
+}
+/* line 128, ../sass/css-to-sass.scss */
+#como-1 .material-icons {
+  font-size: 30px;
+}
+/* line 131, ../sass/css-to-sass.scss */
+#como-1 svg.co-morbidity-icon-pink {
+  top: 3px;
+  position: relative;
+}
+/* line 135, ../sass/css-to-sass.scss */
+#como-1 .add-como-icon-and-text {
+  display: inline-block;
+}
+/* line 138, ../sass/css-to-sass.scss */
+#como-1 #comoselected-1 {
+  display: inline-block;
+}
+/* line 140, ../sass/css-to-sass.scss */
+#como-1 #comoselected-1 button.show, #como-1 #comoselected-1 span {
+  display: inline-block;
+  position: relative;
+  top: 9px;
+}
+/* line 145, ../sass/css-to-sass.scss */
+#como-1 #comoselected-1 button.hide, #como-1 #comoselected-1 button {
+  display: none;
+}
+/* line 148, ../sass/css-to-sass.scss */
+#como-1 #comoselected-1 span + span:before {
+  content: ',';
+}
+/* line 152, ../sass/css-to-sass.scss */
+#como-1 .card-block b {
+  vertical-align: -webkit-baseline-middle;
+  vertical-align: sub;
+}
+/* line 156, ../sass/css-to-sass.scss */
+#como-1.card {
+  border-radius: 0;
+  padding: 1.125rem 1.5rem;
+}
+/* line 159, ../sass/css-to-sass.scss */
+#como-1.card p {
+  display: inline-block;
+  font-weight: bold;
+}
+/* line 162, ../sass/css-to-sass.scss */
+#como-1.card p span {
+  color: #c50084;
+}
+/* line 166, ../sass/css-to-sass.scss */
+#como-1.card button {
+  float: right;
+  background-color: #fff;
+  color: #c50084;
+  border: 3px solid #c50084;
+  border-radius: 4px;
+}
+/* line 172, ../sass/css-to-sass.scss */
+#como-1.card button:hover {
+  background-color: #c50084;
+  color: #fff;
+  outline: none;
+}
+/* line 177, ../sass/css-to-sass.scss */
+#como-1.card button:focus {
+  background-color: #c50084;
+  color: #fff;
+  outline: none;
+}
+/* line 182, ../sass/css-to-sass.scss */
+#como-1.card button:hover, #como-1.card button:focus {
+  background-color: #c50084;
+  color: #fff;
+  outline: none;
+}
+
+/* line 190, ../sass/css-to-sass.scss */
+#como-2 {
+  height: auto;
+  border-bottom: 3px solid #c50084;
+}
+/* line 193, ../sass/css-to-sass.scss */
+#como-2.card {
+  border-radius: 0;
+  padding: 1.125rem 1.5rem;
+}
+/* line 196, ../sass/css-to-sass.scss */
+#como-2.card p {
+  display: inline-block;
+  font-weight: bold;
+}
+/* line 199, ../sass/css-to-sass.scss */
+#como-2.card p span {
+  color: #c50084;
+}
+/* line 203, ../sass/css-to-sass.scss */
+#como-2.card button {
+  float: right;
+  background-color: #fff;
+  color: #c50084;
+  border: 3px solid #c50084;
+  border-radius: 4px;
+}
+/* line 209, ../sass/css-to-sass.scss */
+#como-2.card button:hover, #como-2.card button:focus {
+  background-color: #c50084;
+  color: #fff;
+  outline: none;
+}
+/* line 216, ../sass/css-to-sass.scss */
+#como-2 .material-icons {
+  font-size: 50px;
+}
+/* line 219, ../sass/css-to-sass.scss */
+#como-2 #comoselected-2 span {
+  position: relative;
+  top: 9px;
+}
+
+/* line 224, ../sass/css-to-sass.scss */
+#tip_pitfall, #tmp .poce_contents.treatment-algorithm #tip_pitfall {
+  background-color: #e5eef7;
+  border: 1px solid #e9e9e9;
+  color: #333;
+  width: 90%;
+  padding: 1rem;
+}
+/* line 230, ../sass/css-to-sass.scss */
+#tip_pitfall .card-title, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-title {
+  font-family: Arial,sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  display: contents;
+}
+/* line 236, ../sass/css-to-sass.scss */
+#tip_pitfall .card-block, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block {
+  padding: 1rem 1em 1rem 2rem !important;
+  background: url("../images/pin.svg") no-repeat 5px 15px;
+  background-size: 15px;
+}
+/* line 240, ../sass/css-to-sass.scss */
+#tip_pitfall .card-block p + ul, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block p + ul {
+  padding-left: 1rem !important;
+  margin-bottom: 0 !important;
+}
+/* line 244, ../sass/css-to-sass.scss */
+#tip_pitfall .card-block .card-text, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block .card-text {
+  padding: 1rem 0 0 0rem;
+}
+/* line 247, ../sass/css-to-sass.scss */
+#tip_pitfall .card-block svg#pin, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block svg#pin {
+  height: 30px;
+  position: relative;
+  left: -5px;
+  float: left;
+}
+/* line 254, ../sass/css-to-sass.scss */
+#tip_pitfall li, #tmp .poce_contents.treatment-algorithm #tip_pitfall li {
+  padding: 2px 5px;
+  margin: 0;
+}
+
+/* line 259, ../sass/css-to-sass.scss */
+#lookOutPopUp {
+  background-color: #FFCFEF;
+  padding: 1rem;
+}
+/* line 262, ../sass/css-to-sass.scss */
+#lookOutPopUp.checked {
+  width: 100%;
+  display: inline-block;
+}
+/* line 266, ../sass/css-to-sass.scss */
+#lookOutPopUp.unchecked {
+  display: none;
+}
+/* line 269, ../sass/css-to-sass.scss */
+#lookOutPopUp .co-morbidity-icon-pink polygon {
+  fill: #fff;
+}
+/* line 272, ../sass/css-to-sass.scss */
+#lookOutPopUp p {
+  font-weight: bold;
+}
+/* line 275, ../sass/css-to-sass.scss */
+#lookOutPopUp .got-it {
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+/* line 282, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .card-block {
+  padding: 0 !important;
+}
+/* line 285, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus {
+  border: 1px solid #c50084;
+  background: none;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+}
+/* line 290, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus h4 {
+  color: #c50084;
+  font-weight: bold;
+}
+/* line 296, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a {
+  color: #c50084;
+  text-decoration: none;
+}
+/* line 299, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
+  text-decoration: underline;
+}
+/* line 305, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion {
+  margin: 1rem 0;
+}
+/* line 307, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg {
+  text-indent: 0;
+  padding: 1rem;
+  width: 100%;
+}
+/* line 311, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons {
+  text-indent: -10px;
+  top: 0;
+  padding: 0 0.5rem 0 0;
+}
+/* line 315, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons svg, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons svg {
+  top: 0;
+  left: 0;
+}
+/* line 322, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg {
+  background-color: #f8e0f0;
+}
+/* line 325, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg h3.cplus_title {
+  font-size: 1.3rem;
+  position: relative;
+  font-weight: normal;
+}
+/* line 336, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .treatment-box {
+  background-color: #fff;
+  padding: 0.9rem 0;
+  margin: 1rem 0;
+  border: none;
+}
+/* line 345, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons {
+  margin: 0;
+  border: none;
+}
+/* line 350, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box {
+  background-color: #fff;
+  padding: 0.9rem 0;
+  margin: 1rem 0;
+  border: none;
+}
+/* line 355, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog {
+  max-width: 50rem;
+}
+/* line 357, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header {
+  background: #fff;
+  margin-top: 1rem;
+}
+/* line 360, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header .modal-title {
+  color: #c50084;
+  margin: 0 0 1.5rem 0;
+  text-align: center;
+}
+/* line 367, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .small-or {
+  color: #333;
+  margin: 0;
+}
+/* line 375, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg .material-icons {
+  display: inline;
+  float: left;
+  text-indent: -30px;
+}
+/* line 380, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg .material-icons svg.co-morbidity-icon-pink {
+  height: 40px;
+}
+/* line 386, ../sass/css-to-sass.scss */
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg h3.cplus_title {
+  color: #333;
+  display: inline;
+  float: left;
+  width: auto;
+}
+
+/* line 399, ../sass/css-to-sass.scss */
+.poce_contents .evidence-accordion {
+  width: 90%;
+  background-color: #f8f8f8;
+  border: 1px solid #e9e9e9;
+  padding: 1rem 0 0 0;
+  margin: 2rem 0;
+}
+/* line 405, ../sass/css-to-sass.scss */
+.poce_contents .evidence-accordion .title {
+  padding: 0 0.5rem 1rem;
+  margin: 0;
+  display: block;
+  background-color: transparent;
+}
+/* line 411, ../sass/css-to-sass.scss */
+.poce_contents .evidence-accordion .title span.title {
+  display: initial;
+  padding: 0;
+  color: #c50084;
+  font-weight: bold;
+  font-size: 1rem;
+}
+/* line 419, ../sass/css-to-sass.scss */
+.poce_contents .evidence-accordion .title p {
+  display: inline-block;
+  padding: 0 0 0 1rem;
+  margin: 0;
+}
+/* line 425, ../sass/css-to-sass.scss */
+.poce_contents .evidence-accordion .content p {
+  padding: 0;
+}
+/* line 429, ../sass/css-to-sass.scss */
+.poce_contents div[class*='-como-content'] .poce_drug_msg .evidence-accordion .title {
+  position: relative;
+}
+
+/* line 435, ../sass/css-to-sass.scss */
 .evidence-accordion .title {
-    display: inline-block;
-    margin-left: -0.7rem
+  display: inline-block;
+  margin-left: -0.7rem;
 }
-.treatment-table .title-04 .material-icons,
+/* line 438, ../sass/css-to-sass.scss */
 .evidence-accordion .title .material-icons {
-    min-width: 24px;
-    padding-top: 6px
+  min-width: 24px;
+  padding-top: 6px;
 }
-.histExam .rowDetails .evidence-accordion .title span,
-.invest .rowDetails .evidence-accordion span {
-    padding: 0.2rem 0px 50px 0.15rem;
-}
-.evidence-accordion .title .material-icons span:first-child,
-.treatment-table .title-04 .material-icons span:first-child {
-    display: block
-}
-.evidence-accordion .title .material-icons span,
-.treatment-table .title-04 .material-icons span,
+/* line 441, ../sass/css-to-sass.scss */
 .evidence-accordion .title .material-icons span {
-    display: none
+  display: none;
 }
-.invest .rowDetails .evidence-accordion .title .material-icons span,
-.tmp .rowDetails .evidence-accordion .title .material-icons span,
-.tmp .rowDetails .evidence-accordion .title .material-icons,
-.tmp .rowDetails .evidence-accordion .title .material-icons.open {
-    color: #c50084
-} 
-.panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink,
-.panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
-    display:none
+/* line 443, ../sass/css-to-sass.scss */
+.evidence-accordion .title .material-icons span:first-child {
+  display: block;
 }
-.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink,
-.panel-title .title-02 .material-icons svg.co-morbidity-icon-pink {
-    height: 20px;
+/* line 446, ../sass/css-to-sass.scss */
+.evidence-accordion .title .material-icons span.title {
+  display: initial;
+  padding: 0;
+  color: #c50084;
+  font-weight: bold;
+  font-size: 1rem;
 }
+
+/* line 462, ../sass/css-to-sass.scss */
+.invest .rowDetails .evidence-accordion .title .material-icons span, .tmp .rowDetails .evidence-accordion .title .material-icons span, .tmp .rowDetails .evidence-accordion .title .material-icons, .tmp .rowDetails .evidence-accordion .title .material-icons.open {
+  color: #c50084;
+}
+
+/* line 465, ../sass/css-to-sass.scss */
+.histExam .rowDetails .evidence-accordion .title span, .invest .rowDetails .evidence-accordion span {
+  padding: 0.2rem 0px 50px 0.15rem;
+}
+
+/* line 468, ../sass/css-to-sass.scss */
+.treatment-table .panel-content {
+  display: none;
+  padding: 0 1rem;
+  margin: 0;
+  float: right;
+  clear: both;
+}
+
+/* line 475, ../sass/css-to-sass.scss */
+.diffDiagnosis > .card > .card-block, .diffDiagnosis2 > .card > .card-block, .histExam > .card > .card-block, .diagGuidelines > .card > .card-block, .complications > .card > .card-block, .invest > .card > .card-block, .htmlTable > .card > .card-block, .details > .card > .card-block, .treatment-table > .card > .card-block, #differ > .card > .card-block {
+  padding: 0;
+}
+
+/* line 478, ../sass/css-to-sass.scss */
+#comoselected-1 button.btn {
+  margin: 0 0 0 1rem;
+}
+
+/* line 481, ../sass/css-to-sass.scss */
+#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
+  fill: #fff;
+}
+
+/* line 484, ../sass/css-to-sass.scss */
+#topicNav.stickme #como-2 {
+  position: fixed;
+  top: 110px;
+  width: 1116px;
+  z-index: 1;
+}
+
+/* line 490, ../sass/css-to-sass.scss */
+.add-como-icon-and-text {
+  background-color: #c50084;
+  color: #fff;
+  padding: 1px 5px 6px;
+  border-radius: 5px;
+  float: left;
+}
+
+/* line 497, ../sass/css-to-sass.scss */
+.add-como-icon-and-text .add.unchecked, .add-como-icon-and-text .added.unchecked, .non-como-content.hide {
+  display: none;
+}
+
+/* line 500, ../sass/css-to-sass.scss */
+.add-como-icon-and-text .add.checked, .add-como-icon-and-text .added.checked {
+  display: inline-block;
+}
+
+/* line 503, ../sass/css-to-sass.scss */
+.add-como-icon-and-text .add:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* line 507, ../sass/css-to-sass.scss */
+.add-como-icon-and-text path, .add-como-icon-and-text g g g circle {
+  fill: #fff;
+}
+
+/* line 510, ../sass/css-to-sass.scss */
+.co-morbidity-icon-pink polygon {
+  fill: #C50084;
+}
+
+/* line 513, ../sass/css-to-sass.scss */
+.modal-title .co-morbidity-icon-pink polygon, .poce_drug_msg .co-morbidity-icon-pink polygon, .txtwrap .co-morbidity-icon-pink polygon, .title-02 .co-morbidity-icon-pink polygon {
+  fill: #fff;
+}
+
+/* line 516, ../sass/css-to-sass.scss */
+.add-como-icon-and-text.checked {
+  background-color: #fff;
+  color: #000;
+}
+
+/* line 520, ../sass/css-to-sass.scss */
+.add-como-icon-and-text.checked path, .add-como-icon-and-text.checked g g g circle {
+  fill: #c50084;
+}
+
+/* line 523, ../sass/css-to-sass.scss */
+.add-como-icon-and-text.checked .co-morbidity-icon-pink polygon {
+  fill: #fff;
+}
+
+/* line 526, ../sass/css-to-sass.scss */
+.poce_drug_msg .material-icons svg.co-morbidity-icon-pink, .material-icons svg.co-morbidity-icon-pink {
+  height: 30px;
+}
+
+/* line 529, ../sass/css-to-sass.scss */
+.modal-dialog svg.co-morbidity-icon-pink {
+  height: 40px;
+}
+
+/* line 532, ../sass/css-to-sass.scss */
+#poce-contents div[class*='-como-content'] {
+  padding: 1rem !important;
+  border: 1px dashed #c50084;
+  background-color: #f8e0f0;
+  margin: 1rem 0;
+}
+
+/* line 538, ../sass/css-to-sass.scss */
+div[class*='-como-content'] {
+  margin: 1rem 0;
+}
+
+/* line 541, ../sass/css-to-sass.scss */
+#poce_content .treatment-table .txtwrap::after {
+  content: "\e90c";
+  font-family: 'Material Icons';
+  font-size: 30px;
+  position: absolute;
+  top: -3px;
+  margin-left: 10px;
+  color: #c50084;
+}
+
+/* line 550, ../sass/css-to-sass.scss */
+#poce_content .treatment-table .txtwrap.no-icon::after {
+  content: " ";
+}
+
+/* line 553, ../sass/css-to-sass.scss */
+.poce_contents ul, .poce_contents ul ul li {
+  padding: 0.3rem 0;
+  margin: auto;
+}
+
+/* line 557, ../sass/css-to-sass.scss */
+.poce_contents ul li:before, .poce_contents ul ul li:before {
+  content: none;
+}
+
+/* line 560, ../sass/css-to-sass.scss */
+.poce_contents ul li {
+  padding: 3px 5px;
+}
+
+/* line 563, ../sass/css-to-sass.scss */
+.poce_contents ul {
+  list-style: disc outside;
+  padding: 10px 0px 7px 20px;
+  text-indent: inherit;
+}
+
+/* line 568, ../sass/css-to-sass.scss */
+.poce_contents ul ul {
+  list-style: circle outside !important;
+  margin: auto;
+  padding: 0px 0px 0px 10px;
+}
+
+/* line 573, ../sass/css-to-sass.scss */
+.poce_contents ul ul ul {
+  list-style: disc outside !important;
+  padding: 10px 0px 7px 10px;
+}
+
+/* line 577, ../sass/css-to-sass.scss */
+.poce_contents #rfs .accordion-toggle {
+  margin-left: 20px;
+  text-indent: -15px;
+  line-height: 1.25;
+}
+
+/* line 582, ../sass/css-to-sass.scss */
+.poce_contents #rfs .accordion-toggle h3 {
+  line-height: 1.5;
+}
+
+/* line 585, ../sass/css-to-sass.scss */
+.poce_contents #allrfs .table thead th {
+  background-color: #bf007c;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-top: 8px;
+  padding-bottom: 0;
+  height: 36px;
+}
+
+/* line 594, ../sass/css-to-sass.scss */
+.poce_contents #allrfs .table tbody td, .poce_contents #allrfs .table tbody th {
+  font-size: inherit;
+}
+
+/* line 597, ../sass/css-to-sass.scss */
+.poce_contents #allrfs .table tbody td ul, .poce_contents #allrfs .table tbody th ul {
+  margin-bottom: 1rem !important;
+}
+
+/* line 600, ../sass/css-to-sass.scss */
+.poce_contents #allrfs .table th {
+  border-right: 1px solid #e1e1e1;
+}
+
+/* line 603, ../sass/css-to-sass.scss */
+.poce_contents .alt-table {
+  border: solid 1px #e9e9e9;
+  border-collapse: collapse;
+  border-spacing: 0;
+  font: normal 16px Arial,sans-serif;
+  margin: 0 10% 0 10%;
+}
+
+/* line 610, ../sass/css-to-sass.scss */
+.poce_contents .alt-table thead th {
+  background-color: #f5f5f5;
+  border: solid 1px #e9e9e9;
+  color: #333;
+  padding: 10px;
+  text-align: left;
+}
+
+/* line 617, ../sass/css-to-sass.scss */
+.poce_contents .alt-table tbody td {
+  border: solid 1px #e9e9e9;
+  color: #333;
+  padding: 10px;
+}
+
+/* line 622, ../sass/css-to-sass.scss */
+.poce_contents .toggle {
+  display: none;
+}
+
+/* line 625, ../sass/css-to-sass.scss */
+.poce_contents .option {
+  position: relative;
+}
+
+/* line 628, ../sass/css-to-sass.scss */
+.poce_contents .title, .poce_contents .content {
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  transition: all 0.2s;
+}
+
+/* line 633, ../sass/css-to-sass.scss */
+.poce_contents .title {
+  background-color: #f8f8f8;
+  padding: 0 0 0 2.5rem;
+  display: inline-block;
+}
+
+/* line 638, ../sass/css-to-sass.scss */
+.treatment-table .title-04 .material-icons span {
+  display: none;
+}
+
+/* line 641, ../sass/css-to-sass.scss */
+.treatment-table .title-04 {
+  display: inline-block;
+  margin-left: -0.7rem;
+}
+
+/* line 645, ../sass/css-to-sass.scss */
+.treatment-table .title-04 .material-icons {
+  min-width: 24px;
+  padding-top: 6px;
+}
+
+/* line 649, ../sass/css-to-sass.scss */
+.treatment-table .title-04 .material-icons span:first-child {
+  display: block;
+}
+
+/* line 652, ../sass/css-to-sass.scss */
+.poce_contents .title p {
+  color: #000;
+  font-size: 1rem;
+  font-weight: normal;
+  padding: 0;
+}
+
+/* line 658, ../sass/css-to-sass.scss */
+.poce_contents .content {
+  max-height: 0;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  border-top: 1px solid #e4e4e4;
+}
+
+/* line 664, ../sass/css-to-sass.scss */
+.poce_contents .content p {
+  margin: 0;
+  padding: 0.5em 2.5em 1em;
+  line-height: 1.5;
+}
+
+/* line 669, ../sass/css-to-sass.scss */
+.poce_contents .content ul {
+  padding-left: 1.5rem;
+}
+
+/* line 672, ../sass/css-to-sass.scss */
+.poce_contents .toggle:checked + .title + .content {
+  max-height: 500px;
+  overflow: auto;
+  padding: 1rem;
+}
+
+/* line 677, ../sass/css-to-sass.scss */
+.poce_contents .toggle:checked + .title:before {
+  transform: rotate(90deg) !important;
+}
+
+/* line 680, ../sass/css-to-sass.scss */
+.blue-accordion h3 a:hover > span > span:first-child:hover, .blue-accordion h3 a:hover > span > span:first-child {
+  text-decoration: none;
+}
+
+/* line 683, ../sass/css-to-sass.scss */
+.poce_contents.invest .rowHead {
+  margin-bottom: 16px;
+}
+
+/* line 686, ../sass/css-to-sass.scss */
+.poce_urgent, .invest .card .card-block.poce_urgent {
+  padding: 1rem !important;
+  border: 1px dashed #c50084;
+}
+
+/* line 690, ../sass/css-to-sass.scss */
+.poce_urgent h3 {
+  color: #c50084;
+}
+
+/* line 693, ../sass/css-to-sass.scss */
+.poce_contents #kpoints .card .card-block p, .poce_contents #diagrecs .card .card-block p {
+  margin-left: -7px;
+}
+
+/* line 696, ../sass/css-to-sass.scss */
+#comoselected-1, #comoselected-2 {
+  font-weight: bold;
+  color: #c50084;
+  margin: 0 1rem;
+}
+
+/* line 701, ../sass/css-to-sass.scss */
+#comoselected-1 ul, #comoselected-2 ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  text-align: center;
+}
+
+/* line 707, ../sass/css-to-sass.scss */
+#comoselected-1 ul li, #comoselected-2 ul li {
+  display: inline;
+}
+
+/* line 710, ../sass/css-to-sass.scss */
+#comoselected-1 ul li a, #comoselected-2 ul li a {
+  text-decoration: none;
+  padding: .2em 1em;
+  color: #fff;
+  background-color: #036;
+}
+
+/* line 716, ../sass/css-to-sass.scss */
+#comoselected-1 ul li a:hover, #comoselected-2 ul li a:hover {
+  color: #fff;
+  background-color: #369;
+}
+
+/* line 720, ../sass/css-to-sass.scss */
+.browser-update-bar-hide, .hide, .panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
+  display: none;
+}
+
+/* line 723, ../sass/css-to-sass.scss */
+.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02 .material-icons svg.co-morbidity-icon-pink {
+  height: 20px;
+}
+
+/* line 726, ../sass/css-to-sass.scss */
 .treatment-table .treatment-wrap .treatment-box {
-    background: #e5eef7;
-    border: 1px solid #b0bec5;
-    padding: 0.9rem;
-    margin-bottom: 1rem
+  background: #e5eef7;
+  border: 1px solid #b0bec5;
+  padding: 0.9rem;
+  margin-bottom: 1rem;
 }
 
-.treatment-table .treatment-wrap .treatment-box .small-or,
-.treatment-table .treatment-wrap .treatment-box .and-or {
-    margin: 1rem 0
+/* line 732, ../sass/css-to-sass.scss */
+.treatment-table .treatment-wrap .treatment-box .small-or, .treatment-table .treatment-wrap .treatment-box .and-or {
+  margin: 1rem 0;
 }
+
+/* line 735, ../sass/css-to-sass.scss */
 .treatment-table .treatment-wrap .treatment-box .and-or {
-    margin-left: -1rem;
-    margin-right: -1rem;
-    position: relative;
-    left: 1px
+  margin-left: -1rem;
+  margin-right: -1rem;
+  position: relative;
+  left: 1px;
 }
+
+/* line 741, ../sass/css-to-sass.scss */
 .treatment-table .treatment-wrap .treatment-box .reference {
-    display: inline
+  display: inline;
 }
 
+/* line 744, ../sass/css-to-sass.scss */
 .treatment-table .treatment-wrap .treatment-box .reference .morePop {
-    padding-left: 1rem
+  padding-left: 1rem;
 }
+
+/* line 747, ../sass/css-to-sass.scss */
 .treatment-box a:hover {
-    text-decoration: underline;
-    color: #bf007c
+  text-decoration: underline;
+  color: #bf007c;
 }
+
+/* line 751, ../sass/css-to-sass.scss */
 .treatment-box .material-icons {
-    color: #2a6ebb
+  color: #2a6ebb;
 }
 
-@media (max-width: 992px) {
-    #comoselected-1 button.btn{
-        position: absolute;
-        top:0;
-        right:0;
-    }
-    #topicNav.stickme #como-2 {
-        position: relative
-    }
-}
-@media only screen and (max-width: 768px) {
-    .panel-title .txtwrap .material-icons {
-        position: absolute;
-        float: right;
-        top: -4px;
-        right:-29px;
-    }
+@media (max-width: 768px) {
+  /* line 759, ../sass/css-to-sass.scss */
+  .panel-title .txtwrap .material-icons {
+    position: absolute;
+    float: right;
+    top: -4px;
+    right: -29px;
+  }
+
+  /* line 765, ../sass/css-to-sass.scss */
+  .treatment-table .title-02 {
+    float: none;
+    max-width: 100%;
+  }
+
+  /* line 769, ../sass/css-to-sass.scss */
+  .treatment-table .title-04 {
+    margin-left: 0.5rem;
+    max-width: 88%;
+  }
+
+  /* line 773, ../sass/css-to-sass.scss */
+  .treatment-table .title-04 .material-icons, .evidence-accordion .title .material-icons {
+    margin-left: -4px;
+    padding-top: 0;
+  }
+
+  /* line 777, ../sass/css-to-sass.scss */
+  .poce_contents .evidence-accordion .title .material-icons {
+    padding-top: 0;
+  }
+
+  /* line 780, ../sass/css-to-sass.scss */
+  .poce_contents .evidence-accordion .title {
+    padding: 0 0 0 1.5rem;
+  }
+
+  /* line 783, ../sass/css-to-sass.scss */
+  .treatment-table .panel-content {
+    padding-left: 1.5rem !important;
+  }
 }
 @media (max-width: 991px) {
-    .evidence-accordion .title .material-icons {
-        float: left;
-        width: 32px;
-        height: 24px;
-        cursor: pointer;
-        padding-top:8px
-    }
-}
-@media (min-width: 1024px) {
-    .treatment-table .title-04 {
-        max-width: 900px
-    }
+  /* line 788, ../sass/css-to-sass.scss */
+  .treatment-table .panel-heading h3 .txtwrap {
+    max-width: 470px;
+    display: inline-block;
+  }
 
-    .treatment-table .title-04 {
-        width: auto;
-        position: relative;
-        top: 7px
-    }
+  /* line 792, ../sass/css-to-sass.scss */
+  .treatment-table .panel-content.child-accordion .panel-content {
+    float: left;
+    left: 2.7rem;
+  }
 
-    .treatment-table .title-04 .material-icons {
-        float: left;
-        clear: right;
-        width: 24px;
-        height: 24px;
-        margin-bottom: -24px
-    }
-    .evidence-accordion .title .material-icons {
-        float: left;
-        width: 32px;
-        height: 24px;
-        cursor: pointer;
-        padding-top:8px
-    }
-    .treatment-table .txtwrap {
-        /* display: block;
-        float: right; */
-        width: 100% !important;
-        padding-left: 32px;
-        cursor: pointer
-    }    
-    .evidence-accordion .title span.title {
-        display: inline-block;
-        cursor: pointer
-    }
-}
-@media only screen and (max-width: 1199px) {
-    #topicNav #topicMenuTopBg,
-    #topicNav #menuLinks,
-    #topicNav #menus,
-    #topicNav #como-2 {
-        width: 936px !important
-    }
-}
-@media (max-width: 991px) {
-.treatment-table .panel-heading h3 .txtwrap {
-        max-width: 470px;
-        display: inline-block;
-    }
-    .treatment-table .panel-content.child-accordion .panel-content {
-        float:left;
-        left: 2.7rem;
-    }
-    .treatment-table .panel-content.child-accordion .panel-header .title-02 {
-        left:2rem
-    }
-}
-@media (min-width: 1024px) {   
-    
-    .blue-accordion .panel-heading {
-        padding: 0;    
-    }
-    .blue-accordion .panel-heading .panel-title,
-    .blue-accordion .panel-body {
-        float:initial;
-    }
-    .blue-accordion .panel-heading h3 a {
-        float: left;
-        width: auto
-    }
-    .blue-accordion .panel-heading h3 a.view-hide-all {
-        float: right;
-        width: auto;
-    }
-    .blue-accordion .panel-heading h3 a .title-04 {
-        top:0
-    }
-    .blue-accordion .panel-heading h3 a span.msg{
-        font-size: 0.875rem;
-    }
-    .treatment-table .blue-accordion {
-        padding:0;
-    }
-    .treatment-table .blue-accordion .panel-heading .txtwrap{
-        padding:4px 0 0 32px
-    }
-/* CHILD ACCORDION TITLE & CONTENT */
-    .treatment-table .panel-content.child-accordion {
-        float:initial
-    } 
-    .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-        display: inline-block;
-        min-width: 95px
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span {
-        padding-left: 3rem;
-        font-size: 1rem
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span:before {
-        left:-42px;
-        width: 19px
-    }
-    .treatment-table .panel-header.child-accordion .title-04 .material-icons {
-        position: absolute;
-        left: 49px;
-        top: 16px;
-        padding-top: 3px
-    }
-/* CHILD ACCORDION TITLE & CONTENT ENDS */
+  /* line 796, ../sass/css-to-sass.scss */
+  .treatment-table .panel-content.child-accordion .panel-header .title-02 {
+    left: 2rem;
+  }
+
+  /* line 799, ../sass/css-to-sass.scss */
+  .evidence-accordion .title .material-icons {
+    float: left;
+    width: 32px;
+    height: 24px;
+    cursor: pointer;
+    padding-top: 8px;
+  }
+
+  /* line 806, ../sass/css-to-sass.scss */
+  #comoselected-1 button.btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /* line 811, ../sass/css-to-sass.scss */
+  #topicNav.stickme #como-2 {
+    position: relative;
+  }
 }
 @media (max-width: 1023px) {
-/* BLUE H3 PANEL HEADING ACCORDION TITLE & CONTENT */
-    .blue-accordion h3 a:hover>span>span:first-child:hover,
-    .blue-accordion h3 a:hover>span>span:first-child {
-        text-decoration: none
-    }
-    .blue-accordion .panel-heading {
-        padding: 0;    
-    }
-    .blue-accordion .panel-heading .panel-title,
-    .blue-accordion .panel-body {
-        float:initial;
-    }
-    .blue-accordion .panel-heading h3 a {
-        float: left;
-        width: auto
-    }
-    .blue-accordion .panel-heading h3 a.view-hide-all {
-        float: right;
-        width: auto;
-    }
-    .blue-accordion .panel-heading h3 a .title-04 {
-        top:0
-    }
-    .treatment-table .blue-accordion {
-        padding:0;
-    }
-    .treatment-table .blue-accordion .panel-heading .txtwrap {
-        padding:0;
-        display: inline
-    }
-/* CHILD ACCORDION TITLE & CONTENT */
-    .treatment-table .panel-content.child-accordion {
-        float:initial
-    } 
-    .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-        display: inline-block;
-        min-width: 95px
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span {
-        padding-left: 3rem;
-        font-size: 1rem
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span:before {
-        left:-65px;
-        width: 19px
-    }
-    .treatment-table .panel-header.child-accordion .title-04 {
-        position: relative;
-    }
-    .treatment-table .panel-header.child-accordion .title-04 .material-icons {
-        position: absolute;
-        left: 49px;
-        top: 16px;
-        padding-top: 3px
-    }
+  /* line 816, ../sass/css-to-sass.scss */
+  .blue-accordion h3 a:hover > span > span:first-child:hover, .blue-accordion h3 a:hover > span > span:first-child {
+    text-decoration: none;
+  }
+
+  /* line 819, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading {
+    padding: 0;
+  }
+
+  /* line 822, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading .panel-title, .blue-accordion .panel-body {
+    float: initial;
+  }
+
+  /* line 825, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading h3 a {
+    float: left;
+    width: auto;
+  }
+
+  /* line 829, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading h3 a.view-hide-all {
+    float: right;
+    width: auto;
+  }
+
+  /* line 833, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading h3 a .title-04 {
+    top: 0;
+  }
+
+  /* line 836, ../sass/css-to-sass.scss */
+  .treatment-table .blue-accordion {
+    padding: 0;
+  }
+
+  /* line 839, ../sass/css-to-sass.scss */
+  .treatment-table .blue-accordion .panel-heading .txtwrap {
+    padding: 0;
+    display: inline;
+  }
+
+  /* line 843, ../sass/css-to-sass.scss */
+  .treatment-table .panel-content.child-accordion {
+    float: initial;
+  }
+
+  /* line 846, ../sass/css-to-sass.scss */
+  .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
+    display: inline-block;
+    min-width: 95px;
+  }
+
+  /* line 850, ../sass/css-to-sass.scss */
+  .treatment-table .panel-header.child-accordion .title-01 span {
+    padding-left: 3rem;
+    font-size: 1rem;
+  }
+
+  /* line 854, ../sass/css-to-sass.scss */
+  .treatment-table .panel-header.child-accordion .title-01 span:before {
+    left: -65px;
+    width: 19px;
+  }
+
+  /* line 858, ../sass/css-to-sass.scss */
+  .treatment-table .panel-header.child-accordion .title-04 {
+    position: relative;
+  }
+
+  /* line 861, ../sass/css-to-sass.scss */
+  .treatment-table .panel-header.child-accordion .title-04 .material-icons {
+    position: absolute;
+    left: 49px;
+    top: 16px;
+    padding-top: 3px;
+  }
 }
-@media only screen and (max-width: 768px) {
-    .treatment-table .title-02 {
-        float: none;
-        max-width: 100%
-    }
+@media (max-width: 1199px) {
+  /* line 869, ../sass/css-to-sass.scss */
+  #topicNav #topicMenuTopBg, #topicNav #menuLinks, #topicNav #menus, #topicNav #como-2 {
+    width: 936px !important;
+  }
+}
+@media (min-width: 1024px) {
+  /* line 874, ../sass/css-to-sass.scss */
+  .treatment-table .title-04 {
+    max-width: 900px;
+  }
 
-    .treatment-table .title-04 {
-        margin-left: 0.5rem;
-        max-width: 88%;
-    }
+  /* line 877, ../sass/css-to-sass.scss */
+  .treatment-table .title-04 {
+    width: auto;
+    position: relative;
+    top: 7px;
+  }
 
-    .treatment-table .title-04 .material-icons,
-    .evidence-accordion .title .material-icons {
-        margin-left: -4px;
-        padding-top: 0
-    }
-    .poce_contents .evidence-accordion .title .material-icons {
-        padding-top:0
-    }
-    .poce_contents .evidence-accordion .title {
-        padding:0 0 0 1.5rem
-    }
-    .treatment-table .panel-content {
-        padding-left: 1.5rem !important
-    }
+  /* line 882, ../sass/css-to-sass.scss */
+  .treatment-table .title-04 .material-icons {
+    float: left;
+    clear: right;
+    width: 24px;
+    height: 24px;
+    margin-bottom: -24px;
+  }
+
+  /* line 889, ../sass/css-to-sass.scss */
+  .evidence-accordion .title .material-icons {
+    float: left;
+    width: 32px;
+    height: 24px;
+    cursor: pointer;
+    padding-top: 8px;
+  }
+
+  /* line 896, ../sass/css-to-sass.scss */
+  .treatment-table .txtwrap {
+    width: 100% !important;
+    padding-left: 32px;
+    cursor: pointer;
+  }
+
+  /* line 901, ../sass/css-to-sass.scss */
+  .evidence-accordion .title span.title {
+    display: inline-block;
+    cursor: pointer;
+  }
+
+  /* line 905, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading {
+    padding: 0;
+  }
+
+  /* line 908, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading .panel-title, .blue-accordion .panel-body {
+    float: initial;
+  }
+
+  /* line 911, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading h3 a {
+    float: left;
+    width: auto;
+  }
+
+  /* line 915, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading h3 a.view-hide-all {
+    float: right;
+    width: auto;
+  }
+
+  /* line 919, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading h3 a .title-04 {
+    top: 0;
+  }
+
+  /* line 922, ../sass/css-to-sass.scss */
+  .blue-accordion .panel-heading h3 a span.msg {
+    font-size: 0.875rem;
+  }
+
+  /* line 925, ../sass/css-to-sass.scss */
+  .treatment-table .blue-accordion {
+    padding: 0;
+  }
+
+  /* line 928, ../sass/css-to-sass.scss */
+  .treatment-table .blue-accordion .panel-heading .txtwrap {
+    padding: 4px 0 0 32px;
+  }
+
+  /* line 931, ../sass/css-to-sass.scss */
+  .treatment-table .panel-content.child-accordion {
+    float: initial;
+  }
+
+  /* line 934, ../sass/css-to-sass.scss */
+  .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
+    display: inline-block;
+    min-width: 95px;
+  }
+
+  /* line 938, ../sass/css-to-sass.scss */
+  .treatment-table .panel-header.child-accordion .title-01 span {
+    padding-left: 3rem;
+    font-size: 1rem;
+  }
+
+  /* line 942, ../sass/css-to-sass.scss */
+  .treatment-table .panel-header.child-accordion .title-01 span:before {
+    left: -42px;
+    width: 19px;
+  }
+
+  /* line 946, ../sass/css-to-sass.scss */
+  .treatment-table .panel-header.child-accordion .title-04 .material-icons {
+    position: absolute;
+    left: 49px;
+    top: 16px;
+    padding-top: 3px;
+  }
 }
