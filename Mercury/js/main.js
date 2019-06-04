@@ -100,8 +100,8 @@ function treatmentTbl(tt) {
         // animate slide toggle on blue title accordions on TA page
         $(this).find('a:first-child').click(function (e) {
             e.preventDefault();
-            var pan = $(this).closest('.panel');
-            pan.find('.panel-content').slideToggle(500).attr('aria-expanded', 'true');
+            var pan2 = $(this).closest('.panel');
+            pan2.find('.panel-body.panel-content').slideToggle(500).attr('aria-expanded', 'true');            
         });
     });
     tt.find('.panel-title').each(function () {
