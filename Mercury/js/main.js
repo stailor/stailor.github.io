@@ -76,7 +76,8 @@ function imgSizing2(i) {
 function treatmentTbl(tt) {
     var state, state2, txt;
     tt.find('.panel-heading').each(function () {
-        $(this).find('a').click(function (e) {
+
+        $(this).find('a:nth-child(2)').click(function (e) {
             e.preventDefault();
             var pan = $(this).closest('.panel');
             $(this).attr('aria-expanded', function (i, attr) {
@@ -84,10 +85,23 @@ function treatmentTbl(tt) {
                 return state;
             });
             pan.toggleClass('show-content').find('.msg').text(function (i, txt) {
-                return txt == jQuery.i18n.prop('VIEW ALL') ? jQuery.i18n.prop('VIEW ALL') : jQuery.i18n.prop('HIDE ALL');
+                return txt == jQuery.i18n.prop('VIEW ALL') ? jQuery.i18n.prop('HIDE ALL') : jQuery.i18n.prop('VIEW ALL');
+            });
+
+
+            rowTitle.find('a').attr('aria-expanded', function (i, attr) {
+                return attr == 'true' ? 'false' : 'true';
+            }).find('.msg').text(function (i, txt) {
+                return txt == jQuery.i18n.prop('VIEW ALL') ? jQuery.i18n.prop('HIDE ALL') : jQuery.i18n.prop('VIEW ALL');
             });
             pan.find('.panel-title').children('a').removeClass('show-panel').attr('aria-expanded', state);
             pan.find('.panel-content').removeAttr('style').attr('aria-expanded', state);
+        });
+        // animate slide toggle on blue title accordions on TA page
+        $(this).find('a:first-child').click(function (e) {
+            e.preventDefault();
+            var pan = $(this).closest('.panel');
+            pan.find('.panel-content').slideToggle(500).attr('aria-expanded', 'true');
         });
     });
     tt.find('.panel-title').each(function () {
