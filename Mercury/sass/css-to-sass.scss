@@ -91,6 +91,7 @@
         background: #ddd;
     }
 }
+// COMO SPECIFIC COPY IN DASHED LINE BOX
 .poce_drug_msg {
     border: 1px dashed #c50084;
     display: table-cell;
@@ -122,7 +123,7 @@
         }
     }
 }
-// ADD COMORBIDITIES BUTTON & PANEL
+// ADD/ED COMORBIDITIES BUTTON & PANEL
 #como-1 {
     height: auto;
     .material-icons {
@@ -132,12 +133,82 @@
         top: 3px;
         position: relative;
     }
+    // not sure if .add-como-icon-and-text needs to come out of #como-1
     .add-como-icon-and-text {
         display: inline-block;
+        background-color: #c50084;
+        color: #fff;
+        padding: 1px 5px 6px;
+        border-radius: 5px;
+        float: left;
+    
+        .add.unchecked, .added.unchecked, .non-como-content.hide {
+            display: none;
+        }
+        .add.checked, .added.checked {
+            display: inline-block;
+        }
+        .add:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+        path, g g g circle {
+            fill: #fff;
+        }
+        &.checked {
+            background-color: #fff;
+            color: #000;
+    
+            path {
+                fill: #c50084;
+            }
+            g g g circle {
+                fill: #c50084;
+            }
+            .co-morbidity-icon-pink polygon {
+                fill: #fff;
+            }
+        }
+    }
+   
+    #comoselected-1 {
+        font-weight: bold;
+        color: #c50084;
+        margin: 0 1rem;
+    
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+    
+            li {
+                display: inline;
+    
+                a {
+                    text-decoration: none;
+                    padding: .2em 1em;
+                    color: #fff;
+                    background-color: #036;
+    
+                    &:hover {
+                        color: #fff;
+                        background-color: #369;
+                    }
+                }
+            }
+        }
     }
     #comoselected-1 {
         display: inline-block;
-        button.show, span {
+
+        button.btn {
+            margin: 0 0 0 1rem;
+        }
+        button.show {            
+            display: inline-block;
+        }
+        span {
             display: inline-block;
             position: relative;
             top: 9px;
@@ -146,7 +217,7 @@
             display: none;
         }
         span+span:before {
-            content: ',';
+            content: ', ';
         }
     }
     .card-block b {
@@ -187,6 +258,7 @@
         }
     }
 }
+// ADD COMORBIDITIES STICKY SCROLLDOWN PAGE PANEL
 #como-2 {
     height: auto;
     border-bottom: 3px solid #c50084;
@@ -216,11 +288,40 @@
     .material-icons {
         font-size: 50px;
     }
-    #comoselected-2 span {
-        position: relative;
-        top: 9px;
+    #comoselected-2 {
+        font-weight: bold;
+        color: #c50084;
+        margin: 0 1rem;
+        
+        span {
+            position: relative;
+            top: 9px;
+        }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            text-align: center;
+    
+            li {
+                display: inline;
+    
+                a {
+                    text-decoration: none;
+                    padding: .2em 1em;
+                    color: #fff;
+                    background-color: #036;
+    
+                    &:hover {
+                        color: #fff;
+                        background-color: #369;
+                    }
+                }
+            }
+        }
     }
 }
+// TIPS AND PITFALL BOX
 #tip_pitfall, #tmp .poce_contents.treatment-algorithm #tip_pitfall {
     background-color: #e5eef7;
     border: 1px solid #e9e9e9;
@@ -256,6 +357,7 @@
         margin: 0;
     }
 }
+// LOOK OUT FOR THIS COMO ICON WARNING BOX
 #lookOutPopUp {
     background-color: #FFCFEF;
     padding: 1rem;
@@ -277,6 +379,7 @@
         text-align: center;
     }
 }
+// SWITCHABLE DRUG BOX
 #tmp {
     .poce_contents.treatment-algorithm {
         .card-block {
@@ -429,6 +532,151 @@
     div[class*='-como-content'] .poce_drug_msg .evidence-accordion .title {
         position: relative;
     }
+    ul {
+        list-style: disc outside;
+        padding: 10px 0px 7px 20px;
+        text-indent: inherit;
+
+        li {
+            padding: 3px 5px;
+        }
+        ul {
+            list-style: circle outside !important;
+            margin: auto;
+            padding: 0px 0px 0px 10px;
+
+            ul {
+                list-style: disc outside !important;
+                padding: 10px 0px 7px 10px;
+            }
+        }
+    }
+    ul, ul ul li {
+        padding: 0.3rem 0;
+        margin: auto;
+    }
+    ul li, ul ul li {
+        &:before {
+            content: none;
+        }
+    }
+    #rfs {
+        .accordion-toggle {
+            margin-left: 20px;
+            text-indent: -15px;
+            line-height: 1.25;
+
+            h3 {
+                line-height: 1.5;
+            }
+        }
+    }
+    #allrfs {
+        .table {
+            thead th {
+                background-color: #bf007c;
+                color: #fff;
+                font-size: 1rem;
+                font-weight: bold;
+                padding-top: 8px;
+                padding-bottom: 0;
+                height: 36px;
+                border-right: 1px solid #e1e1e1;
+            }
+            tbody {
+                td, th {
+                    font-size: inherit;
+
+                    ul {
+                        margin-bottom: 1rem !important;
+                    }
+                }
+            } 
+           
+        }
+    }
+    .alt-table {
+        border: solid 1px #e9e9e9;
+        border-collapse: collapse;
+        border-spacing: 0;
+        font: normal 16px Arial,sans-serif;
+        margin: 0 10% 0 10%;
+
+        thead th {
+            background-color: #f5f5f5;
+            border: solid 1px #e9e9e9;
+            color: #333;
+            padding: 10px;
+            text-align: left;
+        }
+        tbody td {
+            border: solid 1px #e9e9e9;
+            color: #333;
+            padding: 10px;
+        }
+    }
+    .toggle {
+        display: none;
+    }
+    .option {
+        position: relative;
+    }
+    .title {
+        background-color: #f8f8f8;
+        padding: 0 0 0 2.5rem;
+        display: inline-block;
+
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: all 0.2s;
+
+        p {
+            color: #000;
+            font-size: 1rem;
+            font-weight: normal;
+            padding: 0;
+        }
+    }
+    .content {
+        max-height: 0;
+        overflow: hidden;
+        background-color: #f8f8f8;
+        border-top: 1px solid #e4e4e4;
+
+        backface-visibility: hidden;
+        transform: translateZ(0);
+        transition: all 0.2s;
+
+        p {
+            margin: 0;
+            padding: 0.5em 2.5em 1em;
+            line-height: 1.5;
+        }
+        ul {
+            padding-left: 1.5rem;
+        }
+    }
+    .toggle {
+        &:checked {
+            +.title {
+                &:before {
+                    transform: rotate(90deg) !important;
+                }
+                +.content {
+                  max-height: 500px;
+                   overflow: auto;
+                   padding: 1rem;
+                }
+            }
+        }
+
+    }
+    &.invest .rowHead {
+        margin-bottom: 16px;
+    }
+    #kpoints .card .card-block p, #diagrecs .card .card-block p {
+        margin-left: -7px;
+    }
 }
 // EVIDENCE ACCORDION NOT IN POCE CONTENTS CLASS
 .evidence-accordion {
@@ -454,29 +702,127 @@
         }
     }
 }
+// ORIGINAL PRIMARY OPTIONS DRUG BOX STYLES, COMO ICON ON DROP DOWNS
+.treatment-table {
+    
+    .title-04 {
+        display: inline-block;
+        margin-left: -0.7rem;
 
+        .material-icons {
+            min-width: 24px;
+            padding-top: 6px;
 
+            span {
+                display: none;
+
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+    }
+    .panel-content {
+        display: none;
+        padding: 0 1rem;
+        margin: 0;
+        float: right;
+        clear: both;
+    }
+    // CHILDREN DROPDOWN 
+    .panel-header {
+        &.child-accordion {
+            a {
+                .title-01 {
+                    span {
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                    
+                }
+                
+            }            
+        } 
+    }
+   
+    // ORIG STYLE PRIMARY OPTIONS / DRUG BOX
+    .treatment-wrap {
+        .treatment-box {
+            background: #e5eef7;
+            border: 1px solid #b0bec5;
+            padding: 0.9rem;
+            margin-bottom: 1rem;
+
+            a:hover {
+                text-decoration: underline;
+                color: #bf007c;
+            }
+            .material-icons {
+                color: #2a6ebb;
+            }
+            .small-or, .and-or {
+                margin: 1rem 0;
+            }
+            .and-or {
+                margin-left: -1rem;
+                margin-right: -1rem;
+                position: relative;
+                left: 1px;
+            }
+            .reference {
+                display: inline;
+
+                .morePop {
+                    padding-left: 1rem;
+                }
+            }
+        }
+    }
+}
+// STOP HOVER ON DROP DOWN ARROWS ON LIGHT BLUE DROP DOWNS ON TA PAGE
+.blue-accordion {
+    h3 {
+        a{
+            &:hover {
+                &>span>span:first-child, &>span>span:first-child:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
 // *************************************************
 // NOT DONE
-// *************************************************
-.invest .rowDetails .evidence-accordion .title .material-icons span, .tmp .rowDetails .evidence-accordion .title .material-icons span, .tmp .rowDetails .evidence-accordion .title .material-icons, .tmp .rowDetails .evidence-accordion .title .material-icons.open {
+// ************************************************
+.poce_urgent, .invest .card .card-block.poce_urgent {
+    padding: 1rem !important;
+    border: 1px dashed #c50084;
+}
+.poce_urgent h3 {
+    color: #c50084;
+}
+
+.invest .rowDetails .evidence-accordion .title .material-icons span, 
+.tmp .rowDetails .evidence-accordion .title .material-icons span, 
+.tmp .rowDetails .evidence-accordion .title .material-icons, 
+.tmp .rowDetails .evidence-accordion .title .material-icons.open {
     color: #c50084;
 }
 .histExam .rowDetails .evidence-accordion .title span, .invest .rowDetails .evidence-accordion span {
     padding: 0.2rem 0px 50px 0.15rem;
 }
-.treatment-table .panel-content {
-    display: none;
-    padding: 0 1rem;
-    margin: 0;
-    float: right;
-    clear: both;
-}
-.diffDiagnosis>.card>.card-block, .diffDiagnosis2>.card>.card-block, .histExam>.card>.card-block, .diagGuidelines>.card>.card-block, .complications>.card>.card-block, .invest>.card>.card-block, .htmlTable>.card>.card-block, .details>.card>.card-block, .treatment-table>.card>.card-block, #differ>.card>.card-block {
+.diffDiagnosis>.card>.card-block, 
+.diffDiagnosis2>.card>.card-block, 
+.histExam>.card>.card-block, 
+.diagGuidelines>.card>.card-block, 
+.complications>.card>.card-block, 
+.invest>.card>.card-block, 
+.htmlTable>.card>.card-block, 
+.details>.card>.card-block, 
+.treatment-table>.card>.card-block, 
+#differ>.card>.card-block {
     padding: 0;
-}
-#comoselected-1 button.btn {
-    margin: 0 0 0 1rem;
 }
 #topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
     fill: #fff;
@@ -487,43 +833,30 @@
     width: 1116px;
     z-index: 1;
 }
-.add-como-icon-and-text {
-    background-color: #c50084;
-    color: #fff;
-    padding: 1px 5px 6px;
-    border-radius: 5px;
-    float: left;
-}
-.add-como-icon-and-text .add.unchecked, .add-como-icon-and-text .added.unchecked, .non-como-content.hide {
+.non-como-content.hide {
     display: none;
 }
-.add-como-icon-and-text .add.checked, .add-como-icon-and-text .added.checked {
-    display: inline-block;
+.browser-update-bar-hide, 
+.hide, 
+.panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, 
+.panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
+    display: none;
 }
-.add-como-icon-and-text .add:hover {
-    text-decoration: underline;
-    cursor: pointer;
-}
-.add-como-icon-and-text path, .add-como-icon-and-text g g g circle {
-    fill: #fff;
+.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink, 
+.panel-title .title-02 .material-icons svg.co-morbidity-icon-pink {
+    height: 20px;
 }
 .co-morbidity-icon-pink polygon {
     fill: #C50084;
 }
-.modal-title .co-morbidity-icon-pink polygon, .poce_drug_msg .co-morbidity-icon-pink polygon, .txtwrap .co-morbidity-icon-pink polygon, .title-02 .co-morbidity-icon-pink polygon {
+.modal-title .co-morbidity-icon-pink polygon, 
+.poce_drug_msg .co-morbidity-icon-pink polygon, 
+.txtwrap .co-morbidity-icon-pink polygon, 
+.title-02 .co-morbidity-icon-pink polygon {
     fill: #fff;
 }
-.add-como-icon-and-text.checked {
-    background-color: #fff;
-    color: #000;
-}
-.add-como-icon-and-text.checked path, .add-como-icon-and-text.checked g g g circle {
-    fill: #c50084;
-}
-.add-como-icon-and-text.checked .co-morbidity-icon-pink polygon {
-    fill: #fff;
-}
-.poce_drug_msg .material-icons svg.co-morbidity-icon-pink, .material-icons svg.co-morbidity-icon-pink {
+.poce_drug_msg .material-icons svg.co-morbidity-icon-pink, 
+.material-icons svg.co-morbidity-icon-pink {
     height: 30px;
 }
 .modal-dialog svg.co-morbidity-icon-pink {
@@ -550,207 +883,7 @@ div[class*='-como-content'] {
 #poce_content .treatment-table .txtwrap.no-icon::after {
     content: " ";
 }
-.poce_contents ul, .poce_contents ul ul li {
-    padding: 0.3rem 0;
-    margin: auto;
-}
-.poce_contents ul li:before, .poce_contents ul ul li:before {
-    content: none;
-}
-.poce_contents ul li {
-    padding: 3px 5px;
-}
-.poce_contents ul {
-    list-style: disc outside;
-    padding: 10px 0px 7px 20px;
-    text-indent: inherit;
-}
-.poce_contents ul ul {
-    list-style: circle outside !important;
-    margin: auto;
-    padding: 0px 0px 0px 10px;
-}
-.poce_contents ul ul ul {
-    list-style: disc outside !important;
-    padding: 10px 0px 7px 10px;
-}
-.poce_contents #rfs .accordion-toggle {
-    margin-left: 20px;
-    text-indent: -15px;
-    line-height: 1.25;
-}
-.poce_contents #rfs .accordion-toggle h3 {
-    line-height: 1.5;
-}
-.poce_contents #allrfs .table thead th {
-    background-color: #bf007c;
-    color: #fff;
-    font-size: 1rem;
-    font-weight: bold;
-    padding-top: 8px;
-    padding-bottom: 0;
-    height: 36px;
-}
-.poce_contents #allrfs .table tbody td, .poce_contents #allrfs .table tbody th {
-    font-size: inherit;
-}
-.poce_contents #allrfs .table tbody td ul, .poce_contents #allrfs .table tbody th ul {
-    margin-bottom: 1rem !important;
-}
-.poce_contents #allrfs .table th {
-    border-right: 1px solid #e1e1e1;
-}
-.poce_contents .alt-table {
-    border: solid 1px #e9e9e9;
-    border-collapse: collapse;
-    border-spacing: 0;
-    font: normal 16px Arial,sans-serif;
-    margin: 0 10% 0 10%;
-}
-.poce_contents .alt-table thead th {
-    background-color: #f5f5f5;
-    border: solid 1px #e9e9e9;
-    color: #333;
-    padding: 10px;
-    text-align: left;
-}
-.poce_contents .alt-table tbody td {
-    border: solid 1px #e9e9e9;
-    color: #333;
-    padding: 10px;
-}
-.poce_contents .toggle {
-    display: none;
-}
-.poce_contents .option {
-    position: relative;
-}
-.poce_contents .title, .poce_contents .content {
-    backface-visibility: hidden;
-    transform: translateZ(0);
-    transition: all 0.2s;
-}
-.poce_contents .title {
-    background-color: #f8f8f8;
-    padding: 0 0 0 2.5rem;
-    display: inline-block;
-}
-.treatment-table .title-04 .material-icons span {
-    display: none;
-}
-.treatment-table .title-04 {
-    display: inline-block;
-    margin-left: -0.7rem;
-}
-.treatment-table .title-04 .material-icons {
-    min-width: 24px;
-    padding-top: 6px;
-}
-.treatment-table .title-04 .material-icons span:first-child {
-    display: block;
-}
-.poce_contents .title p {
-    color: #000;
-    font-size: 1rem;
-    font-weight: normal;
-    padding: 0;
-}
-.poce_contents .content {
-    max-height: 0;
-    overflow: hidden;
-    background-color: #f8f8f8;
-    border-top: 1px solid #e4e4e4;
-}
-.poce_contents .content p {
-    margin: 0;
-    padding: 0.5em 2.5em 1em;
-    line-height: 1.5;
-}
-.poce_contents .content ul {
-    padding-left: 1.5rem;
-}
-.poce_contents .toggle:checked+.title+.content {
-    max-height: 500px;
-    overflow: auto;
-    padding: 1rem;
-}
-.poce_contents .toggle:checked+.title:before {
-    transform: rotate(90deg) !important;
-}
-.blue-accordion h3 a:hover>span>span:first-child:hover, .blue-accordion h3 a:hover>span>span:first-child {
-    text-decoration: none;
-}
-.poce_contents.invest .rowHead {
-    margin-bottom: 16px;
-}
-.poce_urgent, .invest .card .card-block.poce_urgent {
-    padding: 1rem !important;
-    border: 1px dashed #c50084;
-}
-.poce_urgent h3 {
-    color: #c50084;
-}
-.poce_contents #kpoints .card .card-block p, .poce_contents #diagrecs .card .card-block p {
-    margin-left: -7px;
-}
-#comoselected-1, #comoselected-2 {
-    font-weight: bold;
-    color: #c50084;
-    margin: 0 1rem;
-}
-#comoselected-1 ul, #comoselected-2 ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    text-align: center;
-}
-#comoselected-1 ul li, #comoselected-2 ul li {
-    display: inline;
-}
-#comoselected-1 ul li a, #comoselected-2 ul li a {
-    text-decoration: none;
-    padding: .2em 1em;
-    color: #fff;
-    background-color: #036;
-}
-#comoselected-1 ul li a:hover, #comoselected-2 ul li a:hover {
-    color: #fff;
-    background-color: #369;
-}
-.browser-update-bar-hide, .hide, .panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
-    display: none;
-}
-.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02 .material-icons svg.co-morbidity-icon-pink {
-    height: 20px;
-}
-.treatment-table .treatment-wrap .treatment-box {
-    background: #e5eef7;
-    border: 1px solid #b0bec5;
-    padding: 0.9rem;
-    margin-bottom: 1rem;
-}
-.treatment-table .treatment-wrap .treatment-box .small-or, .treatment-table .treatment-wrap .treatment-box .and-or {
-    margin: 1rem 0;
-}
-.treatment-table .treatment-wrap .treatment-box .and-or {
-    margin-left: -1rem;
-    margin-right: -1rem;
-    position: relative;
-    left: 1px;
-}
-.treatment-table .treatment-wrap .treatment-box .reference {
-    display: inline;
-}
-.treatment-table .treatment-wrap .treatment-box .reference .morePop {
-    padding-left: 1rem;
-}
-.treatment-box a:hover {
-    text-decoration: underline;
-    color: #bf007c;
-}
-.treatment-box .material-icons {
-    color: #2a6ebb;
-}
+
 // ***********************************************
 //             NOT DONE
 // ***********************************************
@@ -762,40 +895,52 @@ div[class*='-como-content'] {
         top: -4px;
         right: -29px;
     }
-    .treatment-table .title-02 {
-        float: none;
-        max-width: 100%;
+    .treatment-table {
+        .panel-content {
+            padding-left: 1.5rem !important;
+        }
+        .title-02 {
+            float: none;
+            max-width: 100%;
+        }
+        .title-04 {
+            margin-left: 0.5rem;
+            max-width: 88%;
+
+            .material-icons {
+                margin-left: -4px;
+                padding-top: 0;                
+            }
+        }
     }
-    .treatment-table .title-04 {
-        margin-left: 0.5rem;
-        max-width: 88%;
-    }
-    .treatment-table .title-04 .material-icons, .evidence-accordion .title .material-icons {
+    .evidence-accordion .title .material-icons {
         margin-left: -4px;
-        padding-top: 0;
-    }
-    .poce_contents .evidence-accordion .title .material-icons {
         padding-top: 0;
     }
     .poce_contents .evidence-accordion .title {
         padding: 0 0 0 1.5rem;
-    }
-    .treatment-table .panel-content {
-        padding-left: 1.5rem !important;
+
+        .material-icons {
+            padding-top: 0;
+        }
     }
 }
 @media (max-width:991px) {
-    .treatment-table .panel-heading h3 .txtwrap {
-        max-width: 470px;
-        display: inline-block;
-    }
-    .treatment-table .panel-content.child-accordion .panel-content {
-        float: left;
-        left: 2.7rem;
-    }
-    .treatment-table .panel-content.child-accordion .panel-header .title-02 {
-        left: 2rem;
-    }
+    .treatment-table {
+        .panel-heading h3 .txtwrap {
+            max-width: 470px;
+            display: inline-block;
+        }
+        .panel-content.child-accordion {
+            .panel-content {
+                float: left;
+                left: 2.7rem;
+            }
+            .panel-header .title-02 {
+                left: 2rem;
+            }
+        }
+    } 
     .evidence-accordion .title .material-icons {
         float: left;
         width: 32px;
@@ -813,56 +958,73 @@ div[class*='-como-content'] {
     }
 }
 @media (max-width:1023px) {
-    .blue-accordion h3 a:hover>span>span:first-child:hover, .blue-accordion h3 a:hover>span>span:first-child {
-        text-decoration: none;
+    .blue-accordion {
+        .panel-heading {
+            padding: 0;
+
+            .panel-title {
+                float: initial;
+            }
+            h3 a {
+                float: left;
+                width: auto;
+
+                &:hover>span>span:first-child:hover, &:hover>span>span:first-child {
+                    text-decoration: none;
+                }
+                &.view-hide-all {
+                    float: right;
+                    width: auto;
+                }
+                .title-04 {
+                    top: 0;
+                }
+            }
+        }
+        .panel-body {
+            float: initial;
+        }
     }
-    .blue-accordion .panel-heading {
-        padding: 0;
-    }
-    .blue-accordion .panel-heading .panel-title, .blue-accordion .panel-body {
-        float: initial;
-    }
-    .blue-accordion .panel-heading h3 a {
-        float: left;
-        width: auto;
-    }
-    .blue-accordion .panel-heading h3 a.view-hide-all {
-        float: right;
-        width: auto;
-    }
-    .blue-accordion .panel-heading h3 a .title-04 {
-        top: 0;
-    }
-    .treatment-table .blue-accordion {
-        padding: 0;
-    }
-    .treatment-table .blue-accordion .panel-heading .txtwrap {
-        padding: 0;
-        display: inline;
-    }
-    .treatment-table .panel-content.child-accordion {
-        float: initial;
-    }
-    .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-        display: inline-block;
-        min-width: 95px;
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span {
-        padding-left: 3rem;
-        font-size: 1rem;
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span:before {
-        left: -65px;
-        width: 19px;
-    }
-    .treatment-table .panel-header.child-accordion .title-04 {
-        position: relative;
-    }
-    .treatment-table .panel-header.child-accordion .title-04 .material-icons {
-        position: absolute;
-        left: 49px;
-        top: 16px;
-        padding-top: 3px;
+    .treatment-table {
+        .blue-accordion {
+            padding: 0;
+
+            .panel-heading .txtwrap {
+                padding: 0;
+                display: inline;
+            }
+        }
+        .panel-content {
+            &.child-accordion {
+                float: initial;
+
+                section .panel-header .panel-title .title-03 {
+                    display: inline-block;
+                    min-width: 95px;
+                }
+            }
+        }
+        .panel-header.child-accordion {
+            .title-01 span {
+                padding-left: 3rem;
+                font-size: 1rem;
+    
+                &:before {
+                    left: -65px;
+                    width: 19px;
+                }
+            }
+            .title-04 {
+                position: relative;
+
+                .material-icons {
+                    position: absolute;
+                    left: 49px;
+                    top: 16px;
+                    padding-top: 3px;
+                }
+            }
+        }
     }
 }
 @media (max-width:1199px) {
@@ -871,82 +1033,98 @@ div[class*='-como-content'] {
     }
 }
 @media (min-width:1024px) {
-    .treatment-table .title-04 {
-        max-width: 900px;
+    .treatment-table {
+        .title-04 {
+            max-width: 900px;
+            width: auto;
+            position: relative;
+            top: 7px;
+
+            .material-icons {
+                float: left;
+                clear: right;
+                width: 24px;
+                height: 24px;
+                margin-bottom: -24px;
+            }
+        }
+        .txtwrap {
+            width: 100% !important;
+            padding-left: 32px;
+            cursor: pointer;
+        }
+        .panel-content.child-accordion {
+            float: initial
+        }
+        .blue-accordion {
+            padding: 0;
+
+            .panel-heading .txtwrap {
+                padding: 4px 0 0 32px;
+            }
+        }
+        .panel-content.child-accordion section .panel-header .panel-title .title-03 {
+            display: inline-block;
+            min-width: 95px;
+        }
+        .panel-header.child-accordion {
+            .title-01 span {
+                padding-left: 3rem;
+                font-size: 1rem;
+    
+                &:before {
+                    left: -42px;
+                    width: 19px;
+                }
+            }
+            .title-04 .material-icons {
+                position: absolute;
+                left: 49px;
+                top: 16px;
+                padding-top: 3px;
+            }
+        }
     }
-    .treatment-table .title-04 {
-        width: auto;
-        position: relative;
-        top: 7px;
+    .evidence-accordion {
+        .title {
+            .material-icons {
+                float: left;
+                width: 32px;
+                height: 24px;
+                cursor: pointer;
+                padding-top: 8px;
+            }
+            span.title {
+                display: inline-block;
+                cursor: pointer;
+            }
+        }
     }
-    .treatment-table .title-04 .material-icons {
-        float: left;
-        clear: right;
-        width: 24px;
-        height: 24px;
-        margin-bottom: -24px;
-    }
-    .evidence-accordion .title .material-icons {
-        float: left;
-        width: 32px;
-        height: 24px;
-        cursor: pointer;
-        padding-top: 8px;
-    }
-    .treatment-table .txtwrap {
-        width: 100% !important;
-        padding-left: 32px;
-        cursor: pointer;
-    }
-    .evidence-accordion .title span.title {
-        display: inline-block;
-        cursor: pointer;
-    }
-    .blue-accordion .panel-heading {
-        padding: 0;
-    }
-    .blue-accordion .panel-heading .panel-title, .blue-accordion .panel-body {
-        float: initial;
-    }
-    .blue-accordion .panel-heading h3 a {
-        float: left;
-        width: auto;
-    }
-    .blue-accordion .panel-heading h3 a.view-hide-all {
-        float: right;
-        width: auto;
-    }
-    .blue-accordion .panel-heading h3 a .title-04 {
-        top: 0;
-    }
-    .blue-accordion .panel-heading h3 a span.msg {
-        font-size: 0.875rem;
-    }
-    .treatment-table .blue-accordion {
-        padding: 0;
-    }
-    .treatment-table .blue-accordion .panel-heading .txtwrap {
-        padding: 4px 0 0 32px;
-    }
-    .treatment-table .panel-content.child-accordion {
-        float: initial;
-    }
-    .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-        display: inline-block;
-        min-width: 95px;
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span {
-        padding-left: 3rem;
-        font-size: 1rem;
-    }
-    .treatment-table .panel-header.child-accordion .title-01 span:before {
-        left: -42px;
-        width: 19px;
-    }
-    .treatment-table .panel-header.child-accordion .title-04 .material-icons {
-        position: absolute;
-        left: 49px;
-        top: 16px;
-        padding-top: 3px;
+    .blue-accordion {
+        .panel-heading {
+            padding: 0;
+
+            .panel-title {
+                float: initial;
+            }
+            h3 a {
+                float: left;
+                width: auto;
+
+                &.view-hide-all {
+                    float: right;
+                    width: auto;
+                }
+                .title-04 {
+                    top: 0;
+                }
+                span.msg {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+        .panel-body {
+            float: initial;
+        }
     }
 }

@@ -72,7 +72,7 @@ function imgSizing2(i) {
         }
     });
 }
-
+// treatment algorithm page view all
 function treatmentTbl(tt) {
     var state, state2, txt;
     tt.find('.panel-heading').each(function () {
@@ -84,7 +84,7 @@ function treatmentTbl(tt) {
                 return state;
             });
             pan.toggleClass('show-content').find('.msg').text(function (i, txt) {
-                return txt == jQuery.i18n.prop('VIEW ALL') ? jQuery.i18n.prop('HIDE ALL') : jQuery.i18n.prop('VIEW ALL');
+                return txt == jQuery.i18n.prop('VIEW ALL') ? jQuery.i18n.prop('VIEW ALL') : jQuery.i18n.prop('HIDE ALL');
             });
             pan.find('.panel-title').children('a').removeClass('show-panel').attr('aria-expanded', state);
             pan.find('.panel-content').removeAttr('style').attr('aria-expanded', state);
