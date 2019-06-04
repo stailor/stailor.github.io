@@ -236,3 +236,9 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
+
+// CLOSE BUTTON ON ASTHMA WARNING ON TREATMENT ALGORITHM MODAL FOR COMORBIDITES
+$(".close-warning").click(function(){
+    $(".warning-asthma").hide();
+  });
+  
