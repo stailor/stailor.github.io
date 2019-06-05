@@ -139,19 +139,44 @@ $(function() {
 
     if (($(copd).prop("checked") === true) && ($(asthma).prop("checked") === true)) {
         $('.warning-asthma').show();
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'line-through');
-        $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-description').css('text-decoration', 'line-through');
+        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'line-through', 'color', '#ddd');
+        $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-description').css('text-decoration', 'line-through', 'color', '#ddd');
         $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-indicator').addClass('disable-checkbox');
         $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-indicator').addClass('disable-checkbox');
         
     } else {
         $('.warning-asthma').hide();
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'none');
-        $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-description').css('text-decoration', 'none');
+        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'none', 'color', '#000');
+        $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-description').css('text-decoration', 'none', 'color', '#000');
         $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-indicator').removeClass('disable-checkbox');
         $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-indicator').removeClass('disable-checkbox');
     }
 
+    // __________________________________________________________________________________________
+    // MY ATTEMPT AT FIXING THE DISABLE CHECKBOX FUNCTIONALITY FOR ASTHMA / COPD
+        // var asthmaLabel = $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description');    
+        // var asthmaCheckbox = $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] input[type="checkbox"]');
+        // var copdCheckbox = $('#editComo .modal-body .list-group-item.selected label[for="COPD"] input[type="checkbox"]');
+    
+        // if ( ($(copd).prop("checked") === true) && ($(asthma).prop("checked") === true) ) {
+        //     $('.warning-asthma').show();
+        //     $(asthmaCheckbox).attr("disabled", true);
+        //     $(asthmaLabel).css('text-decoration', 'line-through');        
+        // }
+        // else if ( 
+        //     ($(copd).prop("checked") === false) && ($(asthma).prop("checked") === true) ||
+        //     ($(copd).prop("checked") === true) && ($(asthma).prop("checked") === false) ||
+        //     ($(copd).prop("checked") === false) && ($(asthma).prop("checked") === false)
+        //     )
+        //     {
+        //         $('.warning-asthma').hide();
+        //         $(asthmaCheckbox).removeAttr("disabled");
+        //         $(copdCheckbox).removeAttr("disabled");
+        //         $(asthmaLabel).css('text-decoration', 'none');        
+        //     }
+            
+    // MY ATTEMPT AT FIXING THE DISABLE CHECKBOX FUNCTIONALITY FOR ASTHMA / COPD ENDS
+    // __________________________________________________________________________________________
 
   });
   // Grab the topic title from the H1 tag and drop it into the modal para

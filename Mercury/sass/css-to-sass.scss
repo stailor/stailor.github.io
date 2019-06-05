@@ -24,7 +24,7 @@
         border-radius: 4px;
         position: absolute;
         background: #fff;
-        width: 300px;
+        width: 302px;
         z-index: 5;
         left: -300px;
         top: -19px;
@@ -89,6 +89,11 @@
     }
     .modal-body .disable-checkbox {
         background: #ddd;
+        cursor: not-allowed;
+        
+        &:hover {
+            cursor: not-allowed;
+        }
     }
 }
 // COMO SPECIFIC COPY IN DASHED LINE BOX
@@ -97,6 +102,10 @@
     display: table-cell;
     margin-bottom: 1rem;
     padding: 2rem;
+
+    .co-morbidity-icon-pink polygon {
+        fill: #fff;
+    }
     .poce_title {
         padding-left: 3rem;
         color: #c50084;
@@ -120,6 +129,10 @@
             top: 0;
             left: -6px;
             position: relative;
+
+            &.co-morbidity-icon-pink {
+                height: 30px;
+            }
         }
     }
 }
@@ -457,6 +470,10 @@
                         border: none;
                         .modal .modal-dialog {
                             max-width: 50rem;
+
+                            svg.co-morbidity-icon-pink {
+                                height: 40px;
+                            }
                             .modal-content .modal-header {
                                 background: #fff;
                                 margin-top: 1rem;
@@ -792,25 +809,84 @@
         }
     }
 }
-// *************************************************
-// NOT DONE
-// ************************************************
-.poce_urgent, .invest .card .card-block.poce_urgent {
+.poce_urgent {
     padding: 1rem !important;
     border: 1px dashed #c50084;
+    
+    h3 {
+        color: #c50084;
+    }
 }
-.poce_urgent h3 {
-    color: #c50084;
+#poce_content {
+    .treatment-table {
+        .txtwrap {
+            &::after {
+                content: "\e90c";
+                font-family: 'Material Icons';
+                font-size: 30px;
+                position: absolute;
+                top: -3px;
+                margin-left: 10px;
+                color: #c50084;
+            }
+           &.no-icon {
+                &::after {
+                    content: " ";
+               }
+           } 
+        }
+    }
+}
+.invest {
+    .card .card-block.poce_urgent {
+        padding: 1rem !important;
+        border: 1px dashed #c50084;
+    }
+    .rowDetails {
+        .evidence-accordion {
+            span {
+                padding: 0.2rem 0px 50px 0.15rem;
+            }
+            .title .material-icons span {
+                color: #c50084;
+            }
+        }
+    }
+}
+.tmp .rowDetails .evidence-accordion .title {
+    .material-icons span, .material-icons, .material-icons.open {
+        fill: #C50084;    
+    }
 }
 
-.invest .rowDetails .evidence-accordion .title .material-icons span, 
-.tmp .rowDetails .evidence-accordion .title .material-icons span, 
-.tmp .rowDetails .evidence-accordion .title .material-icons, 
-.tmp .rowDetails .evidence-accordion .title .material-icons.open {
-    color: #c50084;
+// ***********************************************
+//             NO POINT SASSING
+// ***********************************************
+.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink, 
+.panel-title .title-02 .material-icons svg.co-morbidity-icon-pink {
+    height: 20px;
 }
-.histExam .rowDetails .evidence-accordion .title span, .invest .rowDetails .evidence-accordion span {
+#topicNav.stickme #como-2 {
+    position: fixed;
+    top: 110px;
+    width: 1116px;
+    z-index: 1;
+}
+.histExam .rowDetails .evidence-accordion .title span {
     padding: 0.2rem 0px 50px 0.15rem;
+}
+.co-morbidity-icon-pink polygon {
+    fill: #C50084;
+}
+.non-como-content.hide,
+.browser-update-bar-hide, 
+.hide, 
+.panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, 
+.panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
+    display: none;
+}
+.material-icons svg.co-morbidity-icon-pink {
+    height: 30px;
 }
 .diffDiagnosis>.card>.card-block, 
 .diffDiagnosis2>.card>.card-block, 
@@ -824,43 +900,14 @@
 #differ>.card>.card-block {
     padding: 0;
 }
-#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon {
-    fill: #fff;
-}
-#topicNav.stickme #como-2 {
-    position: fixed;
-    top: 110px;
-    width: 1116px;
-    z-index: 1;
-}
-.non-como-content.hide {
-    display: none;
-}
-.browser-update-bar-hide, 
-.hide, 
-.panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, 
-.panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
-    display: none;
-}
-.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink, 
-.panel-title .title-02 .material-icons svg.co-morbidity-icon-pink {
-    height: 20px;
-}
-.co-morbidity-icon-pink polygon {
-    fill: #C50084;
-}
+#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon,
 .modal-title .co-morbidity-icon-pink polygon, 
-.poce_drug_msg .co-morbidity-icon-pink polygon, 
 .txtwrap .co-morbidity-icon-pink polygon, 
 .title-02 .co-morbidity-icon-pink polygon {
     fill: #fff;
 }
-.poce_drug_msg .material-icons svg.co-morbidity-icon-pink, 
-.material-icons svg.co-morbidity-icon-pink {
-    height: 30px;
-}
-.modal-dialog svg.co-morbidity-icon-pink {
-    height: 40px;
+div[class*='-como-content'] {
+    margin: 1rem 0;
 }
 #poce-contents div[class*='-como-content'] {
     padding: 1rem !important;
@@ -868,25 +915,6 @@
     background-color: #f8e0f0;
     margin: 1rem 0;
 }
-div[class*='-como-content'] {
-    margin: 1rem 0;
-}
-#poce_content .treatment-table .txtwrap::after {
-    content: "\e90c";
-    font-family: 'Material Icons';
-    font-size: 30px;
-    position: absolute;
-    top: -3px;
-    margin-left: 10px;
-    color: #c50084;
-}
-#poce_content .treatment-table .txtwrap.no-icon::after {
-    content: " ";
-}
-
-// ***********************************************
-//             NOT DONE
-// ***********************************************
 
 @media (max-width:768px) {
     .panel-title .txtwrap .material-icons {
