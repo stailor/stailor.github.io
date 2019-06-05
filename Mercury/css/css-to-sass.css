@@ -1,1224 +1,246 @@
-/* line 4, ../sass/css-to-sass.scss */
-.modal-registration-form #editComo .modal-body {
-  padding: 1.25rem 1.5rem;
-}
-/* line 6, ../sass/css-to-sass.scss */
-.modal-registration-form #editComo .modal-body ul li label.custom-checkbox {
-  margin-bottom: 0;
-}
-/* line 10, ../sass/css-to-sass.scss */
-.modal-registration-form #editComo .modal-body .list-group-flush:first-child .list-group-item:last-child {
-  margin: 0;
-}
-/* line 13, ../sass/css-to-sass.scss */
-.modal-registration-form #editComo .modal-body .list-group-flush .list-group-item {
-  margin: 0.1rem 0;
-}
+.modal-registration-form #editComo .modal-body { padding: 1.25rem 1.5rem; }
+.modal-registration-form #editComo .modal-body ul li label.custom-checkbox { margin-bottom: 0; }
+.modal-registration-form #editComo .modal-body .list-group-flush:first-child .list-group-item:last-child { margin: 0; }
+.modal-registration-form #editComo .modal-body .list-group-flush .list-group-item { margin: 0.1rem 0; }
 
-/* line 21, ../sass/css-to-sass.scss */
-#editComo .warning-asthma {
-  border: 2px solid #c50084;
-  padding: 1rem;
-  border-radius: 4px;
-  position: absolute;
-  background: #fff;
-  width: 302px;
-  z-index: 5;
-  left: -300px;
-  top: -19px;
-  box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
-  background: #fff;
-  border: 2px solid #c50084;
-}
-/* line 34, ../sass/css-to-sass.scss */
-#editComo .warning-asthma:after, #editComo .warning-asthma:before {
-  left: 100%;
-  top: 50%;
-  border: solid transparent;
-  content: " ";
-  height: 0;
-  width: 0;
-  position: absolute;
-  pointer-events: none;
-}
-/* line 44, ../sass/css-to-sass.scss */
-#editComo .warning-asthma:after {
-  border-color: rgba(255, 255, 255, 0);
-  border-left-color: #fff;
-  border-width: 10px;
-  margin-top: -10px;
-}
-/* line 50, ../sass/css-to-sass.scss */
-#editComo .warning-asthma:before {
-  border-color: rgba(197, 0, 132, 0);
-  border-left-color: #c50084;
-  border-width: 13px;
-  margin-top: -13px;
-}
-/* line 56, ../sass/css-to-sass.scss */
-#editComo .warning-asthma button.close {
-  top: 2px;
-  right: 5px;
-  position: absolute;
-}
-/* line 63, ../sass/css-to-sass.scss */
-#editComo button.btn {
-  background-color: rgba(0, 0, 0, 0.12);
-  box-shadow: none;
-  color: rgba(0, 0, 0, 0.26);
-  cursor: not-allowed;
-  opacity: 1;
-  pointer-events: none;
-}
-/* line 70, ../sass/css-to-sass.scss */
-#editComo button.btn.btn-secondary {
-  background-color: #a30054 !important;
-  color: #fff !important;
-  cursor: pointer;
-  opacity: 1;
-  pointer-events: all;
-}
-/* line 76, ../sass/css-to-sass.scss */
-#editComo button.btn.btn-secondary.ticked {
-  display: none;
-}
-/* line 78, ../sass/css-to-sass.scss */
-#editComo button.btn.btn-secondary.ticked.show {
-  display: block;
-}
-/* line 85, ../sass/css-to-sass.scss */
-#editComo .modal-dialog button.close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-}
-/* line 90, ../sass/css-to-sass.scss */
-#editComo .modal-body .disable-checkbox {
-  background: #ddd;
-  cursor: not-allowed;
-}
-/* line 94, ../sass/css-to-sass.scss */
-#editComo .modal-body .disable-checkbox:hover {
-  cursor: not-allowed;
-}
+#editComo .warning-asthma { border: 2px solid #c50084; padding: 1rem; border-radius: 4px; position: absolute; background: #fff; width: 302px; z-index: 5; left: -300px; top: -19px; box-shadow: 2px 2px 3px 3px rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); background: #fff; border: 2px solid #c50084; }
+#editComo .warning-asthma:after, #editComo .warning-asthma:before { left: 100%; top: 50%; border: solid transparent; content: " "; height: 0; width: 0; position: absolute; pointer-events: none; }
+#editComo .warning-asthma:after { border-color: rgba(255, 255, 255, 0); border-left-color: #fff; border-width: 10px; margin-top: -10px; }
+#editComo .warning-asthma:before { border-color: rgba(197, 0, 132, 0); border-left-color: #c50084; border-width: 13px; margin-top: -13px; }
+#editComo .warning-asthma button.close { top: 2px; right: 5px; position: absolute; }
+#editComo button.btn { background-color: rgba(0, 0, 0, 0.12); box-shadow: none; color: rgba(0, 0, 0, 0.26); cursor: not-allowed; opacity: 1; pointer-events: none; }
+#editComo button.btn.btn-secondary { background-color: #a30054 !important; color: #fff !important; cursor: pointer; opacity: 1; pointer-events: all; }
+#editComo button.btn.btn-secondary.ticked { display: none; }
+#editComo button.btn.btn-secondary.ticked.show { display: block; }
+#editComo .modal-dialog button.close { position: absolute; top: 1rem; right: 1rem; }
+#editComo .modal-body .disable-checkbox { background: #ddd; cursor: not-allowed; }
+#editComo .modal-body .disable-checkbox:hover { cursor: not-allowed; }
 
-/* line 100, ../sass/css-to-sass.scss */
-.poce_drug_msg {
-  border: 1px dashed #c50084;
-  display: table-cell;
-  margin-bottom: 1rem;
-  padding: 2rem;
-}
-/* line 106, ../sass/css-to-sass.scss */
-.poce_drug_msg .co-morbidity-icon-pink polygon {
-  fill: #fff;
-}
-/* line 109, ../sass/css-to-sass.scss */
-.poce_drug_msg .poce_title {
-  padding-left: 3rem;
-  color: #c50084;
-  font-size: 1.125rem;
-  margin: 0 0 1rem -3rem;
-  display: inline-block;
-}
-/* line 116, ../sass/css-to-sass.scss */
-.poce_drug_msg h3 {
-  padding: 0;
-  text-indent: 0;
-  float: none !important;
-}
-/* line 121, ../sass/css-to-sass.scss */
-.poce_drug_msg p {
-  text-indent: initial;
-}
-/* line 124, ../sass/css-to-sass.scss */
-.poce_drug_msg .material-icons {
-  vertical-align: top;
-  top: -5px;
-  position: relative;
-}
-/* line 128, ../sass/css-to-sass.scss */
-.poce_drug_msg .material-icons svg {
-  top: 0;
-  left: -6px;
-  position: relative;
-}
-/* line 133, ../sass/css-to-sass.scss */
-.poce_drug_msg .material-icons svg.co-morbidity-icon-pink {
-  height: 30px;
-}
+.poce_drug_msg { border: 1px dashed #c50084; display: table-cell; margin-bottom: 1rem; padding: 2rem; }
+.poce_drug_msg .co-morbidity-icon-pink polygon { fill: #fff; }
+.poce_drug_msg .poce_title { padding-left: 3rem; color: #c50084; font-size: 1.125rem; margin: 0 0 1rem -3rem; display: inline-block; }
+.poce_drug_msg h3 { padding: 0; text-indent: 0; float: none !important; }
+.poce_drug_msg p { text-indent: initial; }
+.poce_drug_msg .material-icons { vertical-align: top; top: -5px; position: relative; }
+.poce_drug_msg .material-icons svg { top: 0; left: -6px; position: relative; }
+.poce_drug_msg .material-icons svg.co-morbidity-icon-pink { height: 30px; }
 
-/* line 140, ../sass/css-to-sass.scss */
-#como-1 {
-  height: auto;
-}
-/* line 142, ../sass/css-to-sass.scss */
-#como-1 .material-icons {
-  font-size: 30px;
-}
-/* line 145, ../sass/css-to-sass.scss */
-#como-1 svg.co-morbidity-icon-pink {
-  top: 3px;
-  position: relative;
-}
-/* line 150, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text {
-  display: inline-block;
-  background-color: #c50084;
-  color: #fff;
-  padding: 1px 5px 6px;
-  border-radius: 5px;
-  float: left;
-}
-/* line 158, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text .add.unchecked, #como-1 .add-como-icon-and-text .added.unchecked, #como-1 .add-como-icon-and-text .non-como-content.hide {
-  display: none;
-}
-/* line 161, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text .add.checked, #como-1 .add-como-icon-and-text .added.checked {
-  display: inline-block;
-}
-/* line 164, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text .add:hover {
-  text-decoration: underline;
-  cursor: pointer;
-}
-/* line 168, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text path, #como-1 .add-como-icon-and-text g g g circle {
-  fill: #fff;
-}
-/* line 171, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text.checked {
-  background-color: #fff;
-  color: #000;
-}
-/* line 175, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text.checked path {
-  fill: #c50084;
-}
-/* line 178, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text.checked g g g circle {
-  fill: #c50084;
-}
-/* line 181, ../sass/css-to-sass.scss */
-#como-1 .add-como-icon-and-text.checked .co-morbidity-icon-pink polygon {
-  fill: #fff;
-}
-/* line 187, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 {
-  font-weight: bold;
-  color: #c50084;
-  margin: 0 1rem;
-}
-/* line 192, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-}
-/* line 198, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 ul li {
-  display: inline;
-}
-/* line 201, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 ul li a {
-  text-decoration: none;
-  padding: .2em 1em;
-  color: #fff;
-  background-color: #036;
-}
-/* line 207, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 ul li a:hover {
-  color: #fff;
-  background-color: #369;
-}
-/* line 215, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 {
-  display: inline-block;
-}
-/* line 218, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 button.btn {
-  margin: 0 0 0 1rem;
-}
-/* line 221, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 button.show {
-  display: inline-block;
-}
-/* line 224, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 span {
-  display: inline-block;
-  position: relative;
-  top: 9px;
-}
-/* line 229, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 button.hide, #como-1 #comoselected-1 button {
-  display: none;
-}
-/* line 232, ../sass/css-to-sass.scss */
-#como-1 #comoselected-1 span + span:before {
-  content: ', ';
-}
-/* line 236, ../sass/css-to-sass.scss */
-#como-1 .card-block b {
-  vertical-align: -webkit-baseline-middle;
-  vertical-align: sub;
-}
-/* line 240, ../sass/css-to-sass.scss */
-#como-1.card {
-  border-radius: 0;
-  padding: 1.125rem 1.5rem;
-}
-/* line 243, ../sass/css-to-sass.scss */
-#como-1.card p {
-  display: inline-block;
-  font-weight: bold;
-}
-/* line 246, ../sass/css-to-sass.scss */
-#como-1.card p span {
-  color: #c50084;
-}
-/* line 250, ../sass/css-to-sass.scss */
-#como-1.card button {
-  float: right;
-  background-color: #fff;
-  color: #c50084;
-  border: 3px solid #c50084;
-  border-radius: 4px;
-}
-/* line 256, ../sass/css-to-sass.scss */
-#como-1.card button:hover {
-  background-color: #c50084;
-  color: #fff;
-  outline: none;
-}
-/* line 261, ../sass/css-to-sass.scss */
-#como-1.card button:focus {
-  background-color: #c50084;
-  color: #fff;
-  outline: none;
-}
-/* line 266, ../sass/css-to-sass.scss */
-#como-1.card button:hover, #como-1.card button:focus {
-  background-color: #c50084;
-  color: #fff;
-  outline: none;
-}
+#como-1 { height: auto; }
+#como-1 .material-icons { font-size: 30px; }
+#como-1 svg.co-morbidity-icon-pink { top: 3px; position: relative; }
+#como-1 .add-como-icon-and-text { display: inline-block; background-color: #c50084; color: #fff; padding: 1px 5px 6px; border-radius: 5px; float: left; }
+#como-1 .add-como-icon-and-text .add.unchecked, #como-1 .add-como-icon-and-text .added.unchecked, #como-1 .add-como-icon-and-text .non-como-content.hide { display: none; }
+#como-1 .add-como-icon-and-text .add.checked, #como-1 .add-como-icon-and-text .added.checked { display: inline-block; }
+#como-1 .add-como-icon-and-text .add:hover { text-decoration: underline; cursor: pointer; }
+#como-1 .add-como-icon-and-text path, #como-1 .add-como-icon-and-text g g g circle { fill: #fff; }
+#como-1 .add-como-icon-and-text.checked { background-color: #fff; color: #000; }
+#como-1 .add-como-icon-and-text.checked path { fill: #c50084; }
+#como-1 .add-como-icon-and-text.checked g g g circle { fill: #c50084; }
+#como-1 .add-como-icon-and-text.checked .co-morbidity-icon-pink polygon { fill: #fff; }
+#como-1 #comoselected-1 { font-weight: bold; color: #c50084; margin: 0 1rem; }
+#como-1 #comoselected-1 ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
+#como-1 #comoselected-1 ul li { display: inline; }
+#como-1 #comoselected-1 ul li a { text-decoration: none; padding: .2em 1em; color: #fff; background-color: #036; }
+#como-1 #comoselected-1 ul li a:hover { color: #fff; background-color: #369; }
+#como-1 #comoselected-1 { display: inline-block; }
+#como-1 #comoselected-1 button.btn { margin: 0 0 0 1rem; }
+#como-1 #comoselected-1 button.show { display: inline-block; }
+#como-1 #comoselected-1 span { display: inline-block; position: relative; top: 9px; }
+#como-1 #comoselected-1 button.hide, #como-1 #comoselected-1 button { display: none; }
+#como-1 #comoselected-1 span + span:before { content: ', '; }
+#como-1 .card-block b { vertical-align: -webkit-baseline-middle; vertical-align: sub; }
+#como-1.card { border-radius: 0; padding: 1.125rem 1.5rem; }
+#como-1.card p { display: inline-block; font-weight: bold; }
+#como-1.card p span { color: #c50084; }
+#como-1.card button { float: right; background-color: #fff; color: #c50084; border: 3px solid #c50084; border-radius: 4px; }
+#como-1.card button:hover { background-color: #c50084; color: #fff; outline: none; }
+#como-1.card button:focus { background-color: #c50084; color: #fff; outline: none; }
+#como-1.card button:hover, #como-1.card button:focus { background-color: #c50084; color: #fff; outline: none; }
 
-/* line 275, ../sass/css-to-sass.scss */
-#como-2 {
-  height: auto;
-  border-bottom: 3px solid #c50084;
-}
-/* line 278, ../sass/css-to-sass.scss */
-#como-2.card {
-  border-radius: 0;
-  padding: 1.125rem 1.5rem;
-}
-/* line 281, ../sass/css-to-sass.scss */
-#como-2.card p {
-  display: inline-block;
-  font-weight: bold;
-}
-/* line 284, ../sass/css-to-sass.scss */
-#como-2.card p span {
-  color: #c50084;
-}
-/* line 288, ../sass/css-to-sass.scss */
-#como-2.card button {
-  float: right;
-  background-color: #fff;
-  color: #c50084;
-  border: 3px solid #c50084;
-  border-radius: 4px;
-}
-/* line 294, ../sass/css-to-sass.scss */
-#como-2.card button:hover, #como-2.card button:focus {
-  background-color: #c50084;
-  color: #fff;
-  outline: none;
-}
-/* line 301, ../sass/css-to-sass.scss */
-#como-2 .material-icons {
-  font-size: 50px;
-}
-/* line 304, ../sass/css-to-sass.scss */
-#como-2 #comoselected-2 {
-  font-weight: bold;
-  color: #c50084;
-  margin: 0 1rem;
-}
-/* line 309, ../sass/css-to-sass.scss */
-#como-2 #comoselected-2 span {
-  position: relative;
-  top: 9px;
-}
-/* line 313, ../sass/css-to-sass.scss */
-#como-2 #comoselected-2 ul {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  text-align: center;
-}
-/* line 319, ../sass/css-to-sass.scss */
-#como-2 #comoselected-2 ul li {
-  display: inline;
-}
-/* line 322, ../sass/css-to-sass.scss */
-#como-2 #comoselected-2 ul li a {
-  text-decoration: none;
-  padding: .2em 1em;
-  color: #fff;
-  background-color: #036;
-}
-/* line 328, ../sass/css-to-sass.scss */
-#como-2 #comoselected-2 ul li a:hover {
-  color: #fff;
-  background-color: #369;
-}
+#como-2 { height: auto; border-bottom: 3px solid #c50084; }
+#como-2.card { border-radius: 0; padding: 1.125rem 1.5rem; }
+#como-2.card p { display: inline-block; font-weight: bold; }
+#como-2.card p span { color: #c50084; }
+#como-2.card button { float: right; background-color: #fff; color: #c50084; border: 3px solid #c50084; border-radius: 4px; }
+#como-2.card button:hover, #como-2.card button:focus { background-color: #c50084; color: #fff; outline: none; }
+#como-2 .material-icons { font-size: 50px; }
+#como-2 #comoselected-2 { font-weight: bold; color: #c50084; margin: 0 1rem; }
+#como-2 #comoselected-2 span { position: relative; top: 9px; }
+#como-2 #comoselected-2 ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
+#como-2 #comoselected-2 ul li { display: inline; }
+#como-2 #comoselected-2 ul li a { text-decoration: none; padding: .2em 1em; color: #fff; background-color: #036; }
+#como-2 #comoselected-2 ul li a:hover { color: #fff; background-color: #369; }
 
-/* line 338, ../sass/css-to-sass.scss */
-#tip_pitfall, #tmp .poce_contents.treatment-algorithm #tip_pitfall {
-  background-color: #e5eef7;
-  border: 1px solid #e9e9e9;
-  color: #333;
-  width: 90%;
-  padding: 1rem;
-}
-/* line 344, ../sass/css-to-sass.scss */
-#tip_pitfall .card-title, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-title {
-  font-family: Arial,sans-serif;
-  font-size: 1rem;
-  font-weight: bold;
-  display: contents;
-}
-/* line 350, ../sass/css-to-sass.scss */
-#tip_pitfall .card-block, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block {
-  padding: 1rem 1em 1rem 2rem !important;
-  background: url("../images/pin.svg") no-repeat 5px 15px;
-  background-size: 15px;
-}
-/* line 354, ../sass/css-to-sass.scss */
-#tip_pitfall .card-block p + ul, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block p + ul {
-  padding-left: 1rem !important;
-  margin-bottom: 0 !important;
-}
-/* line 358, ../sass/css-to-sass.scss */
-#tip_pitfall .card-block .card-text, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block .card-text {
-  padding: 1rem 0 0 0rem;
-}
-/* line 361, ../sass/css-to-sass.scss */
-#tip_pitfall .card-block svg#pin, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block svg#pin {
-  height: 30px;
-  position: relative;
-  left: -5px;
-  float: left;
-}
-/* line 368, ../sass/css-to-sass.scss */
-#tip_pitfall li, #tmp .poce_contents.treatment-algorithm #tip_pitfall li {
-  padding: 2px 5px;
-  margin: 0;
-}
+#tip_pitfall, #tmp .poce_contents.treatment-algorithm #tip_pitfall { background-color: #e5eef7; border: 1px solid #e9e9e9; color: #333; width: 90%; padding: 1rem; }
+#tip_pitfall .card-title, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-title { font-family: Arial,sans-serif; font-size: 1rem; font-weight: bold; display: contents; }
+#tip_pitfall .card-block, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block { padding: 1rem 1em 1rem 2rem !important; background: url("../images/pin.svg") no-repeat 5px 15px; background-size: 15px; }
+#tip_pitfall .card-block p + ul, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block p + ul { padding-left: 1rem !important; margin-bottom: 0 !important; }
+#tip_pitfall .card-block .card-text, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block .card-text { padding: 1rem 0 0 0rem; }
+#tip_pitfall .card-block svg#pin, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-block svg#pin { height: 30px; position: relative; left: -5px; float: left; }
+#tip_pitfall li, #tmp .poce_contents.treatment-algorithm #tip_pitfall li { padding: 2px 5px; margin: 0; }
 
-/* line 374, ../sass/css-to-sass.scss */
-#lookOutPopUp {
-  background-color: #FFCFEF;
-  padding: 1rem;
-}
-/* line 377, ../sass/css-to-sass.scss */
-#lookOutPopUp.checked {
-  width: 100%;
-  display: inline-block;
-}
-/* line 381, ../sass/css-to-sass.scss */
-#lookOutPopUp.unchecked {
-  display: none;
-}
-/* line 384, ../sass/css-to-sass.scss */
-#lookOutPopUp .co-morbidity-icon-pink polygon {
-  fill: #fff;
-}
-/* line 387, ../sass/css-to-sass.scss */
-#lookOutPopUp p {
-  font-weight: bold;
-}
-/* line 390, ../sass/css-to-sass.scss */
-#lookOutPopUp .got-it {
-  margin-bottom: 0.75rem;
-  text-align: center;
-}
+#lookOutPopUp { background-color: #FFCFEF; padding: 1rem; }
+#lookOutPopUp.checked { width: 100%; display: inline-block; }
+#lookOutPopUp.unchecked { display: none; }
+#lookOutPopUp .co-morbidity-icon-pink polygon { fill: #fff; }
+#lookOutPopUp p { font-weight: bold; }
+#lookOutPopUp .got-it { margin-bottom: 0.75rem; text-align: center; }
 
-/* line 398, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .card-block {
-  padding: 0 !important;
-}
-/* line 401, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus {
-  border: 1px solid #c50084;
-  background: none;
-  padding: 1rem 2rem;
-  margin-bottom: 1rem;
-}
-/* line 406, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus h4 {
-  color: #c50084;
-  font-weight: bold;
-}
-/* line 412, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a {
-  color: #c50084;
-  text-decoration: none;
-}
-/* line 415, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover {
-  text-decoration: underline;
-}
-/* line 421, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion {
-  margin: 1rem 0;
-}
-/* line 423, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg {
-  text-indent: 0;
-  padding: 1rem;
-  width: 100%;
-}
-/* line 427, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons {
-  text-indent: -10px;
-  top: 0;
-  padding: 0 0.5rem 0 0;
-}
-/* line 431, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons svg, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons svg {
-  top: 0;
-  left: 0;
-}
-/* line 438, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg {
-  background-color: #f8e0f0;
-}
-/* line 441, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg h3.cplus_title {
-  font-size: 1.3rem;
-  position: relative;
-  font-weight: normal;
-}
-/* line 452, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .treatment-box {
-  background-color: #fff;
-  padding: 0.9rem 0;
-  margin: 1rem 0;
-  border: none;
-}
-/* line 461, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons {
-  margin: 0;
-  border: none;
-}
-/* line 466, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box {
-  background-color: #fff;
-  padding: 0.9rem 0;
-  margin: 1rem 0;
-  border: none;
-}
-/* line 471, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog {
-  max-width: 50rem;
-}
-/* line 474, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog svg.co-morbidity-icon-pink {
-  height: 40px;
-}
-/* line 477, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header {
-  background: #fff;
-  margin-top: 1rem;
-}
-/* line 480, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header .modal-title {
-  color: #c50084;
-  margin: 0 0 1.5rem 0;
-  text-align: center;
-}
-/* line 487, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .small-or {
-  color: #333;
-  margin: 0;
-}
-/* line 495, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg .material-icons {
-  display: inline;
-  float: left;
-  text-indent: -30px;
-}
-/* line 500, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg .material-icons svg.co-morbidity-icon-pink {
-  height: 40px;
-}
-/* line 506, ../sass/css-to-sass.scss */
-#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg h3.cplus_title {
-  color: #333;
-  display: inline;
-  float: left;
-  width: auto;
-}
+#tmp .poce_contents.treatment-algorithm .card-block { padding: 0 !important; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus { border: 1px solid #c50084; background: none; padding: 1rem 2rem; margin-bottom: 1rem; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus h4 { color: #c50084; font-weight: bold; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a { color: #c50084; text-decoration: none; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus p.como_link a:hover { text-decoration: underline; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion { margin: 1rem 0; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg { text-indent: 0; padding: 1rem; width: 100%; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons { text-indent: -10px; top: 0; padding: 0 0.5rem 0 0; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg .material-icons svg, #tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons svg { top: 0; left: 0; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg { background-color: #f8e0f0; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .poce_drug_msg h3.cplus_title { font-size: 1.3rem; position: relative; font-weight: normal; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content2 .treatment-box { background-color: #fff; padding: 0.9rem 0; margin: 1rem 0; border: none; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .poce_drug_msg .material-icons { margin: 0; border: none; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box { background-color: #fff; padding: 0.9rem 0; margin: 1rem 0; border: none; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog { max-width: 50rem; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog svg.co-morbidity-icon-pink { height: 40px; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header { background: #fff; margin-top: 1rem; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .modal .modal-dialog .modal-content .modal-header .modal-title { color: #c50084; margin: 0 0 1.5rem 0; text-align: center; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .drug-accordion .drug-content1 .treatment-box .small-or { color: #333; margin: 0; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg .material-icons { display: inline; float: left; text-indent: -30px; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg .material-icons svg.co-morbidity-icon-pink { height: 40px; }
+#tmp .poce_contents.treatment-algorithm .treatment-box-cplus .poce_drug_msg h3.cplus_title { color: #333; display: inline; float: left; width: auto; }
 
-/* line 519, ../sass/css-to-sass.scss */
-.poce_contents .evidence-accordion {
-  width: 90%;
-  background-color: #f8f8f8;
-  border: 1px solid #e9e9e9;
-  padding: 1rem 0 0 0;
-  margin: 2rem 0;
-}
-/* line 525, ../sass/css-to-sass.scss */
-.poce_contents .evidence-accordion .title {
-  padding: 0 0.5rem 1rem;
-  margin: 0;
-  display: block;
-  background-color: transparent;
-}
-/* line 531, ../sass/css-to-sass.scss */
-.poce_contents .evidence-accordion .title span.title {
-  display: initial;
-  padding: 0;
-  color: #c50084;
-  font-weight: bold;
-  font-size: 1rem;
-}
-/* line 539, ../sass/css-to-sass.scss */
-.poce_contents .evidence-accordion .title p {
-  display: inline-block;
-  padding: 0 0 0 1rem;
-  margin: 0;
-}
-/* line 545, ../sass/css-to-sass.scss */
-.poce_contents .evidence-accordion .content p {
-  padding: 0;
-}
-/* line 549, ../sass/css-to-sass.scss */
-.poce_contents div[class*='-como-content'] .poce_drug_msg .evidence-accordion .title {
-  position: relative;
-}
-/* line 552, ../sass/css-to-sass.scss */
-.poce_contents ul {
-  list-style: disc outside;
-  padding: 10px 0px 7px 20px;
-  text-indent: inherit;
-}
-/* line 557, ../sass/css-to-sass.scss */
-.poce_contents ul li {
-  padding: 3px 5px;
-}
-/* line 560, ../sass/css-to-sass.scss */
-.poce_contents ul ul {
-  list-style: circle outside !important;
-  margin: auto;
-  padding: 0px 0px 0px 10px;
-}
-/* line 565, ../sass/css-to-sass.scss */
-.poce_contents ul ul ul {
-  list-style: disc outside !important;
-  padding: 10px 0px 7px 10px;
-}
-/* line 571, ../sass/css-to-sass.scss */
-.poce_contents ul, .poce_contents ul ul li {
-  padding: 0.3rem 0;
-  margin: auto;
-}
-/* line 576, ../sass/css-to-sass.scss */
-.poce_contents ul li:before, .poce_contents ul ul li:before {
-  content: none;
-}
-/* line 581, ../sass/css-to-sass.scss */
-.poce_contents #rfs .accordion-toggle {
-  margin-left: 20px;
-  text-indent: -15px;
-  line-height: 1.25;
-}
-/* line 586, ../sass/css-to-sass.scss */
-.poce_contents #rfs .accordion-toggle h3 {
-  line-height: 1.5;
-}
-/* line 593, ../sass/css-to-sass.scss */
-.poce_contents #allrfs .table thead th {
-  background-color: #bf007c;
-  color: #fff;
-  font-size: 1rem;
-  font-weight: bold;
-  padding-top: 8px;
-  padding-bottom: 0;
-  height: 36px;
-  border-right: 1px solid #e1e1e1;
-}
-/* line 604, ../sass/css-to-sass.scss */
-.poce_contents #allrfs .table tbody td, .poce_contents #allrfs .table tbody th {
-  font-size: inherit;
-}
-/* line 607, ../sass/css-to-sass.scss */
-.poce_contents #allrfs .table tbody td ul, .poce_contents #allrfs .table tbody th ul {
-  margin-bottom: 1rem !important;
-}
-/* line 615, ../sass/css-to-sass.scss */
-.poce_contents .alt-table {
-  border: solid 1px #e9e9e9;
-  border-collapse: collapse;
-  border-spacing: 0;
-  font: normal 16px Arial,sans-serif;
-  margin: 0 10% 0 10%;
-}
-/* line 622, ../sass/css-to-sass.scss */
-.poce_contents .alt-table thead th {
-  background-color: #f5f5f5;
-  border: solid 1px #e9e9e9;
-  color: #333;
-  padding: 10px;
-  text-align: left;
-}
-/* line 629, ../sass/css-to-sass.scss */
-.poce_contents .alt-table tbody td {
-  border: solid 1px #e9e9e9;
-  color: #333;
-  padding: 10px;
-}
-/* line 635, ../sass/css-to-sass.scss */
-.poce_contents .toggle {
-  display: none;
-}
-/* line 638, ../sass/css-to-sass.scss */
-.poce_contents .option {
-  position: relative;
-}
-/* line 641, ../sass/css-to-sass.scss */
-.poce_contents .title {
-  background-color: #f8f8f8;
-  padding: 0 0 0 2.5rem;
-  display: inline-block;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: all 0.2s;
-}
-/* line 650, ../sass/css-to-sass.scss */
-.poce_contents .title p {
-  color: #000;
-  font-size: 1rem;
-  font-weight: normal;
-  padding: 0;
-}
-/* line 657, ../sass/css-to-sass.scss */
-.poce_contents .content {
-  max-height: 0;
-  overflow: hidden;
-  background-color: #f8f8f8;
-  border-top: 1px solid #e4e4e4;
-  backface-visibility: hidden;
-  transform: translateZ(0);
-  transition: all 0.2s;
-}
-/* line 667, ../sass/css-to-sass.scss */
-.poce_contents .content p {
-  margin: 0;
-  padding: 0.5em 2.5em 1em;
-  line-height: 1.5;
-}
-/* line 672, ../sass/css-to-sass.scss */
-.poce_contents .content ul {
-  padding-left: 1.5rem;
-}
-/* line 679, ../sass/css-to-sass.scss */
-.poce_contents .toggle:checked + .title:before {
-  transform: rotate(90deg) !important;
-}
-/* line 682, ../sass/css-to-sass.scss */
-.poce_contents .toggle:checked + .title + .content {
-  max-height: 500px;
-  overflow: auto;
-  padding: 1rem;
-}
-/* line 691, ../sass/css-to-sass.scss */
-.poce_contents.invest .rowHead {
-  margin-bottom: 16px;
-}
-/* line 694, ../sass/css-to-sass.scss */
-.poce_contents #kpoints .card .card-block p, .poce_contents #diagrecs .card .card-block p {
-  margin-left: -7px;
-}
+.poce_contents .evidence-accordion { width: 90%; background-color: #f8f8f8; border: 1px solid #e9e9e9; padding: 1rem 0 0 0; margin: 2rem 0; }
+.poce_contents .evidence-accordion .title { padding: 0 0.5rem 1rem; margin: 0; display: block; background-color: transparent; }
+.poce_contents .evidence-accordion .title span.title { display: initial; padding: 0; color: #c50084; font-weight: bold; font-size: 1rem; }
+.poce_contents .evidence-accordion .title p { display: inline-block; padding: 0 0 0 1rem; margin: 0; }
+.poce_contents .evidence-accordion .content p { padding: 0; }
+.poce_contents div[class*='-como-content'] .poce_drug_msg .evidence-accordion .title { position: relative; }
+.poce_contents ul { list-style: disc outside; padding: 10px 0px 7px 20px; text-indent: inherit; }
+.poce_contents ul li { padding: 3px 5px; }
+.poce_contents ul ul { list-style: circle outside !important; margin: auto; padding: 0px 0px 0px 10px; }
+.poce_contents ul ul ul { list-style: disc outside !important; padding: 10px 0px 7px 10px; }
+.poce_contents ul, .poce_contents ul ul li { padding: 0.3rem 0; margin: auto; }
+.poce_contents ul li:before, .poce_contents ul ul li:before { content: none; }
+.poce_contents #rfs .accordion-toggle { margin-left: 20px; text-indent: -15px; line-height: 1.25; }
+.poce_contents #rfs .accordion-toggle h3 { line-height: 1.5; }
+.poce_contents #allrfs .table thead th { background-color: #bf007c; color: #fff; font-size: 1rem; font-weight: bold; padding-top: 8px; padding-bottom: 0; height: 36px; border-right: 1px solid #e1e1e1; }
+.poce_contents #allrfs .table tbody td, .poce_contents #allrfs .table tbody th { font-size: inherit; }
+.poce_contents #allrfs .table tbody td ul, .poce_contents #allrfs .table tbody th ul { margin-bottom: 1rem !important; }
+.poce_contents .alt-table { border: solid 1px #e9e9e9; border-collapse: collapse; border-spacing: 0; font: normal 16px Arial,sans-serif; margin: 0 10% 0 10%; }
+.poce_contents .alt-table thead th { background-color: #f5f5f5; border: solid 1px #e9e9e9; color: #333; padding: 10px; text-align: left; }
+.poce_contents .alt-table tbody td { border: solid 1px #e9e9e9; color: #333; padding: 10px; }
+.poce_contents .toggle { display: none; }
+.poce_contents .option { position: relative; }
+.poce_contents .title { background-color: #f8f8f8; padding: 0 0 0 2.5rem; display: inline-block; backface-visibility: hidden; transform: translateZ(0); transition: all 0.2s; }
+.poce_contents .title p { color: #000; font-size: 1rem; font-weight: normal; padding: 0; }
+.poce_contents .content { max-height: 0; overflow: hidden; background-color: #f8f8f8; border-top: 1px solid #e4e4e4; backface-visibility: hidden; transform: translateZ(0); transition: all 0.2s; }
+.poce_contents .content p { margin: 0; padding: 0.5em 2.5em 1em; line-height: 1.5; }
+.poce_contents .content ul { padding-left: 1.5rem; }
+.poce_contents .toggle:checked + .title:before { transform: rotate(90deg) !important; }
+.poce_contents .toggle:checked + .title + .content { max-height: 500px; overflow: auto; padding: 1rem; }
+.poce_contents.invest .rowHead { margin-bottom: 16px; }
+.poce_contents #kpoints .card .card-block p, .poce_contents #diagrecs .card .card-block p { margin-left: -7px; }
 
-/* line 700, ../sass/css-to-sass.scss */
-.evidence-accordion .title {
-  display: inline-block;
-  margin-left: -0.7rem;
-}
-/* line 703, ../sass/css-to-sass.scss */
-.evidence-accordion .title .material-icons {
-  min-width: 24px;
-  padding-top: 6px;
-}
-/* line 706, ../sass/css-to-sass.scss */
-.evidence-accordion .title .material-icons span {
-  display: none;
-}
-/* line 708, ../sass/css-to-sass.scss */
-.evidence-accordion .title .material-icons span:first-child {
-  display: block;
-}
-/* line 711, ../sass/css-to-sass.scss */
-.evidence-accordion .title .material-icons span.title {
-  display: initial;
-  padding: 0;
-  color: #c50084;
-  font-weight: bold;
-  font-size: 1rem;
-}
+.evidence-accordion .title { display: inline-block; margin-left: -0.7rem; }
+.evidence-accordion .title .material-icons { min-width: 24px; padding-top: 6px; }
+.evidence-accordion .title .material-icons span { display: none; }
+.evidence-accordion .title .material-icons span:first-child { display: block; }
+.evidence-accordion .title .material-icons span.title { display: initial; padding: 0; color: #c50084; font-weight: bold; font-size: 1rem; }
 
-/* line 725, ../sass/css-to-sass.scss */
-.treatment-table .title-04 {
-  display: inline-block;
-  margin-left: -0.7rem;
-}
-/* line 729, ../sass/css-to-sass.scss */
-.treatment-table .title-04 .material-icons {
-  min-width: 24px;
-  padding-top: 6px;
-}
-/* line 733, ../sass/css-to-sass.scss */
-.treatment-table .title-04 .material-icons span {
-  display: none;
-}
-/* line 736, ../sass/css-to-sass.scss */
-.treatment-table .title-04 .material-icons span:first-child {
-  display: block;
-}
-/* line 742, ../sass/css-to-sass.scss */
-.treatment-table .panel-content {
-  display: none;
-  padding: 0 1rem;
-  margin: 0;
-  float: right;
-  clear: both;
-}
-/* line 755, ../sass/css-to-sass.scss */
-.treatment-table .panel-header.child-accordion a .title-01 span:hover {
-  cursor: pointer;
-}
-/* line 768, ../sass/css-to-sass.scss */
-.treatment-table .treatment-wrap .treatment-box {
-  background: #e5eef7;
-  border: 1px solid #b0bec5;
-  padding: 0.9rem;
-  margin-bottom: 1rem;
-}
-/* line 774, ../sass/css-to-sass.scss */
-.treatment-table .treatment-wrap .treatment-box a:hover {
-  text-decoration: underline;
-  color: #bf007c;
-}
-/* line 778, ../sass/css-to-sass.scss */
-.treatment-table .treatment-wrap .treatment-box .material-icons {
-  color: #2a6ebb;
-}
-/* line 781, ../sass/css-to-sass.scss */
-.treatment-table .treatment-wrap .treatment-box .small-or, .treatment-table .treatment-wrap .treatment-box .and-or {
-  margin: 1rem 0;
-}
-/* line 784, ../sass/css-to-sass.scss */
-.treatment-table .treatment-wrap .treatment-box .and-or {
-  margin-left: -1rem;
-  margin-right: -1rem;
-  position: relative;
-  left: 1px;
-}
-/* line 790, ../sass/css-to-sass.scss */
-.treatment-table .treatment-wrap .treatment-box .reference {
-  display: inline;
-}
-/* line 793, ../sass/css-to-sass.scss */
-.treatment-table .treatment-wrap .treatment-box .reference .morePop {
-  padding-left: 1rem;
-}
+.treatment-table .title-04 { display: inline-block; margin-left: -0.7rem; }
+.treatment-table .title-04 .material-icons { min-width: 24px; padding-top: 6px; }
+.treatment-table .title-04 .material-icons span { display: none; }
+.treatment-table .title-04 .material-icons span:first-child { display: block; }
+.treatment-table .panel-content { display: none; padding: 0 1rem; margin: 0; float: right; clear: both; }
+.treatment-table .panel-header.child-accordion a .title-01 span:hover { cursor: pointer; }
+.treatment-table .treatment-wrap .treatment-box { background: #e5eef7; border: 1px solid #b0bec5; padding: 0.9rem; margin-bottom: 1rem; }
+.treatment-table .treatment-wrap .treatment-box a:hover { text-decoration: underline; color: #bf007c; }
+.treatment-table .treatment-wrap .treatment-box .material-icons { color: #2a6ebb; }
+.treatment-table .treatment-wrap .treatment-box .small-or, .treatment-table .treatment-wrap .treatment-box .and-or { margin: 1rem 0; }
+.treatment-table .treatment-wrap .treatment-box .and-or { margin-left: -1rem; margin-right: -1rem; position: relative; left: 1px; }
+.treatment-table .treatment-wrap .treatment-box .reference { display: inline; }
+.treatment-table .treatment-wrap .treatment-box .reference .morePop { padding-left: 1rem; }
 
-/* line 805, ../sass/css-to-sass.scss */
-.blue-accordion h3 a:hover > span > span:first-child, .blue-accordion h3 a:hover > span > span:first-child:hover {
-  text-decoration: none;
-}
+.blue-accordion h3 a:hover > span > span:first-child, .blue-accordion h3 a:hover > span > span:first-child:hover { text-decoration: none; }
 
-/* line 812, ../sass/css-to-sass.scss */
-.poce_urgent {
-  padding: 1rem !important;
-  border: 1px dashed #c50084;
-}
-/* line 816, ../sass/css-to-sass.scss */
-.poce_urgent h3 {
-  color: #c50084;
-}
+.poce_urgent { padding: 1rem !important; border: 1px dashed #c50084; }
+.poce_urgent h3 { color: #c50084; }
 
-/* line 823, ../sass/css-to-sass.scss */
-#poce_content .treatment-table .txtwrap::after {
-  content: "\e90c";
-  font-family: 'Material Icons';
-  font-size: 30px;
-  position: absolute;
-  top: -3px;
-  margin-left: 10px;
-  color: #c50084;
-}
-/* line 833, ../sass/css-to-sass.scss */
-#poce_content .treatment-table .txtwrap.no-icon::after {
-  content: " ";
-}
+#poce_content .treatment-table .txtwrap::after { content: "\e90c"; font-family: 'Material Icons'; font-size: 30px; position: absolute; top: -3px; margin-left: 10px; color: #c50084; }
+#poce_content .treatment-table .txtwrap.no-icon::after { content: " "; }
 
-/* line 841, ../sass/css-to-sass.scss */
-.invest .card .card-block.poce_urgent {
-  padding: 1rem !important;
-  border: 1px dashed #c50084;
-}
-/* line 847, ../sass/css-to-sass.scss */
-.invest .rowDetails .evidence-accordion span {
-  padding: 0.2rem 0px 50px 0.15rem;
-}
-/* line 850, ../sass/css-to-sass.scss */
-.invest .rowDetails .evidence-accordion .title .material-icons span {
-  color: #c50084;
-}
+.invest .card .card-block.poce_urgent { padding: 1rem !important; border: 1px dashed #c50084; }
+.invest .rowDetails .evidence-accordion span { padding: 0.2rem 0px 50px 0.15rem; }
+.invest .rowDetails .evidence-accordion .title .material-icons span { color: #c50084; }
 
-/* line 857, ../sass/css-to-sass.scss */
-.tmp .rowDetails .evidence-accordion .title .material-icons span, .tmp .rowDetails .evidence-accordion .title .material-icons, .tmp .rowDetails .evidence-accordion .title .material-icons.open {
-  fill: #C50084;
-}
+.tmp .rowDetails .evidence-accordion .title .material-icons span, .tmp .rowDetails .evidence-accordion .title .material-icons, .tmp .rowDetails .evidence-accordion .title .material-icons.open { fill: #C50084; }
 
-/* line 865, ../sass/css-to-sass.scss */
-.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink,
-.panel-title .title-02 .material-icons svg.co-morbidity-icon-pink {
-  height: 20px;
-}
+.panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02 .material-icons svg.co-morbidity-icon-pink { height: 20px; }
 
-/* line 869, ../sass/css-to-sass.scss */
-#topicNav.stickme #como-2 {
-  position: fixed;
-  top: 110px;
-  width: 1116px;
-  z-index: 1;
-}
+#topicNav.stickme #como-2 { position: fixed; top: 110px; width: 1116px; z-index: 1; }
 
-/* line 875, ../sass/css-to-sass.scss */
-.histExam .rowDetails .evidence-accordion .title span {
-  padding: 0.2rem 0px 50px 0.15rem;
-}
+.histExam .rowDetails .evidence-accordion .title span { padding: 0.2rem 0px 50px 0.15rem; }
 
-/* line 878, ../sass/css-to-sass.scss */
-.co-morbidity-icon-pink polygon {
-  fill: #C50084;
-}
+.co-morbidity-icon-pink polygon { fill: #C50084; }
 
-/* line 881, ../sass/css-to-sass.scss */
-.non-como-content.hide,
-.browser-update-bar-hide,
-.hide,
-.panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink,
-.panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
-  display: none;
-}
+.non-como-content.hide, .browser-update-bar-hide, .hide, .panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink { display: none; }
 
-/* line 888, ../sass/css-to-sass.scss */
-.material-icons svg.co-morbidity-icon-pink {
-  height: 30px;
-}
+.material-icons svg.co-morbidity-icon-pink { height: 30px; }
 
-/* line 891, ../sass/css-to-sass.scss */
-.diffDiagnosis > .card > .card-block,
-.diffDiagnosis2 > .card > .card-block,
-.histExam > .card > .card-block,
-.diagGuidelines > .card > .card-block,
-.complications > .card > .card-block,
-.invest > .card > .card-block,
-.htmlTable > .card > .card-block,
-.details > .card > .card-block,
-.treatment-table > .card > .card-block,
-#differ > .card > .card-block {
-  padding: 0;
-}
+.diffDiagnosis > .card > .card-block, .diffDiagnosis2 > .card > .card-block, .histExam > .card > .card-block, .diagGuidelines > .card > .card-block, .complications > .card > .card-block, .invest > .card > .card-block, .htmlTable > .card > .card-block, .details > .card > .card-block, .treatment-table > .card > .card-block, #differ > .card > .card-block { padding: 0; }
 
-/* line 903, ../sass/css-to-sass.scss */
-#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon,
-.modal-title .co-morbidity-icon-pink polygon,
-.txtwrap .co-morbidity-icon-pink polygon,
-.title-02 .co-morbidity-icon-pink polygon {
-  fill: #fff;
-}
+#topicMenuTopWrap #como-2 .co-morbidity-icon-pink polygon, .modal-title .co-morbidity-icon-pink polygon, .txtwrap .co-morbidity-icon-pink polygon, .title-02 .co-morbidity-icon-pink polygon { fill: #fff; }
 
-/* line 909, ../sass/css-to-sass.scss */
-div[class*='-como-content'] {
-  margin: 1rem 0;
-}
+div[class*='-como-content'] { margin: 1rem 0; }
 
-/* line 912, ../sass/css-to-sass.scss */
-#poce-contents div[class*='-como-content'] {
-  padding: 1rem !important;
-  border: 1px dashed #c50084;
-  background-color: #f8e0f0;
-  margin: 1rem 0;
-}
+#poce-contents div[class*='-como-content'] { padding: 1rem !important; border: 1px dashed #c50084; background-color: #f8e0f0; margin: 1rem 0; }
 
-@media (max-width: 768px) {
-  /* line 920, ../sass/css-to-sass.scss */
-  .panel-title .txtwrap .material-icons {
-    position: absolute;
-    float: right;
-    top: -4px;
-    right: -29px;
-  }
-
-  /* line 927, ../sass/css-to-sass.scss */
-  .treatment-table .panel-content {
-    padding-left: 1.5rem !important;
-  }
-  /* line 930, ../sass/css-to-sass.scss */
-  .treatment-table .title-02 {
-    float: none;
-    max-width: 100%;
-  }
-  /* line 934, ../sass/css-to-sass.scss */
-  .treatment-table .title-04 {
-    margin-left: 0.5rem;
-    max-width: 88%;
-  }
-  /* line 938, ../sass/css-to-sass.scss */
-  .treatment-table .title-04 .material-icons {
-    margin-left: -4px;
-    padding-top: 0;
-  }
-
-  /* line 944, ../sass/css-to-sass.scss */
-  .evidence-accordion .title .material-icons {
-    margin-left: -4px;
-    padding-top: 0;
-  }
-
-  /* line 948, ../sass/css-to-sass.scss */
-  .poce_contents .evidence-accordion .title {
-    padding: 0 0 0 1.5rem;
-  }
-  /* line 951, ../sass/css-to-sass.scss */
-  .poce_contents .evidence-accordion .title .material-icons {
-    padding-top: 0;
-  }
-}
-@media (max-width: 991px) {
-  /* line 958, ../sass/css-to-sass.scss */
-  .treatment-table .panel-heading h3 .txtwrap {
-    max-width: 470px;
-    display: inline-block;
-  }
-  /* line 963, ../sass/css-to-sass.scss */
-  .treatment-table .panel-content.child-accordion .panel-content {
-    float: left;
-    left: 2.7rem;
-  }
-  /* line 967, ../sass/css-to-sass.scss */
-  .treatment-table .panel-content.child-accordion .panel-header .title-02 {
-    left: 2rem;
-  }
-
-  /* line 972, ../sass/css-to-sass.scss */
-  .evidence-accordion .title .material-icons {
-    float: left;
-    width: 32px;
-    height: 24px;
-    cursor: pointer;
-    padding-top: 8px;
-  }
-
-  /* line 979, ../sass/css-to-sass.scss */
-  #comoselected-1 button.btn {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
-
-  /* line 984, ../sass/css-to-sass.scss */
-  #topicNav.stickme #como-2 {
-    position: relative;
-  }
-}
-@media (max-width: 1023px) {
-  /* line 990, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading {
-    padding: 0;
-  }
-  /* line 993, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading .panel-title {
-    float: initial;
-  }
-  /* line 996, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading h3 a {
-    float: left;
-    width: auto;
-  }
-  /* line 1000, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading h3 a:hover > span > span:first-child:hover, .blue-accordion .panel-heading h3 a:hover > span > span:first-child {
-    text-decoration: none;
-  }
-  /* line 1003, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading h3 a.view-hide-all {
-    float: right;
-    width: auto;
-  }
-  /* line 1007, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading h3 a .title-04 {
-    top: 0;
-  }
-  /* line 1012, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-body {
-    float: initial;
-  }
-
-  /* line 1017, ../sass/css-to-sass.scss */
-  .treatment-table .blue-accordion {
-    padding: 0;
-  }
-  /* line 1020, ../sass/css-to-sass.scss */
-  .treatment-table .blue-accordion .panel-heading .txtwrap {
-    padding: 0;
-    display: inline;
-  }
-  /* line 1026, ../sass/css-to-sass.scss */
-  .treatment-table .panel-content.child-accordion {
-    float: initial;
-  }
-  /* line 1029, ../sass/css-to-sass.scss */
-  .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-    display: inline-block;
-    min-width: 95px;
-  }
-  /* line 1036, ../sass/css-to-sass.scss */
-  .treatment-table .panel-header.child-accordion .title-01 span {
-    padding-left: 3rem;
-    font-size: 1rem;
-  }
-  /* line 1040, ../sass/css-to-sass.scss */
-  .treatment-table .panel-header.child-accordion .title-01 span:before {
-    left: -65px;
-    width: 19px;
-  }
-  /* line 1045, ../sass/css-to-sass.scss */
-  .treatment-table .panel-header.child-accordion .title-04 {
-    position: relative;
-  }
-  /* line 1048, ../sass/css-to-sass.scss */
-  .treatment-table .panel-header.child-accordion .title-04 .material-icons {
-    position: absolute;
-    left: 49px;
-    top: 16px;
-    padding-top: 3px;
-  }
-}
-@media (max-width: 1199px) {
-  /* line 1059, ../sass/css-to-sass.scss */
-  #topicNav #topicMenuTopBg, #topicNav #menuLinks, #topicNav #menus, #topicNav #como-2 {
-    width: 936px !important;
-  }
-}
-@media (min-width: 1024px) {
-  /* line 1065, ../sass/css-to-sass.scss */
-  .treatment-table .title-04 {
-    max-width: 900px;
-    width: auto;
-    position: relative;
-    top: 7px;
-  }
-  /* line 1071, ../sass/css-to-sass.scss */
-  .treatment-table .title-04 .material-icons {
-    float: left;
-    clear: right;
-    width: 24px;
-    height: 24px;
-    margin-bottom: -24px;
-  }
-  /* line 1079, ../sass/css-to-sass.scss */
-  .treatment-table .txtwrap {
-    width: 100% !important;
-    padding-left: 32px;
-    cursor: pointer;
-  }
-  /* line 1084, ../sass/css-to-sass.scss */
-  .treatment-table .panel-content.child-accordion {
-    float: initial;
-  }
-  /* line 1087, ../sass/css-to-sass.scss */
-  .treatment-table .blue-accordion {
-    padding: 0;
-  }
-  /* line 1090, ../sass/css-to-sass.scss */
-  .treatment-table .blue-accordion .panel-heading .txtwrap {
-    padding: 4px 0 0 32px;
-  }
-  /* line 1094, ../sass/css-to-sass.scss */
-  .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 {
-    display: inline-block;
-    min-width: 95px;
-  }
-  /* line 1099, ../sass/css-to-sass.scss */
-  .treatment-table .panel-header.child-accordion .title-01 span {
-    padding-left: 3rem;
-    font-size: 1rem;
-  }
-  /* line 1103, ../sass/css-to-sass.scss */
-  .treatment-table .panel-header.child-accordion .title-01 span:before {
-    left: -42px;
-    width: 19px;
-  }
-  /* line 1108, ../sass/css-to-sass.scss */
-  .treatment-table .panel-header.child-accordion .title-04 .material-icons {
-    position: absolute;
-    left: 49px;
-    top: 16px;
-    padding-top: 3px;
-  }
-
-  /* line 1118, ../sass/css-to-sass.scss */
-  .evidence-accordion .title .material-icons {
-    float: left;
-    width: 32px;
-    height: 24px;
-    cursor: pointer;
-    padding-top: 8px;
-  }
-  /* line 1125, ../sass/css-to-sass.scss */
-  .evidence-accordion .title span.title {
-    display: inline-block;
-    cursor: pointer;
-  }
-
-  /* line 1132, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading {
-    padding: 0;
-  }
-  /* line 1135, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading .panel-title {
-    float: initial;
-  }
-  /* line 1138, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading h3 a {
-    float: left;
-    width: auto;
-  }
-  /* line 1142, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading h3 a.view-hide-all {
-    float: right;
-    width: auto;
-  }
-  /* line 1146, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading h3 a .title-04 {
-    top: 0;
-  }
-  /* line 1149, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-heading h3 a span.msg {
-    font-size: 0.875rem;
-  }
-  /* line 1154, ../sass/css-to-sass.scss */
-  .blue-accordion .panel-body {
-    float: initial;
-  }
-}
+@media (max-width: 768px) { .panel-title .txtwrap .material-icons { position: absolute; float: right; top: -4px; right: -29px; }
+  .treatment-table .panel-content { padding-left: 1.5rem !important; }
+  .treatment-table .title-02 { float: none; max-width: 100%; }
+  .treatment-table .title-04 { margin-left: 0.5rem; max-width: 88%; }
+  .treatment-table .title-04 .material-icons { margin-left: -4px; padding-top: 0; }
+  .evidence-accordion .title .material-icons { margin-left: -4px; padding-top: 0; }
+  .poce_contents .evidence-accordion .title { padding: 0 0 0 1.5rem; }
+  .poce_contents .evidence-accordion .title .material-icons { padding-top: 0; } }
+@media (max-width: 991px) { .treatment-table .panel-heading h3 .txtwrap { max-width: 470px; display: inline-block; }
+  .treatment-table .panel-content.child-accordion .panel-content { float: left; left: 2.7rem; }
+  .treatment-table .panel-content.child-accordion .panel-header .title-02 { left: 2rem; }
+  .evidence-accordion .title .material-icons { float: left; width: 32px; height: 24px; cursor: pointer; padding-top: 8px; }
+  #comoselected-1 button.btn { position: absolute; top: 0; right: 0; }
+  #topicNav.stickme #como-2 { position: relative; } }
+@media (max-width: 1023px) { .blue-accordion .panel-heading { padding: 0; }
+  .blue-accordion .panel-heading .panel-title { float: initial; }
+  .blue-accordion .panel-heading h3 a { float: left; width: auto; }
+  .blue-accordion .panel-heading h3 a:hover > span > span:first-child:hover, .blue-accordion .panel-heading h3 a:hover > span > span:first-child { text-decoration: none; }
+  .blue-accordion .panel-heading h3 a.view-hide-all { float: right; width: auto; }
+  .blue-accordion .panel-heading h3 a .title-04 { top: 0; }
+  .blue-accordion .panel-body { float: initial; }
+  .treatment-table .blue-accordion { padding: 0; }
+  .treatment-table .blue-accordion .panel-heading .txtwrap { padding: 0; display: inline; }
+  .treatment-table .panel-content.child-accordion { float: initial; }
+  .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 { display: inline-block; min-width: 95px; }
+  .treatment-table .panel-header.child-accordion .title-01 span { padding-left: 3rem; font-size: 1rem; }
+  .treatment-table .panel-header.child-accordion .title-01 span:before { left: -65px; width: 19px; }
+  .treatment-table .panel-header.child-accordion .title-04 { position: relative; }
+  .treatment-table .panel-header.child-accordion .title-04 .material-icons { position: absolute; left: 49px; top: 16px; padding-top: 3px; } }
+@media (max-width: 1199px) { #topicNav #topicMenuTopBg, #topicNav #menuLinks, #topicNav #menus, #topicNav #como-2 { width: 936px !important; } }
+@media (min-width: 1024px) { .treatment-table .title-04 { max-width: 900px; width: auto; position: relative; top: 7px; }
+  .treatment-table .title-04 .material-icons { float: left; clear: right; width: 24px; height: 24px; margin-bottom: -24px; }
+  .treatment-table .txtwrap { width: 100% !important; padding-left: 32px; cursor: pointer; }
+  .treatment-table .panel-content.child-accordion { float: initial; }
+  .treatment-table .blue-accordion { padding: 0; }
+  .treatment-table .blue-accordion .panel-heading .txtwrap { padding: 4px 0 0 32px; }
+  .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 { display: inline-block; min-width: 95px; }
+  .treatment-table .panel-header.child-accordion .title-01 span { padding-left: 3rem; font-size: 1rem; }
+  .treatment-table .panel-header.child-accordion .title-01 span:before { left: -42px; width: 19px; }
+  .treatment-table .panel-header.child-accordion .title-04 .material-icons { position: absolute; left: 49px; top: 16px; padding-top: 3px; }
+  .evidence-accordion .title .material-icons { float: left; width: 32px; height: 24px; cursor: pointer; padding-top: 8px; }
+  .evidence-accordion .title span.title { display: inline-block; cursor: pointer; }
+  .blue-accordion .panel-heading { padding: 0; }
+  .blue-accordion .panel-heading .panel-title { float: initial; }
+  .blue-accordion .panel-heading h3 a { float: left; width: auto; }
+  .blue-accordion .panel-heading h3 a.view-hide-all { float: right; width: auto; }
+  .blue-accordion .panel-heading h3 a .title-04 { top: 0; }
+  .blue-accordion .panel-heading h3 a span.msg { font-size: 0.875rem; }
+  .blue-accordion .panel-body { float: initial; } }
