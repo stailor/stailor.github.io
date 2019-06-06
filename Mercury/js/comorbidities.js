@@ -141,11 +141,7 @@ $(function() {
 
         $('.warning-asthma').show();
         // $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-indicator').addClass('disable-checkbox');
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-indicator').css(
-            {
-                'text-decoration' : 'line-through',
-                'border' : '2px solid #ddd'
-            });
+        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration','line-through');
         $('#editComo input#Asthma').prop("disabled", true);
         $('#editComo input#Asthma').parent().css('cursor','not-allowed');
         console.log('both checked');
