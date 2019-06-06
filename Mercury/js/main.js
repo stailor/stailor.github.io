@@ -75,6 +75,9 @@ function imgSizing2(i) {
 // treatment algorithm page view all
 function treatmentTbl(tt) {
     var state, state2, txt;
+    var blueAcc = $('.blue-accordion');
+    var rowTitle = blueAcc.find('h3');
+
     tt.find('.panel-heading').each(function () {
 
         $(this).find('a:nth-child(2)').click(function (e) {
