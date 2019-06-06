@@ -175,17 +175,6 @@ $(function() {
         console.log('zilch checked');
     }
 
-
-    else {
-        $('.warning-asthma').hide();
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'none');        
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] input').attr("disabled", false);
-
-        // $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-description').css('text-decoration', 'none');
-        // $('#editComo .modal-body .list-group-item.selected label[for="COPD"] span.custom-control-indicator').removeClass('disable-checkbox');
-        // $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-indicator').removeClass('disable-checkbox');
-    }
-
     // __________________________________________________________________________________________
     // MY ATTEMPT AT FIXING THE DISABLE CHECKBOX FUNCTIONALITY FOR ASTHMA / COPD
         // var asthmaLabel = $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description');    
