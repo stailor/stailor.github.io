@@ -141,7 +141,7 @@ $(function() {
 
         $('.warning-asthma').show();
         // $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-indicator').addClass('disable-checkbox');
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration','line-through');
+        // $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration','line-through');
         $('#editComo input#Asthma').prop("disabled", true);
         $('#editComo input#Asthma').parent().css('cursor','not-allowed');
         console.log('both checked');
@@ -149,7 +149,6 @@ $(function() {
     // IF JUST ASTHMA IS CHECKED UNDISABLE COPD 
     if (($(copd).prop("checked") === false) && ($(asthma).prop("checked") === true)) {
         $('.warning-asthma').hide();
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'none');
         $('#editComo input#Asthma').prop("disabled", false);
         $('#editComo  input#Asthma').parent().css('cursor','pointer');
         console.log('just asthma checked');
@@ -157,7 +156,6 @@ $(function() {
     // IF JUST COPD IS CHECKED UNDISABLE ASTHMA
     if (($(copd).prop("checked") === true) && ($(asthma).prop("checked") === false)) {
         $('.warning-asthma').hide();
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'none');
         $('#editComo input#Asthma').attr("disabled", false);
         $('#editComo input#Asthma').parent().css('cursor','pointer');
         console.log('just copd checked');
@@ -165,7 +163,6 @@ $(function() {
     // IF BOTH ARE UNCHECKED UNDISABLE BOTH
     if (($(copd).prop("checked") === false) && ($(asthma).prop("checked") === false)) {
         $('.warning-asthma').hide();
-        $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration', 'none');
         $('#editComo input#Asthma').attr("disabled", false);
         $('#editComo input#Asthma').parent().css('cursor','pointer');
         console.log('zilch checked');
