@@ -25,7 +25,7 @@
 .poce_drug_msg .material-icons svg { top: 0; left: -6px; position: relative; }
 .poce_drug_msg .material-icons svg.co-morbidity-icon-pink { height: 30px; }
 
-#como-1 { height: auto; }
+#como-1 { height: auto; /* TOGGLE ON/OFF */ }
 #como-1 .material-icons { font-size: 30px; }
 #como-1 svg.co-morbidity-icon-pink { top: 3px; position: relative; }
 #como-1 .add-como-icon-and-text { display: inline-block; background-color: #c50084; color: #fff; padding: 1px 5px 6px; border-radius: 5px; float: left; }
@@ -37,6 +37,32 @@
 #como-1 .add-como-icon-and-text.checked path { fill: #c50084; }
 #como-1 .add-como-icon-and-text.checked g g g circle { fill: #c50084; }
 #como-1 .add-como-icon-and-text.checked .co-morbidity-icon-pink polygon { fill: #fff; }
+#como-1 .como-toggle-on-off { display: inline-block; margin: 0.3rem 1rem 0rem 1rem; /* TOGGLE ON/OFF */ }
+#como-1 .como-toggle-on-off .checkbox label .toggle, #como-1 .como-toggle-on-off .checkbox-inline .toggle { margin-left: -20px; margin-right: 5px; }
+#como-1 .como-toggle-on-off .toggle { position: relative; overflow: hidden; }
+#como-1 .como-toggle-on-off .toggle input[type=checkbox] { display: none; }
+#como-1 .como-toggle-on-off .toggle-group { position: absolute; width: 200%; top: 0; bottom: 0; left: 0; transition: left .35s; -webkit-transition: left .35s; -moz-user-select: none; -webkit-user-select: none; }
+#como-1 .como-toggle-on-off .toggle.off .toggle-group { left: -100%; }
+#como-1 .como-toggle-on-off .toggle-on { position: absolute; top: 0; bottom: 0; left: 0; right: 50%; margin: 0; border: 0; border-radius: 0; }
+#como-1 .como-toggle-on-off .toggle-off { position: absolute; top: 0; bottom: 0; left: 50%; right: 0; margin: 0; border: 0; border-radius: 0; }
+#como-1 .como-toggle-on-off .toggle-handle { position: relative; margin: 0 auto; padding-top: 0; padding-bottom: 0; height: 100%; width: 0; border-width: 0 1px; }
+#como-1 .como-toggle-on-off .toggle.btn { min-width: 59px; min-height: 34px; width: 90px !important; }
+#como-1 .como-toggle-on-off .toggle-on.btn { padding-right: 37px; }
+#como-1 .como-toggle-on-off .toggle-off.btn { padding-left: 37px; }
+#como-1 .como-toggle-on-off .toggle.btn-lg { min-width: 79px; min-height: 45px; }
+#como-1 .como-toggle-on-off .toggle-on.btn-lg { padding-right: 31px; }
+#como-1 .como-toggle-on-off .toggle-off.btn-lg { padding-left: 31px; }
+#como-1 .como-toggle-on-off .toggle-handle.btn-lg { width: 40px; }
+#como-1 .como-toggle-on-off .toggle.btn-sm { min-width: 50px; min-height: 30px; }
+#como-1 .como-toggle-on-off .toggle-on.btn-sm { padding-right: 20px; }
+#como-1 .como-toggle-on-off .toggle-off.btn-sm { padding-left: 20px; }
+#como-1 .como-toggle-on-off .toggle.btn-xs { min-width: 35px; min-height: 22px; }
+#como-1 .como-toggle-on-off .toggle-on.btn-xs { padding-right: 12px; }
+#como-1 .como-toggle-on-off .toggle-off.btn-xs { padding-left: 12px; }
+#como-1 .como-toggle-on-off span.toggle-handle.btn.btn-default { color: #333; background-color: #fff; border-color: #ccc; z-index: 100; }
+#como-1 .como-toggle-on-off .btn { display: inline-block; padding: 6px 0px; margin-bottom: 0; font-size: 14px; font-weight: 400; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; }
+#como-1 .como-toggle-on-off .toggle.ios, #como-1 .como-toggle-on-off .toggle-on.ios, #como-1 .como-toggle-on-off .toggle-off.ios { border-radius: 20px; }
+#como-1 .como-toggle-on-off .toggle.ios .toggle-handle { border-radius: 20px; }
 #como-1 #comoselected-1 { font-weight: bold; color: #c50084; margin: 0 1rem; }
 #como-1 #comoselected-1 ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
 #como-1 #comoselected-1 ul li { display: inline; }
@@ -45,7 +71,7 @@
 #como-1 #comoselected-1 { display: inline-block; }
 #como-1 #comoselected-1 button.btn { margin: 0 0 0 1rem; }
 #como-1 #comoselected-1 button.show { display: inline-block; }
-#como-1 #comoselected-1 span { display: inline-block; position: relative; top: 9px; }
+#como-1 #comoselected-1 span { display: inline-block; position: relative; }
 #como-1 #comoselected-1 button.hide, #como-1 #comoselected-1 button { display: none; }
 #como-1 #comoselected-1 span + span:before { content: ', '; }
 #como-1 .card-block b { vertical-align: -webkit-baseline-middle; vertical-align: sub; }

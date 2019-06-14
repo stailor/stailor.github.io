@@ -1695,6 +1695,7 @@
                <div class="card-block">
                   <div class="row">
                      <div class="col-md-12">
+
                         <div class="add-como-icon-and-text">
                            <span class="material-icons">
                               <svg version="1.1" class="co-morbidity-icon-pink" xmlns="http://www.w3.org/2000/svg"
@@ -1722,9 +1723,23 @@
                            <b class="add" data-toggle="modal" data-target="#editComo">Add comorbidities:</b>
                            <b class="added unchecked">Added comorbidities:</b>
                         </div>
+
+                        <!-- TOGGLE ON/OFF -->
+                        <link href="../css/bootstrap-toggle.css" rel="stylesheet">
+                        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+                        <script src="../js/bootstrap-toggle.js"></script>
+                        
+                        <div class="como-toggle-on-off">
+                           <input type="checkbox" checked data-toggle="toggle" data-style="ios" id="toggleSwitch">                           
+                        </div>                        
+                        <!-- TOGGLE ON/OFF ENDS -->
+
+                        <!-- COMO EDIT BUTTON -->
                         <div id="comoselected-1">
                            <button class="btn hide" data-toggle="modal" data-target="#editComo">Edit</button>
                         </div>
+                        <!-- COMO EDIT BUTTON ENDS -->
+                        
                      </div>
                   </div>
                   <!--- row --->

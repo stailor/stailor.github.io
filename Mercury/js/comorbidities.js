@@ -230,6 +230,26 @@ $(function () {
         }
         $icon.toggleClass('open');
     });
+    // TOGGLE ON/OFF SWITCH
+    $('.como-toggle-on-off .toggle').on('click', function () {
+        if ($('.toggle').hasClass('btn-primary')) {
+            console.log('toggleSwitch checked');
+            
+            
+        $("#comoselected-1 span").css('color', '#ccc');
+        $("#comoselected-1 button").hide();
+        $('[class*="-como-content"]').css('display', 'none');
+        
+        }
+        if ($('.toggle').hasClass('off')) {
+            console.log('toggleSwitch NOT checked');
+            $("#comoselected-1 span").css('color', '#c50084');
+            $("#comoselected-1 button").show();
+            $('[class*="-como-content"]').css('display', 'block');
+        }
+        
+    // TOGGLE ON/OFF SWITCH ENDS
+    });
 });
 
 // POCE Evidence Accordion (nested)
@@ -256,4 +276,3 @@ for (i = 0; i < acc.length; i++) {
 $(".close-warning").click(function(){
     $(".warning-asthma").hide();
   });
-  
