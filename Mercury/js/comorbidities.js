@@ -233,21 +233,15 @@ $(function () {
     // TOGGLE ON/OFF SWITCH
     $('.como-toggle-on-off .toggle').on('click', function () {
         if ($('.toggle').hasClass('btn-primary')) {
-            console.log('toggleSwitch checked');
-            
-            
-        $("#comoselected-1 span").css('color', '#ccc');
-        $("#comoselected-1 button").hide();
-        $('[class*="-como-content"]').css('display', 'none');
-        
+            $('#comoselected-1 span').css('color', '#ccc');
+            $('#comoselected-1 button').fadeOut();
+            $('[class*="-como-content"]').fadeOut();        
         }
         if ($('.toggle').hasClass('off')) {
-            console.log('toggleSwitch NOT checked');
-            $("#comoselected-1 span").css('color', '#c50084');
-            $("#comoselected-1 button").show();
-            $('[class*="-como-content"]').css('display', 'block');
-        }
-        
+            $('#comoselected-1 span').css('color', '#c50084');
+            $('[class*="-como-content"]').fadeIn();
+            $('#comoselected-1 button').fadeIn();
+        }        
     // TOGGLE ON/OFF SWITCH ENDS
     });
 });
