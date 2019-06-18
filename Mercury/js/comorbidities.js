@@ -35,6 +35,10 @@ $(function() {
         $('.non-como-content').removeClass("show");
         $('.como-content').addClass("show");
         $('.como-content').removeClass("hide");
+        $('.como-toggle-on-off').addClass("show");
+        $('.como-toggle-on-off').removeClass("hide");
+
+        
         
     });
     // HIDE "LOOK OUT FOR THIS ICON BOX" IF COMOS UNCHECKED AND CLOSE BUTTON IS CLICKED    
@@ -45,6 +49,8 @@ $(function() {
         $('.non-como-content').removeClass("hide");
         $('.como-content').addClass("hide");
         $('.como-content').removeClass("show");
+        $('.como-toggle-on-off').addClass("hide");
+        $('.como-toggle-on-off').removeClass("show");
     });
     $('.close-look-out').click(function(event) {
         $('#lookOutPopUp').addClass("unchecked");

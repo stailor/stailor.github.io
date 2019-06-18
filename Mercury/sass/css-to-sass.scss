@@ -189,6 +189,10 @@
         margin: 0 0 0 1rem;
         float: left;
 
+        &.hide {
+            display: none;
+        }
+
         .checkbox label .toggle,.checkbox-inline .toggle{margin-left:-20px;margin-right:5px}
         .toggle{position:relative;overflow:hidden}
         .toggle input[type=checkbox]{display:none}
