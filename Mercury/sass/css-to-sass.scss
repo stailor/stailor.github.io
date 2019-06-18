@@ -241,59 +241,9 @@
         .toggle.ios .toggle-handle { 
             border-radius: 20px; 
         }
- 
- /* TOGGLE ON/OFF */
-
-        // p {
-
-        //     &.on {
-        //         position: relative;
-        //         background: #2a6ebb;
-        //         color: #fff;
-        //         border-radius: 15px;
-        //         padding: 3px 29px 2px 8px;
-        //         width: 60px;
-        //         cursor: pointer;
-
-        //         span {
-        //             color:#fff;
-
-        //             &.dot {
-        //                 background: url('../images/dot.png') no-repeat 0 0;
-        //                 width: 31px;
-        //                 height: 31px;
-        //                 position: absolute;
-        //                 right: 0;
-        //                 top: 0;
-        //             }
-        //         }                              
-        //     }
-        //     &.off {
-        //         position: relative;
-        //         border-radius: 15px;
-        //         padding: 3px 0 2px 8px;
-        //         width: 70px;
-        //         cursor: pointer;
-        //         background:#fff;
-        //         border: 1px solid #ddd;
-
-        //         span {
-        //             color:#747678;
-        //             padding-left: 1.6rem;
-
-        //             &.dot {
-        //                 background: url('../images/dot-off.png') no-repeat 0 0;
-        //                 width: 31px;
-        //                 height: 31px;
-        //                 position: absolute;
-        //                 left: 0;
-        //                 top: 0;                        
-        //             }
-        //         }
-        //     }
-        // }
     }
     #comoselected-1 {
+        display: inline-block;
         font-weight: bold;
         color: #c50084;
         margin: 0 1rem;
@@ -320,10 +270,6 @@
                 }
             }
         }
-    }
-    #comoselected-1 {
-        display: inline-block;
-
         button.btn {
             margin: 0 0 0 1rem;
         }
@@ -333,6 +279,7 @@
         span {
             display: inline-block;
             position: relative;
+            margin: 0.5rem 0 0 0;
         }
         button.hide, button {
             display: none;
@@ -340,6 +287,7 @@
         span+span:before {
             content: ', ';
         }
+
     }
     .card-block b {
         vertical-align: -webkit-baseline-middle;
