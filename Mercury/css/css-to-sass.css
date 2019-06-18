@@ -37,7 +37,7 @@
 #como-1 .add-como-icon-and-text.checked path { fill: #c50084; }
 #como-1 .add-como-icon-and-text.checked g g g circle { fill: #c50084; }
 #como-1 .add-como-icon-and-text.checked .co-morbidity-icon-pink polygon { fill: #fff; }
-#como-1 .como-toggle-on-off { display: inline-block; margin: 0.3rem 1rem 0rem 1rem; /* TOGGLE ON/OFF */ }
+#como-1 .como-toggle-on-off { display: inline-block; margin: 0 0 0 1rem; float: left; /* TOGGLE ON/OFF */ }
 #como-1 .como-toggle-on-off .checkbox label .toggle, #como-1 .como-toggle-on-off .checkbox-inline .toggle { margin-left: -20px; margin-right: 5px; }
 #como-1 .como-toggle-on-off .toggle { position: relative; overflow: hidden; }
 #como-1 .como-toggle-on-off .toggle input[type=checkbox] { display: none; }

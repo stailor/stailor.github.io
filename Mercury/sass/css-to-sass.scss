@@ -186,7 +186,8 @@
     /* TOGGLE ON/OFF */
     .como-toggle-on-off {
         display: inline-block;
-        margin: 0.3rem 1rem 0rem 1rem;
+        margin: 0 0 0 1rem;
+        float: left;
 
         .checkbox label .toggle,.checkbox-inline .toggle{margin-left:-20px;margin-right:5px}
         .toggle{position:relative;overflow:hidden}
