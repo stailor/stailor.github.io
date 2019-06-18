@@ -233,7 +233,7 @@ $(function () {
     // TOGGLE ON/OFF SWITCH
     $('.como-toggle-on-off .toggle').on('click', function () {
         if ($('.toggle').hasClass('btn-primary')) {
-            $('#comoselected-1 span').css('color', '#ccc');
+            $('#comoselected-1 span').css('color', '#737373');
             $('#comoselected-1 button').fadeOut();
             $('[class*="-como-content"]').fadeOut();        
         }
