@@ -189,44 +189,145 @@
         margin: 0 0 0 1rem;
         float: left;
         min-width: 3.5rem;
+        border: 1px solid #ccc;
+        border-radius: 20px;
 
         &.hide {
             display: none;
         }
-
-        .checkbox label .toggle,.checkbox-inline .toggle{margin-left:-20px;margin-right:5px}
-        .toggle{position:relative;overflow:hidden}
-        .toggle input[type=checkbox]{display:none}
-        .toggle-group{position:absolute;width:224%;top:0;bottom:0;left:0;transition:left .35s;-webkit-transition:left .35s;-moz-user-select:none;-webkit-user-select:none}
-        .toggle.off .toggle-group{left:-127%}
-        .toggle-on{position:absolute;top:0;bottom:0;left:0;right:50%;margin:0;border:0;border-radius:0}
-        .toggle-off{position:absolute;top:0;bottom:0;left:50%;right:0;margin:0;border:0;border-radius:0;background-color: #fff}
-        .toggle-handle{position:relative;margin:0 auto;padding-top:0;padding-bottom:0;height:100%;width:0;border-width:0 1px}
-        .toggle.btn{min-width:59px;min-height:34px;width: 90px!important;}
-        .toggle-on.btn{padding-right:37px}
-        .toggle-off.btn{padding-left:37px}
-        .toggle.btn-lg{min-width:79px;min-height:45px}
-        .toggle-on.btn-lg{padding-right:31px}
-        .toggle-off.btn-lg{padding-left:31px}
-        .toggle-handle.btn-lg{width:40px}
-        .toggle.btn-sm{min-width:50px;min-height:30px}
-        .toggle-on.btn-sm{padding-right:20px}
-        .toggle-off.btn-sm{padding-left:20px}
-        .toggle.btn-xs{min-width:35px;min-height:22px}
-        .toggle-on.btn-xs{padding-right:12px}
-        .toggle-off.btn-xs{padding-left:12px}
-        span.toggle-handle.btn.btn-default {
-            color: #333;
-            background-color: #fff;
-            border-color: #ccc;
-            z-index: 100;
+        .checkbox label .toggle,
+        .checkbox-inline .toggle {
+            margin-left:-20px;
+            margin-right:5px
         }
+        .toggle {
+            position:relative;
+            overflow:hidden;
+
+            &.off .toggle-group {
+                left:-135%
+            }
+            &.btn {
+                min-width:59px;
+                min-height:34px;
+                width: 75px!important;
+            }
+            &.btn-lg {
+                min-width:79px;
+                min-height:45px
+            }
+            &.btn-sm {
+                min-width:50px;
+                min-height:30px
+            }
+            &.btn-xs {
+                min-width:35px;
+                min-height:22px
+            }
+            &.ios { 
+                border-radius: 20px; 
+
+                .toggle-handle { 
+                    border-radius: 20px; 
+                }
+            }
+            input[type=checkbox] {
+                display:none
+            }
+            .toggle-group {
+                position:absolute;
+                width:230%;
+                top:0;
+                bottom:0;
+                left:0;
+                transition:left .35s;
+                -webkit-transition:left .35s;
+                -moz-user-select:none;
+                -webkit-user-select:none;
+                    
+                .toggle-on {
+                    position:absolute;
+                    top:0;
+                    bottom:0;
+                    left:0;
+                    right:50%;
+                    margin:0;
+                    border:0;
+                    border-radius:0;
+
+                    &.btn {
+                        padding-right:47px;
+                    }
+                    &.btn-lg {
+                        padding-right:31px
+                    }
+                    &.btn-sm {
+                        padding-right:20px
+                    }
+                    &.btn-xs {
+                        padding-right:12px
+                    }
+                    &.ios { 
+                        border-radius: 20px; 
+                    }
+                }
+                .toggle-off {
+                    position:absolute;
+                    top:0;
+                    bottom:0;
+                    left:50%;
+                    right:0;
+                    margin:0;
+                    border:0;
+                    border-radius:0;
+                    background-color: #fff;
+                    color:#737373;
+                    background-color: #fff;
+                    box-shadow: none;
+
+                    &.btn {
+                        padding-left:37px
+                    }
+                    &.btn-lg{
+                        padding-left:31px
+                    }
+                    &.btn-sm{
+                        padding-left:20px
+                    }
+                    &.btn-xs{
+                        padding-left:12px
+                    }                    
+                    &.ios { 
+                        border-radius: 20px; 
+                    }
+                }
+                span.toggle-handle {
+                    position:relative;
+                    margin:0 auto;
+                    padding-top:0;
+                    padding-bottom:0;
+                    height:100%;
+                    width:0;
+                    border-width:0 1px;
+
+                    &.btn-lg{
+                        width:40px;
+                    }
+                    &.btn.btn-default {
+                        color: #333;
+                        background-color: #fff;
+                        border-color: #ccc;
+                        z-index: 100;
+                    }
+                }
+            }
+        }   
         .btn {
             display: inline-block;
             padding: 6px 0px;
             margin-bottom: 0;
             font-size: 14px;
-            font-weight: 400;
+            font-weight: bold;
             line-height: 1.42857143;
             text-align: center;
             white-space: nowrap;
@@ -240,13 +341,8 @@
             border: 1px solid transparent;
             border-radius: 4px;
         }
-        .toggle.ios, .toggle-on.ios, .toggle-off.ios { 
-            border-radius: 20px; 
-        }
-        .toggle.ios .toggle-handle { 
-            border-radius: 20px; 
-        }
     }
+
     #comoselected-1 {
         display: inline-block;
         font-weight: bold;
@@ -301,7 +397,7 @@
     }
     &.card {
         border-radius: 0;
-        padding: 1.125rem 1.5rem;
+        padding: 1rem;
         p {
             display: inline-block;
             font-weight: bold;
@@ -335,6 +431,7 @@
         }
     }
 }
+
 // ADD COMORBIDITIES STICKY SCROLLDOWN PAGE PANEL
 #como-2 {
     height: auto;
@@ -1022,6 +1119,25 @@ div[class*='-como-content'] {
         .material-icons {
             padding-top: 0;
         }
+    }
+    .modal#editComo .warning-asthma  {
+        font-size: 0.8rem;
+        left: 120px;
+        width: 241px;
+        &:after {
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: #fff;
+            border-width: 11px;
+            margin-top: -11px;
+            left: -22px;
+        }
+        &:before {
+            border-color: rgba(197, 0, 132, 0);
+            border-right-color: #c50084;
+            border-width: 13px;
+            margin-top: -13px;
+            left: -27px;
+        }    
     }
 }
 @media (max-width:991px) {
