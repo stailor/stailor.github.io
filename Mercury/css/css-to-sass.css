@@ -119,6 +119,7 @@
 #lookOutPopUp .co-morbidity-icon-pink polygon { fill: #fff; }
 #lookOutPopUp p { font-weight: bold; }
 #lookOutPopUp .got-it { margin-bottom: 0.75rem; text-align: center; }
+#lookOutPopUp .close-look-out { margin-left: 1rem; }
 
 #tmp .poce_contents.treatment-algorithm .card-block { padding: 0 !important; }
 #tmp .poce_contents.treatment-algorithm .treatment-box-cplus { border: 1px solid #c50084; background: none; padding: 1rem 2rem; margin-bottom: 1rem; }

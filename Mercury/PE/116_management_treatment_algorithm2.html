@@ -502,7 +502,7 @@
       <div id="como-1" class="card">
          <div class="card-block">
             <div class="row">
-               <div class="col-md-12">
+               <div class="col-md-9">
                   <div class="add-como-icon-and-text">
                      <span class="material-icons">
                         <svg version="1.1" class="co-morbidity-icon-pink" xmlns="http://www.w3.org/2000/svg"
@@ -529,19 +529,23 @@
                      </span>
                      <b class="add" data-toggle="modal" data-target="#editComo">omorbidities:</b>
                      <b class="added unchecked">omorbidities:</b>
+                  </div>                  
+
+                  <div id="comoselected-1">
+                     <button class="btn hide" data-toggle="modal" data-target="#editComo">Edit</button>
                   </div>
+               </div>
+               
+               <div class="col-md-3">
                   <!-- TOGGLE ON/OFF -->
                   <link href="../css/bootstrap-toggle.css" rel="stylesheet">
                   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
                   <script src="../js/bootstrap-toggle.js"></script>
-                  
-                  <div class="como-toggle-on-off hide">
+
+                  <div class="como-toggle-on-off hide" style="float:right">
                      <input type="checkbox" checked data-toggle="toggle" data-style="ios" id="toggleSwitch">                           
                   </div>                        
                   <!-- TOGGLE ON/OFF ENDS -->
-                  <div id="comoselected-1">
-                     <button class="btn hide" data-toggle="modal" data-target="#editComo">Edit</button>
-                  </div>
                </div>
             </div>
             <!--- row --->
@@ -579,8 +583,7 @@
                      </svg>
                   </span>
                   <span>for treatment options that are affected, or added, as a result of your patient's comorbidities.</span>
-                  <button type="button" class="btn btn-secondary showalg close-look-out" data-dismiss="modal"
-                  aria-label="Close">Got it</button>
+                  <button type="button" class="btn btn-secondary showalg close-look-out" data-dismiss="modal" aria-label="Close">Got it</button>
                </p>
                
             </div>
