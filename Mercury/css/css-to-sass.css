@@ -68,6 +68,7 @@
 #como-1 .add-como-icon-and-text.checked path { fill: #c50084; }
 #como-1 .add-como-icon-and-text.checked g g g circle { fill: #c50084; }
 #como-1 .add-como-icon-and-text.checked .co-morbidity-icon-pink polygon { fill: #fff; }
+#como-1 label.toggle-off { padding-left: 36px !important; }
 #como-1 #comoselected-1 { display: inline-block; font-weight: bold; margin: 0 1rem; }
 #como-1 #comoselected-1 ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
 #como-1 #comoselected-1 ul li { display: inline; }

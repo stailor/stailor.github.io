@@ -342,6 +342,9 @@
             }
         }
     }
+    label.toggle-off {
+        padding-left:36px!important;
+    }
     #comoselected-1 {
         display: inline-block;
         font-weight: bold;
@@ -494,7 +497,7 @@
         }
         .como-toggle-on-off {            
             margin-right: 1rem!important;
-            
+
             label.toggle-off {
                 padding-left:36px!important;
             }
