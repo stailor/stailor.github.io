@@ -25,7 +25,38 @@
 .poce_drug_msg .material-icons svg { top: 0; left: -6px; position: relative; }
 .poce_drug_msg .material-icons svg.co-morbidity-icon-pink { height: 30px; }
 
-#como-1 { height: auto; /* TOGGLE ON/OFF */ }
+/* TOGGLE ON/OFF */
+.como-toggle-on-off { display: inline-block; margin: 0 0 0 1rem; float: left; min-width: 3.5rem; border: 1px solid #ccc; border-radius: 20px; }
+.como-toggle-on-off.hide { display: none; }
+.como-toggle-on-off .checkbox label .toggle, .como-toggle-on-off .checkbox-inline .toggle { margin-left: -20px; margin-right: 5px; }
+.como-toggle-on-off .toggle { position: relative; overflow: hidden; }
+.como-toggle-on-off .toggle.off .toggle-group { left: -135%; }
+.como-toggle-on-off .toggle.btn { min-width: 59px; min-height: 34px; width: 75px !important; }
+.como-toggle-on-off .toggle.btn-lg { min-width: 79px; min-height: 45px; }
+.como-toggle-on-off .toggle.btn-sm { min-width: 50px; min-height: 30px; }
+.como-toggle-on-off .toggle.btn-xs { min-width: 35px; min-height: 22px; }
+.como-toggle-on-off .toggle.ios { border-radius: 20px; }
+.como-toggle-on-off .toggle.ios .toggle-handle { border-radius: 20px; }
+.como-toggle-on-off .toggle input[type=checkbox] { display: none; }
+.como-toggle-on-off .toggle .toggle-group { position: absolute; width: 230%; top: 0; bottom: 0; left: 0; transition: left .35s; -webkit-transition: left .35s; -moz-user-select: none; -webkit-user-select: none; }
+.como-toggle-on-off .toggle .toggle-group .toggle-on { position: absolute; top: 0; bottom: 0; left: 0; right: 50%; margin: 0; border: 0; border-radius: 0; }
+.como-toggle-on-off .toggle .toggle-group .toggle-on.btn { padding-right: 47px !important; }
+.como-toggle-on-off .toggle .toggle-group .toggle-on.btn-lg { padding-right: 31px; }
+.como-toggle-on-off .toggle .toggle-group .toggle-on.btn-sm { padding-right: 20px; }
+.como-toggle-on-off .toggle .toggle-group .toggle-on.btn-xs { padding-right: 12px; }
+.como-toggle-on-off .toggle .toggle-group .toggle-on.ios { border-radius: 20px; }
+.como-toggle-on-off .toggle .toggle-group .toggle-off { position: absolute; top: 0; bottom: 0; left: 50%; right: 0; margin: 0; border: 0; border-radius: 0; background-color: #fff; color: #737373; background-color: #fff; box-shadow: none; }
+.como-toggle-on-off .toggle .toggle-group .toggle-off.btn { padding-left: 37px; }
+.como-toggle-on-off .toggle .toggle-group .toggle-off.btn-lg { padding-left: 31px; }
+.como-toggle-on-off .toggle .toggle-group .toggle-off.btn-sm { padding-left: 20px; }
+.como-toggle-on-off .toggle .toggle-group .toggle-off.btn-xs { padding-left: 12px; }
+.como-toggle-on-off .toggle .toggle-group .toggle-off.ios { border-radius: 20px; }
+.como-toggle-on-off .toggle .toggle-group span.toggle-handle { position: relative; margin: 0 auto; padding-top: 0; padding-bottom: 0; height: 100%; width: 0; border-width: 0 1px; }
+.como-toggle-on-off .toggle .toggle-group span.toggle-handle.btn-lg { width: 40px; }
+.como-toggle-on-off .toggle .toggle-group span.toggle-handle.btn.btn-default { color: #333; background-color: #fff; border-color: #ccc; z-index: 100; }
+.como-toggle-on-off .btn { display: inline-block; padding: 6px 0px !important; margin-bottom: 0 !important; font-size: 14px; font-weight: bold; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; }
+
+#como-1 { height: auto; }
 #como-1 .material-icons { font-size: 30px; }
 #como-1 svg.co-morbidity-icon-pink { top: 3px; position: relative; }
 #como-1 .add-como-icon-and-text { display: inline-block; background-color: #c50084; color: #fff; padding: 1px 5px 6px; border-radius: 5px; float: left; }
@@ -37,35 +68,6 @@
 #como-1 .add-como-icon-and-text.checked path { fill: #c50084; }
 #como-1 .add-como-icon-and-text.checked g g g circle { fill: #c50084; }
 #como-1 .add-como-icon-and-text.checked .co-morbidity-icon-pink polygon { fill: #fff; }
-#como-1 .como-toggle-on-off { display: inline-block; margin: 0 0 0 1rem; float: left; min-width: 3.5rem; border: 1px solid #ccc; border-radius: 20px; }
-#como-1 .como-toggle-on-off.hide { display: none; }
-#como-1 .como-toggle-on-off .checkbox label .toggle, #como-1 .como-toggle-on-off .checkbox-inline .toggle { margin-left: -20px; margin-right: 5px; }
-#como-1 .como-toggle-on-off .toggle { position: relative; overflow: hidden; }
-#como-1 .como-toggle-on-off .toggle.off .toggle-group { left: -135%; }
-#como-1 .como-toggle-on-off .toggle.btn { min-width: 59px; min-height: 34px; width: 75px !important; }
-#como-1 .como-toggle-on-off .toggle.btn-lg { min-width: 79px; min-height: 45px; }
-#como-1 .como-toggle-on-off .toggle.btn-sm { min-width: 50px; min-height: 30px; }
-#como-1 .como-toggle-on-off .toggle.btn-xs { min-width: 35px; min-height: 22px; }
-#como-1 .como-toggle-on-off .toggle.ios { border-radius: 20px; }
-#como-1 .como-toggle-on-off .toggle.ios .toggle-handle { border-radius: 20px; }
-#como-1 .como-toggle-on-off .toggle input[type=checkbox] { display: none; }
-#como-1 .como-toggle-on-off .toggle .toggle-group { position: absolute; width: 230%; top: 0; bottom: 0; left: 0; transition: left .35s; -webkit-transition: left .35s; -moz-user-select: none; -webkit-user-select: none; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-on { position: absolute; top: 0; bottom: 0; left: 0; right: 50%; margin: 0; border: 0; border-radius: 0; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-on.btn { padding-right: 47px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-on.btn-lg { padding-right: 31px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-on.btn-sm { padding-right: 20px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-on.btn-xs { padding-right: 12px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-on.ios { border-radius: 20px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-off { position: absolute; top: 0; bottom: 0; left: 50%; right: 0; margin: 0; border: 0; border-radius: 0; background-color: #fff; color: #737373; background-color: #fff; box-shadow: none; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-off.btn { padding-left: 37px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-off.btn-lg { padding-left: 31px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-off.btn-sm { padding-left: 20px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-off.btn-xs { padding-left: 12px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group .toggle-off.ios { border-radius: 20px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group span.toggle-handle { position: relative; margin: 0 auto; padding-top: 0; padding-bottom: 0; height: 100%; width: 0; border-width: 0 1px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group span.toggle-handle.btn-lg { width: 40px; }
-#como-1 .como-toggle-on-off .toggle .toggle-group span.toggle-handle.btn.btn-default { color: #333; background-color: #fff; border-color: #ccc; z-index: 100; }
-#como-1 .como-toggle-on-off .btn { display: inline-block; padding: 6px 0px; margin-bottom: 0; font-size: 14px; font-weight: bold; line-height: 1.42857143; text-align: center; white-space: nowrap; vertical-align: middle; cursor: pointer; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; background-image: none; border: 1px solid transparent; border-radius: 4px; }
 #como-1 #comoselected-1 { display: inline-block; font-weight: bold; margin: 0 1rem; }
 #como-1 #comoselected-1 ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
 #como-1 #comoselected-1 ul li { display: inline; }
@@ -98,6 +100,9 @@
 #como-2 #comoselected-2 ul li { display: inline; }
 #como-2 #comoselected-2 ul li a { text-decoration: none; padding: .2em 1em; color: #fff; background-color: #036; }
 #como-2 #comoselected-2 ul li a:hover { color: #fff; background-color: #369; }
+#como-2 #comoselected-2 .como-toggle-on-off { margin-right: 1rem !important; }
+#como-2 #comoselected-2 .como-toggle-on-off label.toggle-off { padding-left: 36px !important; }
+#como-2 #comoselected-2 .como-toggle-on-off span { top: 0; }
 
 #tip_pitfall, #tmp .poce_contents.treatment-algorithm #tip_pitfall { background-color: #e5eef7; border: 1px solid #e9e9e9; color: #333; width: 90%; padding: 1rem; }
 #tip_pitfall .card-title, #tmp .poce_contents.treatment-algorithm #tip_pitfall .card-title { font-family: Arial,sans-serif; font-size: 1rem; font-weight: bold; display: contents; }
@@ -207,7 +212,7 @@
 
 .panel-title .txtwrap .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02 .material-icons svg.co-morbidity-icon-pink { height: 20px; }
 
-#topicNav.stickme #como-2 { position: fixed; top: 110px; width: 1116px; z-index: 1; }
+#topicNav.stickme #como-2 { position: fixed; top: 110px; width: 1116px; z-index: 1; padding: 1rem; }
 
 .histExam .rowDetails .evidence-accordion .title span { padding: 0.2rem 0px 50px 0.15rem; }
 

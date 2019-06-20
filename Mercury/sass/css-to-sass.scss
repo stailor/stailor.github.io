@@ -136,6 +136,165 @@
         }
     }
 }
+/* TOGGLE ON/OFF */
+.como-toggle-on-off {
+    display: inline-block;
+    margin: 0 0 0 1rem;
+    float: left;
+    min-width: 3.5rem;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+
+    &.hide {
+        display: none;
+    }
+    .checkbox label .toggle,
+    .checkbox-inline .toggle {
+        margin-left:-20px;
+        margin-right:5px
+    }
+    .toggle {
+        position:relative;
+        overflow:hidden;
+
+        &.off .toggle-group {
+            left:-135%
+        }
+        &.btn {
+            min-width:59px;
+            min-height:34px;
+            width: 75px!important;
+        }
+        &.btn-lg {
+            min-width:79px;
+            min-height:45px
+        }
+        &.btn-sm {
+            min-width:50px;
+            min-height:30px
+        }
+        &.btn-xs {
+            min-width:35px;
+            min-height:22px
+        }
+        &.ios { 
+            border-radius: 20px; 
+
+            .toggle-handle { 
+                border-radius: 20px; 
+            }
+        }
+        input[type=checkbox] {
+            display:none
+        }
+        .toggle-group {
+            position:absolute;
+            width:230%;
+            top:0;
+            bottom:0;
+            left:0;
+            transition:left .35s;
+            -webkit-transition:left .35s;
+            -moz-user-select:none;
+            -webkit-user-select:none;
+                
+            .toggle-on {
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:0;
+                right:50%;
+                margin:0;
+                border:0;
+                border-radius:0;
+
+                &.btn {
+                    padding-right:47px!important;
+                }
+                &.btn-lg {
+                    padding-right:31px
+                }
+                &.btn-sm {
+                    padding-right:20px
+                }
+                &.btn-xs {
+                    padding-right:12px
+                }
+                &.ios { 
+                    border-radius: 20px; 
+                }
+            }
+            .toggle-off {
+                position:absolute;
+                top:0;
+                bottom:0;
+                left:50%;
+                right:0;
+                margin:0;
+                border:0;
+                border-radius:0;
+                background-color: #fff;
+                color:#737373;
+                background-color: #fff;
+                box-shadow: none;
+
+                &.btn {
+                    padding-left:37px
+                }
+                &.btn-lg{
+                    padding-left:31px
+                }
+                &.btn-sm{
+                    padding-left:20px
+                }
+                &.btn-xs{
+                    padding-left:12px
+                }                    
+                &.ios { 
+                    border-radius: 20px; 
+                }
+            }
+            span.toggle-handle {
+                position:relative;
+                margin:0 auto;
+                padding-top:0;
+                padding-bottom:0;
+                height:100%;
+                width:0;
+                border-width:0 1px;
+
+                &.btn-lg{
+                    width:40px;
+                }
+                &.btn.btn-default {
+                    color: #333;
+                    background-color: #fff;
+                    border-color: #ccc;
+                    z-index: 100;
+                }
+            }
+        }
+    }   
+    .btn {
+        display: inline-block;
+        padding: 6px 0px!important;
+        margin-bottom: 0!important;
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 1.42857143;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: middle;
+        cursor: pointer;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        background-image: none;
+        border: 1px solid transparent;
+        border-radius: 4px;
+    }
+}
 // ADDED COMORBIDITIES BUTTON & PANEL
 #como-1 {
     height: auto;
@@ -183,166 +342,6 @@
             }
         }
     }
-    /* TOGGLE ON/OFF */
-    .como-toggle-on-off {
-        display: inline-block;
-        margin: 0 0 0 1rem;
-        float: left;
-        min-width: 3.5rem;
-        border: 1px solid #ccc;
-        border-radius: 20px;
-
-        &.hide {
-            display: none;
-        }
-        .checkbox label .toggle,
-        .checkbox-inline .toggle {
-            margin-left:-20px;
-            margin-right:5px
-        }
-        .toggle {
-            position:relative;
-            overflow:hidden;
-
-            &.off .toggle-group {
-                left:-135%
-            }
-            &.btn {
-                min-width:59px;
-                min-height:34px;
-                width: 75px!important;
-            }
-            &.btn-lg {
-                min-width:79px;
-                min-height:45px
-            }
-            &.btn-sm {
-                min-width:50px;
-                min-height:30px
-            }
-            &.btn-xs {
-                min-width:35px;
-                min-height:22px
-            }
-            &.ios { 
-                border-radius: 20px; 
-
-                .toggle-handle { 
-                    border-radius: 20px; 
-                }
-            }
-            input[type=checkbox] {
-                display:none
-            }
-            .toggle-group {
-                position:absolute;
-                width:230%;
-                top:0;
-                bottom:0;
-                left:0;
-                transition:left .35s;
-                -webkit-transition:left .35s;
-                -moz-user-select:none;
-                -webkit-user-select:none;
-                    
-                .toggle-on {
-                    position:absolute;
-                    top:0;
-                    bottom:0;
-                    left:0;
-                    right:50%;
-                    margin:0;
-                    border:0;
-                    border-radius:0;
-
-                    &.btn {
-                        padding-right:47px;
-                    }
-                    &.btn-lg {
-                        padding-right:31px
-                    }
-                    &.btn-sm {
-                        padding-right:20px
-                    }
-                    &.btn-xs {
-                        padding-right:12px
-                    }
-                    &.ios { 
-                        border-radius: 20px; 
-                    }
-                }
-                .toggle-off {
-                    position:absolute;
-                    top:0;
-                    bottom:0;
-                    left:50%;
-                    right:0;
-                    margin:0;
-                    border:0;
-                    border-radius:0;
-                    background-color: #fff;
-                    color:#737373;
-                    background-color: #fff;
-                    box-shadow: none;
-
-                    &.btn {
-                        padding-left:37px
-                    }
-                    &.btn-lg{
-                        padding-left:31px
-                    }
-                    &.btn-sm{
-                        padding-left:20px
-                    }
-                    &.btn-xs{
-                        padding-left:12px
-                    }                    
-                    &.ios { 
-                        border-radius: 20px; 
-                    }
-                }
-                span.toggle-handle {
-                    position:relative;
-                    margin:0 auto;
-                    padding-top:0;
-                    padding-bottom:0;
-                    height:100%;
-                    width:0;
-                    border-width:0 1px;
-
-                    &.btn-lg{
-                        width:40px;
-                    }
-                    &.btn.btn-default {
-                        color: #333;
-                        background-color: #fff;
-                        border-color: #ccc;
-                        z-index: 100;
-                    }
-                }
-            }
-        }   
-        .btn {
-            display: inline-block;
-            padding: 6px 0px;
-            margin-bottom: 0;
-            font-size: 14px;
-            font-weight: bold;
-            line-height: 1.42857143;
-            text-align: center;
-            white-space: nowrap;
-            vertical-align: middle;
-            cursor: pointer;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
-            background-image: none;
-            border: 1px solid transparent;
-            border-radius: 4px;
-        }
-    }
-
     #comoselected-1 {
         display: inline-block;
         font-weight: bold;
@@ -493,6 +492,16 @@
                 }
             }
         }
+        .como-toggle-on-off {            
+            margin-right: 1rem!important;
+            
+            label.toggle-off {
+                padding-left:36px!important;
+            }
+            span {
+                top:0;
+            }
+        } 
     }
 }
 // TIPS AND PITFALL BOX
@@ -1039,6 +1048,7 @@
     top: 110px;
     width: 1116px;
     z-index: 1;
+    padding: 1rem;
 }
 .histExam .rowDetails .evidence-accordion .title span {
     padding: 0.2rem 0px 50px 0.15rem;
