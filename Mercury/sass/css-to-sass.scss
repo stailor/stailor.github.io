@@ -1189,7 +1189,7 @@ div[class*='-como-content'] {
     }
 }
 @media (max-width:1023px) {
-    .blue-accordion {
+    .blue-accordion, .panel {
         .panel-heading {
             padding: 0;
 
@@ -1330,7 +1330,7 @@ div[class*='-como-content'] {
             }
         }
     }
-    .blue-accordion {
+    .blue-accordion, .panel {
         .panel-heading {
             padding: 0;
 
