@@ -1275,6 +1275,7 @@ div[class*="-como-content"] {
         .panel-content {
             &.child-accordion {
                 float: initial;
+                max-width: 100%;
 
                 section .panel-header .panel-title .title-03 {
                     display: inline-block;
@@ -1331,7 +1332,8 @@ div[class*="-como-content"] {
             cursor: pointer;
         }
         .panel-content.child-accordion {
-            float: initial
+            float: initial;
+            max-width: 100%;
         }
         .blue-accordion {
             padding: 0;

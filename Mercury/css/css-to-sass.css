@@ -270,7 +270,7 @@ div[class*="-como-content"] { margin: 1rem 0; }
   .blue-accordion .panel-body, .panel .panel-body { float: initial; }
   .treatment-table .blue-accordion { padding: 0; }
   .treatment-table .blue-accordion .panel-heading .txtwrap { padding: 0; display: inline; }
-  .treatment-table .panel-content.child-accordion { float: initial; }
+  .treatment-table .panel-content.child-accordion { float: initial; max-width: 100%; }
   .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 { display: inline-block; min-width: 95px; }
   .treatment-table .panel-header.child-accordion .title-01 span { padding-left: 3rem; font-size: 1rem; }
   .treatment-table .panel-header.child-accordion .title-01 span:before { left: -65px; width: 19px; }
@@ -280,7 +280,7 @@ div[class*="-como-content"] { margin: 1rem 0; }
 @media (min-width: 1024px) { .treatment-table .title-04 { max-width: 900px; width: auto; position: relative; }
   .treatment-table .title-04 .material-icons { float: left; clear: right; width: 24px; height: 24px; margin-bottom: -24px; }
   .treatment-table .txtwrap { width: 100% !important; padding-left: 32px; cursor: pointer; }
-  .treatment-table .panel-content.child-accordion { float: initial; }
+  .treatment-table .panel-content.child-accordion { float: initial; max-width: 100%; }
   .treatment-table .blue-accordion { padding: 0; }
   .treatment-table .blue-accordion .panel-heading .txtwrap { padding: 4px 0 0 32px; }
   .treatment-table .panel-content.child-accordion section .panel-header .panel-title .title-03 { display: inline-block; min-width: 95px; }
