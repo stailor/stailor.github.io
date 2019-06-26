@@ -378,18 +378,17 @@
             <div id="como-2" class="card" style="display: none;">
                <div class="card-block">
                   <div class="row">
-                     <div class="col-md-3">
+                     <div class="col-md-9">
                         <span class="material-icons">
                         </span>
-                        <b>omorbidities:</b></div>
-                     <div class="col-md-6" id="comoselected-2"> 
-                        
+                        <b>omorbidities:</b>
+                        <div id="comoselected-2"></div>
+                        <button class="btn" data-toggle="modal" data-target="#editComo" style="float:right">Edit</button>
                      </div>
-                     <div class="col-md-2">
-                        <button class="btn" data-toggle="modal" data-target="#editComo">Edit</button>
+                     <div class="col-md-3">                        
                         <!-- TOGGLE ON/OFF -->  
-                        <div class="como-toggle-on-off hide">
-                           <input type="checkbox" checked data-toggle="toggle" data-style="ios" id="toggleSwitch">                           
+                        <div class="como-toggle-on-off hide" style="float:right">
+                           <input type="checkbox" checked data-toggle="toggle" data-style="ios" id="toggleSwitch" >                           
                         </div>                        
                         <!-- TOGGLE ON/OFF ENDS -->
                      </div>
@@ -483,10 +482,9 @@
             <div class="row">
                <div class="col-md-9">
                   <div class="add-como-icon-and-text">
-                     <span class="material-icons">
-                     </span>
-                     <b class="add" data-toggle="modal" data-target="#editComo">omorbidities:</b>
-                     <b class="added unchecked">omorbidities:</b>
+                     <span class="material-icons"></span>
+                     <b class="add" data-toggle="modal" data-target="#editComo">omorbidities</b>
+                     <b class="added unchecked">omorbidities</b>
                   </div>                  
 
                   <div id="comoselected-1">
@@ -1014,7 +1012,7 @@
                         </h3>
                      </div>
                      <!--/.panel-heading -->
-                     <div class="panel-body">
+                     <div class="panel-body panel-content" role="tabpanel" aria-labelledby="tab_1_0_0_acute_content" id="panel_1_0_0_acute_content" aria-expanded="true" style="display: none;">
 
                         <section class="panel-group">
                            <div class="panel-header child-accordion">
@@ -7451,7 +7449,7 @@
 
                         </h3>
                      </div>
-                     <div class="panel-body">
+                     <div class="panel-body panel-content" role="tabpanel" aria-labelledby="tab_1_0_0_acute2_content" id="panel_1_0_0_acute2_content" aria-expanded="true" style="display: none;">
 
                         <section class="panel-group">
                            <div class="panel-header child-accordion">
