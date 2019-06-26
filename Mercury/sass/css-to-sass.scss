@@ -392,7 +392,7 @@
             display: none;
         }
         span+span:before {
-            content: ', ';
+            content: ',';
         }
 
     }
@@ -452,7 +452,7 @@
             }
         }
         button {
-            float: right;
+            float: initial;
             background-color: #fff;
             color: #c50084;
             border: 3px solid #c50084;
@@ -462,6 +462,12 @@
                 color: #fff;
                 outline: none;
             }
+        }
+        b.copy {
+            display: inline-block;
+            position: relative;
+            left: -4px;
+            top: 1px;
         }
     }
     .material-icons {
@@ -475,6 +481,9 @@
         span {
             position: relative;
             top: 9px;
+        }
+        span+span:before {
+            content: ',';
         }
         ul {
             margin: 0;

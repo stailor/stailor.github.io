@@ -67,7 +67,7 @@ $(function() {
     if (this.checked) {
         
         // Add to the comorbidities list
-        $list.append("<span data-value='" + value + "'>" + value + "</span>  ");
+        $list.append("<span data-value='" + value + "'>" + value + "</span>");
         
         // Show the relevant content on the page
         $('.' + comochooser + '-como-content').css('display', 'block');

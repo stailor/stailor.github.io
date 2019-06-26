@@ -78,7 +78,7 @@
 #como-1 #comoselected-1 button.show { display: inline-block; }
 #como-1 #comoselected-1 span { display: inline-block; position: relative; margin: 0.5rem 0 0 0; }
 #como-1 #comoselected-1 button.hide, #como-1 #comoselected-1 button { display: none; }
-#como-1 #comoselected-1 span + span:before { content: ', '; }
+#como-1 #comoselected-1 span + span:before { content: ','; }
 #como-1 .card-block b { vertical-align: -webkit-baseline-middle; vertical-align: sub; }
 #como-1.card { border-radius: 0; padding: 1rem; }
 #como-1.card p { display: inline-block; font-weight: bold; }
@@ -92,11 +92,13 @@
 #como-2.card { border-radius: 0; padding: 1.125rem 1.5rem; }
 #como-2.card p { display: inline-block; font-weight: bold; }
 #como-2.card p span { color: #c50084; }
-#como-2.card button { float: right; background-color: #fff; color: #c50084; border: 3px solid #c50084; border-radius: 4px; }
+#como-2.card button { float: initial; background-color: #fff; color: #c50084; border: 3px solid #c50084; border-radius: 4px; }
 #como-2.card button:hover, #como-2.card button:focus { background-color: #c50084; color: #fff; outline: none; }
+#como-2.card b.copy { display: inline-block; position: relative; left: -4px; top: 1px; }
 #como-2 .material-icons { font-size: 50px; }
 #como-2 #comoselected-2 { font-weight: bold; margin: 0 1rem; display: inline-block; }
 #como-2 #comoselected-2 span { position: relative; top: 9px; }
+#como-2 #comoselected-2 span + span:before { content: ','; }
 #como-2 #comoselected-2 ul { margin: 0; padding: 0; list-style-type: none; text-align: center; }
 #como-2 #comoselected-2 ul li { display: inline; }
 #como-2 #comoselected-2 ul li a { text-decoration: none; padding: .2em 1em; color: #fff; background-color: #036; }
