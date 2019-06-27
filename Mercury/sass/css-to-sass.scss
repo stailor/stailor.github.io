@@ -1147,6 +1147,10 @@ div[class*="-como-content"] {
     width: 40px;
     height: 40px;
 }
+// hides the icon when comos aren't selected
+[class*="-como-content"] .title-02.no-icon > .material-icons {
+    background-image:none;
+}
 
 @media (max-width:768px) {
     .panel-title .txtwrap .material-icons {
