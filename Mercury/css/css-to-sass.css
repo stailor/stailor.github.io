@@ -269,6 +269,7 @@ div[class*="-como-content"] { margin: 1rem 0; }
   .blue-accordion .panel-heading h3 a:hover > span > span:first-child:hover, .blue-accordion .panel-heading h3 a:hover > span > span:first-child, .panel .panel-heading h3 a:hover > span > span:first-child:hover, .panel .panel-heading h3 a:hover > span > span:first-child { text-decoration: none; }
   .blue-accordion .panel-heading h3 a.view-hide-all, .panel .panel-heading h3 a.view-hide-all { float: right; width: auto; }
   .blue-accordion .panel-heading h3 a .title-04, .panel .panel-heading h3 a .title-04 { top: 0; }
+  .blue-accordion .panel-heading h3 a .title-04 span.no-icon, .panel .panel-heading h3 a .title-04 span.no-icon { padding-left: 0.5rem; }
   .blue-accordion .panel-body, .panel .panel-body { float: initial; }
   .treatment-table .blue-accordion { padding: 0; }
   .treatment-table .blue-accordion .panel-heading .txtwrap { padding: 0; display: inline; }
@@ -296,5 +297,6 @@ div[class*="-como-content"] { margin: 1rem 0; }
   .blue-accordion .panel-heading h3 a, .panel .panel-heading h3 a { float: left; width: auto; }
   .blue-accordion .panel-heading h3 a.view-hide-all, .panel .panel-heading h3 a.view-hide-all { float: right; width: auto; }
   .blue-accordion .panel-heading h3 a .title-04, .panel .panel-heading h3 a .title-04 { top: 0; }
+  .blue-accordion .panel-heading h3 a .title-04 span.no-icon, .panel .panel-heading h3 a .title-04 span.no-icon { padding-left: 0.5rem; }
   .blue-accordion .panel-heading h3 a span.msg, .panel .panel-heading h3 a span.msg { font-size: 0.875rem; }
   .blue-accordion .panel-body, .panel .panel-body { float: initial; } }
