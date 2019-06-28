@@ -378,22 +378,25 @@
             <div id="como-2" class="card" style="display: none;">
                <div class="card-block">
                   <div class="row">
-                     <div class="col-md-10">
-                        <span class="material-icons"></span>
-                        <b class="copy">omorbidities:</b>                        
-                        <div id="comoselected-2">                      
+
+
+                        <div class="col-md-3">
+                           <span class="material-icons"></span>
+                           <b class="copy">omorbidities:</b>  
                            <!-- TOGGLE ON/OFF -->  
-                           <div class="como-toggle-on-off hide">
+                           <div class="como-toggle-on-off hide" style="float: initial">
                               <input type="checkbox" checked data-toggle="toggle" data-style="ios" id="toggleSwitch">                           
                            </div>                        
                            <!-- TOGGLE ON/OFF ENDS -->
                         </div>
-                     </div>
-                     <div class="col-md-2">
-                        <button class="btn" data-toggle="modal" data-target="#editComo">Edit</button>
-                     </div>
-                  </div>
+                        <div class="col-md-8">
+                           <div id="comoselected-2"></div>
+                        </div>
+                        <div class="col-md-1">
+                           <button class="btn" data-toggle="modal" data-target="#editComo" style="float:right; margin:0 1rem">Edit</button>
+                        </div>
 
+                  </div>
                </div>
             </div>
          </div>
@@ -480,7 +483,8 @@
       <div id="como-1" class="card">
          <div class="card-block">
             <div class="row">
-               <div class="col-md-12">
+
+               <div class="col-md-3">
                   <div class="add-como-icon-and-text">
                      <span class="material-icons"></span>
                      <b class="add" data-toggle="modal" data-target="#editComo">omorbidities</b>
@@ -489,15 +493,17 @@
                   <!-- TOGGLE ON/OFF -->
                   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
                   <link href="../css/bootstrap-toggle.css" rel="stylesheet">
-                  <script src="../js/bootstrap-toggle.js"></script>
-                  
+                  <script src="../js/bootstrap-toggle.js"></script>                  
                   <div class="como-toggle-on-off hide">
                      <input type="checkbox" checked data-toggle="toggle" data-style="ios" id="toggleSwitch">                           
                   </div>                        
                   <!-- TOGGLE ON/OFF ENDS -->
-                  <div id="comoselected-1">
-                     <button class="btn hide" data-toggle="modal" data-target="#editComo">Edit</button>
-                  </div>
+               </div>               
+               <div class="col-md-8">
+                  <div id="comoselected-1"></div>
+               </div>
+               <div class="col-md-1">
+                  <button class="btn" data-toggle="modal" data-target="#editComo">Edit</button>
                </div>
             </div>
             <!--- row --->
@@ -556,13 +562,10 @@
                      </div>
                      <div class="panel accordion blue-accordion">
                         <div class="panel-heading">
-                           <h3>                           
-                              <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#" role="tab header" id="tab_initial_content" aria-controls="panel_initial_content" aria-expanded="false">
-                                 <span class="title-04">
-                                    
-                                    <span class="no-icon">PE suspected: haemodynamically unstable (SBP &lt;90) AND/OR hypoxaemic</span>
-                                 </span>
-                              </a>
+                           <h3>                       
+                              <span class="title-04">                                    
+                                 <span class="no-icon">PE suspected: haemodynamically unstable (SBP &lt;90) AND/OR hypoxaemic</span>
+                              </span>
    
                               <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#" id="tab_patientGroup-0" class="view-hide-all" aria-controls="panel_patientGroup-0">
                                  <span class="hidden-sm-down">
@@ -574,7 +577,7 @@
                         </div>
                         <!--/.panel-heading -->
                         <div class="panel-body" role="tabpanel" aria-labelledby="tab_1_0_0_initial_content" id="panel_1_0_0_initial_content" aria-expanded="true">
-                           <section class="panel-group COPD-como-content Asthma-como-content">
+                           <section class="panel-group">
                               <div class="panel-header">
                                  <p class="panel-title">
                                     <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#"
@@ -715,7 +718,7 @@
                               </div>
                               <!--/.panel-body -->
                            </section>
-                           <section class="panel-group HeartFailure-como-content CKD-como-content">
+                           <section class="panel-group">
                               <div class="panel-header">
                                  <p class="panel-title">
                                     <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#" role="tab header" id="tab_1_0_0" aria-controls="panel_1_0_0" aria-expanded="false">
@@ -991,13 +994,10 @@
                   </div>
                   <div class="panel bg-line">
                      <div class="panel-heading">
-                        <h3>                           
-                           <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#" role="tab header" id="tab_acute_content" aria-controls="panel_acute_content" aria-expanded="false">
-                              <span class="title-04">
-                                 
-                                 <span class="no-icon">Haemodynamically unstable: PE confirmed (on echocardiography or CTPA)</span>
-                              </span>
-                           </a>
+                        <h3>                          
+                           <span class="title-04">                                 
+                              <span class="no-icon">Haemodynamically unstable: PE confirmed (on echocardiography or CTPA)</span>
+                           </span>
 
                            <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#" id="tab_patientGroup-0-0" class="view-hide-all" aria-controls="panel_patientGroup-0-0">
                               <span class="hidden-sm-down">
@@ -1732,7 +1732,7 @@
                                                 <p class="w-75">Dose based on early pregnancy body weight.</p>
                                              </span>
                                           </span>
-                                          <p class="small-or">Secondary options</p>
+                                          <h4>Secondary options</h4>
                                           <p><strong>[No special considerations]</strong></p>
                                           <p>
                                              <a href="#drugDbPop_1f043ef5-6686-4b38-a018-9dea67de1e36_en-gb"
@@ -1937,7 +1937,7 @@
                                                       <p class="w-75">Dose based on early pregnancy body weight.</p>
                                                    </span>
                                                 </span>
-                                                <p class="small-or">Secondary options</p>
+                                                <h4>Secondary options</h4>
                                                 <p><strong>[No special considerations]</strong></p>
                                                 <p>
                                                    <a href="#drugDbPop_1f043ef5-6686-4b38-a018-9dea67de1e36_en-gb"
@@ -2065,7 +2065,7 @@
                                                       data-trigger="click focus" class="drugDbPop" data-toggle="popover"
                                                       data-original-title="" title="">dalteparin: </a>
                                                 </p>
-                                                <p class="small-or">Secondary options</p>
+                                                <h4>Secondary options</h4>
                                                 <p>
                                                    <a href="#drugDbPop_1f043ef5-6686-4b38-a018-9dea67de1e36_en-gb"
                                                       data-trigger="click focus" class="drugDbPop" data-toggle="popover"
@@ -4000,7 +4000,7 @@
       
       
                                           </p>
-                                          <p class="small-or">Secondary options</p>
+                                          <h4>Secondary options</h4>
                                           <p><strong>[No special considerations]</strong></p>
       
                                           <p>
@@ -4215,7 +4215,7 @@
             
             
                                                 </p>
-                                                <p class="small-or">Secondary options</p>
+                                                <h4>Secondary options</h4>
                                                 <p><strong>[No special considerations]</strong></p>
             
                                                 <p>
@@ -4337,7 +4337,7 @@
                                                       data-trigger="click focus" class="drugDbPop" data-toggle="popover"
                                                       data-original-title="" title="">dalteparin: </a>
                                                 </p>
-                                                <p class="small-or">Secondary options</p>
+                                                <h4>Secondary options</h4>
                                                 <p>
                                                    <a href="#drugDbPop_1f043ef5-6686-4b38-a018-9dea67de1e36_en-gb"
                                                       data-trigger="click focus" class="drugDbPop" data-toggle="popover"
@@ -7428,13 +7428,10 @@
 
                   <div class="panel bg-line">
                      <div class="panel-heading">
-                        <h3>                                                   
-                           <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#" role="tab header" id="tab_acute2_content" aria-controls="panel_acute2_content" aria-expanded="false">
-                              <span class="title-04">
-                                 
-                                 <span class="no-icon">Haemodynamically stable: PE confirmed (on CTPA) or highly suspected (Wells>4 or positive D-dimer)</span>
-                              </span>
-                           </a>
+                        <h3>
+                           <span class="title-04">                                 
+                              <span class="no-icon">Haemodynamically stable: PE confirmed (on CTPA) or highly suspected (Wells>4 or positive D-dimer)</span>
+                           </span>
 
                            <a href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm#" id="tab_haemodynamically_stable" class="view-hide-all" aria-controls="panel_haemodynamically_stable">
                               <span class="hidden-sm-down">
@@ -8007,7 +8004,7 @@
                                                 </span>
                                              </span>
                                           </p>
-                                          <p class="small-or">Secondary options</p>
+                                          <h4>Secondary options</h4>
                                           <p><strong>[No special considerations]</strong></p>
                                           <p>
                                              <a href="#drugDbPop_1f043ef5-6686-4b38-a018-9dea67de1e36_en-gb"
@@ -8208,7 +8205,7 @@
                                                       </span>
                                                    </span>
                                                 </p>
-                                                <p class="small-or">Secondary options</p>
+                                                <h4>Secondary options</h4>
                                                 <p><strong>[No special considerations]</strong></p>
                                                 <p>
                                                    <a href="#drugDbPop_1f043ef5-6686-4b38-a018-9dea67de1e36_en-gb"
@@ -8322,7 +8319,7 @@
                                                       data-trigger="click focus" class="drugDbPop" data-toggle="popover"
                                                       data-original-title="" title="">dalteparin: </a>
                                                 </p>
-                                                <p class="small-or">Secondary options</p>
+                                                <h4>Secondary options</h4>
                                                 <p>
                                                    <a href="#drugDbPop_1f043ef5-6686-4b38-a018-9dea67de1e36_en-gb"
                                                       data-trigger="click focus" class="drugDbPop" data-toggle="popover"

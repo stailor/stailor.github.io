@@ -244,7 +244,7 @@ $(function () {
             $('[class*="-como-content"]').fadeOut();        
         }
         if ($('.toggle').hasClass('off')) {
-            $('#comoselected-1 span').css('color', '#c50084');
+            $('#comoselected-1 span').css('color', '#333');
             $('[class*="-como-content"]').fadeIn();
             $('#comoselected-1 button').fadeIn();
         }        
