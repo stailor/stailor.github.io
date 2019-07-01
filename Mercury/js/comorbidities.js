@@ -244,7 +244,7 @@ $(function () {
             
             if($('section.panel-group .panel-content div[class*="-como-content"]').css('display') == 'block')
             {
-                $(this).addClass('temp-hide');
+                $('section.panel-group .panel-content div[class*="-como-content"]').addClass('temp-hide');
             }
             $('.temp-hide').fadeOut();
 
