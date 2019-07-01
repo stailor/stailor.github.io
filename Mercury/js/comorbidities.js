@@ -239,14 +239,23 @@ $(function () {
     // TOGGLE ON/OFF SWITCH
     $('.como-toggle-on-off .toggle').on('click', function () {
         if ($('.toggle').hasClass('btn-primary')) {
-            $('#comoselected-1 span').css('color', '#737373');
+          
             $('#comoselected-1 button').fadeOut();
-            $('section.panel-group .panel-content div[class*="-como-content"]:contains(display: block)').fadeOut();
+            
+            if($('section.panel-group .panel-content div[class*="-como-content"]').css('display') == 'block')
+            {
+                $(this).addClass('temp-hide');
+            }
+            $('.temp-hide').fadeOut();
+
             $('section.panel-group .title-02 > span.material-icons').fadeOut();
         }
         if ($('.toggle').hasClass('off')) {
             $('#comoselected-1 span').css('color', '#333');
-            $('section.panel-group .panel-content div[class*="-como-content"]:contains(display: block)').fadeIn();
+            
+            $('section.panel-group .panel-content div[class*="-como-content"].temp-hide').fadeIn();
+            $('section.panel-group .panel-content div[class*="-como-content"]').removeClass('temp-hide');
+
             $('section.panel-group .title-02 > span.material-icons').fadeIn();
             $('#comoselected-1 button').fadeIn();
         }        
