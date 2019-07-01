@@ -241,11 +241,13 @@ $(function () {
         if ($('.toggle').hasClass('btn-primary')) {
             $('#comoselected-1 span').css('color', '#737373');
             $('#comoselected-1 button').fadeOut();
-            $('[class*="-como-content"]').fadeOut();        
+            $('section.panel-group .panel-content div[class*="-como-content"]:contains(display: block)').fadeOut();
+            $('section.panel-group .title-02 > span.material-icons').fadeOut();
         }
         if ($('.toggle').hasClass('off')) {
             $('#comoselected-1 span').css('color', '#333');
-            $('[class*="-como-content"]').fadeIn();
+            $('section.panel-group .panel-content div[class*="-como-content"]:contains(display: block)').fadeIn();
+            $('section.panel-group .title-02 > span.material-icons').fadeIn();
             $('#comoselected-1 button').fadeIn();
         }        
     // TOGGLE ON/OFF SWITCH ENDS
