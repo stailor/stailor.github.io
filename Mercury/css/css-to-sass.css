@@ -96,6 +96,7 @@
 #como-2.card button:hover, #como-2.card button:focus { background-color: #c50084; color: #fff; outline: none; }
 #como-2.card b.copy { display: inline-block; position: relative; left: -4px; top: 1px; }
 #como-2 .material-icons { font-size: 50px; }
+#como-2 .como-toggle-on-off .toggle .toggle-group .toggle-off.btn { left: 59%; }
 #como-2 #comoselected-2 { font-weight: bold; margin: 0 1rem; }
 #como-2 #comoselected-2 span { position: relative; top: 9px; line-height: 1.8rem; }
 #como-2 #comoselected-2 span + span:before { content: ','; }

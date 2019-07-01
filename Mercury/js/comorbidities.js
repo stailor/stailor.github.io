@@ -239,27 +239,26 @@ $(function () {
     // TOGGLE ON/OFF SWITCH
     $('.como-toggle-on-off .toggle').on('click', function () {
         if ($('.toggle').hasClass('btn-primary')) {
-          
+ 
             $('#comoselected-1 button').fadeOut();
-            
-            if($('section.panel-group .panel-content div[class*="-como-content"]').css('display') == 'block')
+ 
+            if($('div[class*="-como-content"]').css('display') == 'block')
             {
-                $('section.panel-group .panel-content div[class*="-como-content"]').addClass('temp-hide');
+                $('div[class*="-como-content"]').addClass('temp-hide');
             }
             $('.temp-hide').fadeOut();
-
+ 
             $('section.panel-group .title-02 > span.material-icons').fadeOut();
         }
         if ($('.toggle').hasClass('off')) {
             $('#comoselected-1 span').css('color', '#333');
-            
-            $('section.panel-group .panel-content div[class*="-como-content"].temp-hide').fadeIn();
-            $('section.panel-group .panel-content div[class*="-como-content"]').removeClass('temp-hide');
-
+ 
+            $('.temp-hide').fadeIn();
+            $('div[class*="-como-content"]').removeClass('temp-hide');
+ 
             $('section.panel-group .title-02 > span.material-icons').fadeIn();
             $('#comoselected-1 button').fadeIn();
-        }        
-    // TOGGLE ON/OFF SWITCH ENDS
+        }
     });
 });
 
