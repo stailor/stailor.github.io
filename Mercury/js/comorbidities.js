@@ -150,28 +150,24 @@ $(function() {
         // $('#editComo .modal-body .list-group-item.selected label[for="Asthma"] span.custom-control-description').css('text-decoration','line-through');
         $('#editComo input#Asthma').prop("disabled", true);
         $('#editComo input#Asthma').parent().css('cursor','not-allowed');
-        console.log('both checked');
     } 
     // IF JUST ASTHMA IS CHECKED UNDISABLE COPD 
     if (($(copd).prop("checked") === false) && ($(asthma).prop("checked") === true)) {
         $('.warning-asthma').hide();
         $('#editComo input#Asthma').prop("disabled", false);
         $('#editComo  input#Asthma').parent().css('cursor','pointer');
-        console.log('just asthma checked');
     }
     // IF JUST COPD IS CHECKED UNDISABLE ASTHMA
     if (($(copd).prop("checked") === true) && ($(asthma).prop("checked") === false)) {
         $('.warning-asthma').hide();
         $('#editComo input#Asthma').attr("disabled", false);
         $('#editComo input#Asthma').parent().css('cursor','pointer');
-        console.log('just copd checked');
     }
     // IF BOTH ARE UNCHECKED UNDISABLE BOTH
     if (($(copd).prop("checked") === false) && ($(asthma).prop("checked") === false)) {
         $('.warning-asthma').hide();
         $('#editComo input#Asthma').attr("disabled", false);
         $('#editComo input#Asthma').parent().css('cursor','pointer');
-        console.log('zilch checked');
     }
 
   });
@@ -246,6 +242,7 @@ $(function () {
             {
                 $('div[class*="-como-content"]').addClass('temp-hide');
             }
+            $('.temp-hide').fadeOut();
             
             if($('section[class*="-como-content"]').css('display') == 'block')
             {
