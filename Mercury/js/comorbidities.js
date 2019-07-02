@@ -242,9 +242,9 @@ $(function () {
  
             $('#comoselected-1 button').fadeOut();
  
-            if($('div[class*="-como-content"]').css('display') == 'block')
+            if($('div[class*="-como-content"], section[class*="-como-content"]').css('display') == 'block')
             {
-                $('div[class*="-como-content"]').addClass('temp-hide');
+                $('div[class*="-como-content"], section[class*="-como-content"]').addClass('temp-hide');
             }
             $('.temp-hide').fadeOut();
  
@@ -254,7 +254,7 @@ $(function () {
             $('#comoselected-1 span').css('color', '#333');
  
             $('.temp-hide').fadeIn();
-            $('div[class*="-como-content"]').removeClass('temp-hide');
+            $('div[class*="-como-content"], section[class*="-como-content"]').removeClass('temp-hide');
  
             $('section.panel-group .title-02 > span.material-icons').fadeIn();
             $('#comoselected-1 button').fadeIn();
