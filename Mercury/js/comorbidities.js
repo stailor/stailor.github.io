@@ -242,9 +242,14 @@ $(function () {
  
             $('#comoselected-1 button').fadeOut();
  
-            if($('div[class*="-como-content"], section[class*="-como-content"]').css('display') == 'block')
+            if($('div[class*="-como-content"]').css('display') == 'block')
             {
-                $('div[class*="-como-content"], section[class*="-como-content"]').addClass('temp-hide');
+                $('div[class*="-como-content"]').addClass('temp-hide');
+            }
+            
+            if($('section[class*="-como-content"]').css('display') == 'block')
+            {
+                $('section[class*="-como-content"]').addClass('temp-hide');
             }
             $('.temp-hide').fadeOut();
  
