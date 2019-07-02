@@ -57,6 +57,12 @@
 <link rel="stylesheet" type="text/css" media="screen" href="../css/css-to-sass.css">
    <link rel="stylesheet" type="text/css" media="screen" href="../css/external.css">
    <link rel="shortcut icon" href="https://resources.bmj.com/repository/images/favicon.ico">
+   
+   <!-- TOGGLE  -->
+   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+   <link href="../css/bootstrap-toggle.css" rel="stylesheet">
+   <script src="../js/bootstrap-toggle.js"></script>   
+
    <!-- <link rel="canonical" href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm">
       <link rel="alternate" hreflang="uk-ua" href="https://bestpractice.bmj.com/topics/uk-ua/116/treatment-algorithm">
       <link rel="alternate" hreflang="en-ie" href="https://bestpractice.bmj.com/topics/en-gb/116/treatment-algorithm">
@@ -390,10 +396,10 @@
                      <div class="col-md-2 col-sm-12">
                         <button class="btn" data-toggle="modal" data-target="#editComo">Edit</button>  
                         <!-- TOGGLE ON/OFF -->  
-                        <!-- <div class="como-toggle-on-off hide" style="float:right">
+                        <div id="StickyToggle" class="como-toggle-on-off hide" style="float:right">
                            <input type="checkbox" checked data-toggle="toggle" data-style="ios" id="toggleSwitch" >                           
-                        </div>                         -->
-                        <!-- TOGGLE ON/OFF ENDS -->
+                        </div>
+
                      </div>
                   </div>
                   <!--- row --->
@@ -500,14 +506,10 @@
                
                <div class="col-md-1">
                   <!-- TOGGLE ON/OFF -->
-                  <link href="../css/bootstrap-toggle.css" rel="stylesheet">
-                  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-                  <script src="../js/bootstrap-toggle.js"></script>
-
-                  <div class="como-toggle-on-off hide" style="float:right">
+                  <div id="StaticToggle" class="como-toggle-on-off hide" style="float:right">
                      <input type="checkbox" checked data-toggle="toggle" data-style="ios" id="toggleSwitch">                           
                   </div>                        
-                  <!-- TOGGLE ON/OFF ENDS -->
+                  
                </div>
             </div>
             <!--- row --->

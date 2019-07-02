@@ -232,35 +232,59 @@ $(function () {
         }
         $icon.toggleClass('open');
     });
-    // TOGGLE ON/OFF SWITCH
+    // TOGGLE ON/OFF SWITCH SHOW HIDE COMO DROP DOWNS AND COMO BLOCK CONTENT
     $('.como-toggle-on-off .toggle').on('click', function () {
         if ($('.toggle').hasClass('btn-primary')) {
  
             $('#comoselected-1 button').fadeOut();
  
-            if($('div[class*="-como-content"]').css('display') == 'block')
+            if($('*[class*="-como-content"]').css('display') == 'block')
             {
-                $('div[class*="-como-content"]').addClass('temp-hide');
+                $('*[class*="-como-content"]').addClass('temp-hide');
             }
             $('.temp-hide').fadeOut();
             
-            if($('section[class*="-como-content"]').css('display') == 'block')
+            if($('*[class*="-como-content"]').css('display') == 'block')
             {
-                $('section[class*="-como-content"]').addClass('temp-hide');
+                $('*[class*="-como-content"]').addClass('temp-hide');
             }
             $('.temp-hide').fadeOut();
  
-            $('section.panel-group .title-02 > span.material-icons').fadeOut();
+            $('section.panel-group .title-02 > span.material-icons').fadeOut();            
         }
         if ($('.toggle').hasClass('off')) {
-            $('#comoselected-1 span').css('color', '#333');
  
             $('.temp-hide').fadeIn();
             $('div[class*="-como-content"]').removeClass('temp-hide');
-            $('section[class*="-como-content"]').removeClass('temp-hide');
- 
+            $('section[class*="-como-content"]').removeClass('temp-hide'); 
             $('section.panel-group .title-02 > span.material-icons').fadeIn();
             $('#comoselected-1 button').fadeIn();
+        }
+    });
+
+    // SYNCHRONISING THE TWO TOGGLES TO BE ON / OFF TOGETHER
+    $('#StaticToggle').on('click', function () {
+        if ($('#StaticToggle .toggle').hasClass('btn-primary')) { // if static is
+            $('#StickyToggle .toggle').removeClass('btn-primary');
+            $('#StickyToggle .toggle').addClass('btn-default');
+            $('#StickyToggle .toggle').addClass('off');           
+        }
+        if ($('#StaticToggle .toggle').hasClass('off')) { // if static is off
+            $('#StickyToggle .toggle').removeClass('off');
+            $('#StickyToggle .toggle').removeClass('btn-default');
+            $('#StickyToggle .toggle').addClass('btn-primary');
+        }
+    });
+    $('#StickyToggle').on('click', function () {
+        if ($('#StickyToggle .toggle').hasClass('btn-primary')) { //if sticky is on
+            $('#StaticToggle .toggle').addClass('btn-default');
+            $('#StaticToggle .toggle').addClass('off');
+            $('#StaticToggle .toggle').removeClass('btn-primary');             
+        }
+        if ($('#StickyToggle .toggle').hasClass('off')) { // if sticky is off
+            $('#StaticToggle .toggle').removeClass('btn-default');
+            $('#StaticToggle .toggle').removeClass('off');
+            $('#StaticToggle .toggle').addClass('btn-primary');
         }
     });
 });
