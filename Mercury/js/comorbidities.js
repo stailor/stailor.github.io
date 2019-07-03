@@ -93,7 +93,7 @@ console.log(comochooser);
         });
         // remove titles from como box content if checkbox is unchecked
         // remove span element where title is comochooser + '-title'
-        $('.' + comochooser + '-title').remove();
+        // $('.' + comochooser + '-title').remove();
         
         // Hide the relevant content on the page
         $('.' + comochooser + '-como-content').removeClass('show-como');
