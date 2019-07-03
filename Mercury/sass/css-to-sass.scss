@@ -1128,6 +1128,16 @@
 div[class*="-como-content"] {
     margin: 1rem 0;
 }
+// HIDES THE COMO SPECIFIC CONTENT ON DEFAULT
+.treatment-table .panel-group[class*="-como-content"], 
+.treatment-table .panel-group div[class*="-como-content"] {
+    display: none;
+}
+// WHEN SHOW COMO CLASS IS ADDED BY THE JS, DISPLAY THAT COMO CONTENT
+.treatment-table .panel-group div[class*="-como-content"].show-como, 
+.treatment-table .panel-group[class*="-como-content"].show-como {
+    display:block;
+}
 #poce-contents [class*="-como-content"] {
     padding: 1rem !important;
     border: 1px dashed #c50084;

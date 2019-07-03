@@ -27,7 +27,7 @@ $(function() {
     //     $('#showalg').toggleClass("btn-secondary", comorbidities.is(":checked"));
     // });
 
-    // SHOW "LOOK OUT FOR THIS ICON BOX" IF COMOS CHECKED AND SHOW TREATMENT ALGO BUTTON IS CLICKED
+    // SHOW "LOOK OUT FOR THIS ICON BOX" IF COMOS CHECKED AND SHOW TREATMENT ALGO BUTTON ON THE MODAL IS CLICKED
     $('.modal#editComo .btn.ticked').click(function(event) {
         $('#lookOutPopUp').addClass("checked");
         $('#lookOutPopUp').removeClass("unchecked");
@@ -70,11 +70,13 @@ $(function() {
         $list.append("<span data-value='" + value + "'>" + value + "</span>");
         
         // Show the relevant content on the page
-        $('.' + comochooser + '-como-content').css('display', 'block');
+        $('.' + comochooser + '-como-content').addClass('show-como');
         
         // If section has the .-como-content, find the txtwrap class and add the c+ icon and como title
         $('section.panel-group').has('.' + comochooser + '-como-content').find('.title-02').removeClass('no-icon');
+        // If como ticked, find como div with same name and insert the como name into the poce_title element
         $('.' + comochooser + '-como-content').find('.poce_title').append('<span class="' + comochooser + '-title">' + comovalue + '</span>');
+
         console.log($('section.panel-group').has('.' + comochooser + '-como-content').find('.poce_title'));
         // Add comma in if there is more than one como listed in the como content title
         $(".poce_title span").not(":last-child").append(" ");
@@ -94,7 +96,7 @@ console.log(comochooser);
         $('.' + comochooser + '-title').remove();
         
         // Hide the relevant content on the page
-        $('.' + comochooser + '-como-content').css('display', 'none');
+        $('.' + comochooser + '-como-content').removeClass('show-como');
         
         // If section doesn't have the -como-content, find the txtwrap class and remove the c+ icon 
         $('section.panel-group').has('.' + comochooser + '-como-content').find('.title-02').addClass('no-icon');
@@ -118,11 +120,9 @@ $(function() {
     // Change como copy from add to added when checkboxes un/checked
     $('.add-como-icon-and-text .add').toggleClass("unchecked", comorbidities.is(":checked"));
     $('.add-como-icon-and-text .added').toggleClass("checked", comorbidities.is(":checked"));
-
-    
-
     
     $('li.list-group-item').removeClass("selected", comorbidities.is(":checked"));
+
     // IF NO COMOS SELECTED, HIDE EDIT BUTTON
     $('#comoselected-1 button').toggleClass("show", comorbidities.is(":checked"));
     $('#comoselected-1 button').removeClass("hide", comorbidities.is(":checked"));
@@ -238,13 +238,7 @@ $(function () {
  
             $('#comoselected-1 button').fadeOut();
  
-            if($('*[class*="-como-content"]').css('display') == 'block')
-            {
-                $('*[class*="-como-content"]').addClass('temp-hide');
-            }
-            $('.temp-hide').fadeOut();
-            
-            if($('*[class*="-como-content"]').css('display') == 'block')
+            if($('.treatment-table .panel-group[class*="-como-content"], .treatment-table .panel-group div[class*="-como-content"].show-como').hasClass('show-como'))
             {
                 $('*[class*="-como-content"]').addClass('temp-hide');
             }
@@ -255,8 +249,7 @@ $(function () {
         if ($('.toggle').hasClass('off')) {
  
             $('.temp-hide').fadeIn();
-            $('div[class*="-como-content"]').removeClass('temp-hide');
-            $('section[class*="-como-content"]').removeClass('temp-hide'); 
+            $('.treatment-table .panel-group[class*="-como-content"], .treatment-table .panel-group div[class*="-como-content"].show-como').removeClass('temp-hide'); 
             $('section.panel-group .title-02 > span.material-icons').fadeIn();
             $('#comoselected-1 button').fadeIn();
         }
