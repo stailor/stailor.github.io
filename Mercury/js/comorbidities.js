@@ -238,10 +238,8 @@ $(function () {
  
             $('#comoselected-1 button').fadeOut();
  
-            if($('.treatment-table .panel-group[class*="-como-content"], .treatment-table .panel-group div[class*="-como-content"]').hasClass('show-como'))
-            {
-                $('*[class*="-como-content"]').addClass('temp-hide');
-            }
+            $('.treatment-table .panel-group[class*="-como-content"].show-como, .treatment-table .panel-group div[class*="-como-content"].show-como').addClass('temp-hide');
+            
             $('.temp-hide').fadeOut();
  
             $('section.panel-group .title-02 > span.material-icons').fadeOut();            
