@@ -238,7 +238,7 @@ $(function () {
  
             $('#comoselected-1 button').fadeOut();
  
-            if($('.treatment-table .panel-group[class*="-como-content"], .treatment-table .panel-group div[class*="-como-content"].show-como').hasClass('show-como'))
+            if($('.treatment-table .panel-group[class*="-como-content"], .treatment-table .panel-group div[class*="-como-content"]').hasClass('show-como'))
             {
                 $('*[class*="-como-content"]').addClass('temp-hide');
             }
@@ -249,7 +249,7 @@ $(function () {
         if ($('.toggle').hasClass('off')) {
  
             $('.temp-hide').fadeIn();
-            $('.treatment-table .panel-group[class*="-como-content"], .treatment-table .panel-group div[class*="-como-content"].show-como').removeClass('temp-hide'); 
+            $('.treatment-table .panel-group[class*="-como-content"].show-como, .treatment-table .panel-group div[class*="-como-content"].show-como').removeClass('temp-hide'); 
             $('section.panel-group .title-02 > span.material-icons').fadeIn();
             $('#comoselected-1 button').fadeIn();
         }
