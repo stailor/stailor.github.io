@@ -59,7 +59,7 @@
 #como-1 { height: auto; }
 #como-1 .material-icons { font-size: 30px; }
 #como-1 svg.co-morbidity-icon-pink { top: 3px; position: relative; }
-#como-1 .add-como-icon-and-text { display: inline-block; background-color: #c50084; color: #fff; padding: 1px 5px 6px; border-radius: 5px; float: left; }
+#como-1 .add-como-icon-and-text { display: inline-block; background-color: #c50084; color: #fff; padding: 6px; border-radius: 5px; float: left; }
 #como-1 .add-como-icon-and-text .add.unchecked, #como-1 .add-como-icon-and-text .added.unchecked, #como-1 .add-como-icon-and-text .non-como-content.hide { display: none; }
 #como-1 .add-como-icon-and-text .add, #como-1 .add-como-icon-and-text .add.checked, #como-1 .add-como-icon-and-text .added.checked { display: inline-block; position: relative; left: -4px; top: -2px; }
 #como-1 .add-como-icon-and-text .add:hover { text-decoration: underline; cursor: pointer; }
