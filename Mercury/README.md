@@ -1,8 +1,8 @@
 # Mercury
-<img src="mercury.jpg" height=200 align=left vspace=20 />
-><details>
->><summary>
-### Compiling Sass files to CSS
+<img src="mercury.jpg" height=200 align=center vspace=20 />
+<details>
+<summary>
+Compiling Sass files to CSS
 </summary>
 The project's CSS (src/main/resources/static/css/main.css and src/main/resources/static/css/material.css) is compiled from the Sass components in src/main/sass.  
 The compiled CSS is included in the repo so the steps below are only needed if you intend to make changes to any of the Sass components.
