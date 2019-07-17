@@ -1,9 +1,7 @@
 # Mercury
-![VS Code](mercury.jpg)
-
-><img src="mercury.jpg" height=200 align=left vspace=20 />
-<details>
-<summary>
+<img src="mercury.jpg" height=200 align=left vspace=20 />
+><details>
+>><summary>
 ### Compiling Sass files to CSS
 </summary>
 The project's CSS (src/main/resources/static/css/main.css and src/main/resources/static/css/material.css) is compiled from the Sass components in src/main/sass.  
