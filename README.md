@@ -1,7 +1,7 @@
 # Mercury
 ![VS Code](mercury.jpg)
 
-><img src="mercury.jpg" height=200 align=left vspace=20 />
+><img src="MERCURY/mercury.jpg" height=200 align=left vspace=20 />
 <details>
 <summary>
 ### Compiling Sass files to CSS
