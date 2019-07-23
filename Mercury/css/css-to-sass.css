@@ -13,7 +13,7 @@
 #editComo button.btn.btn-secondary.ticked { display: none; }
 #editComo button.btn.btn-secondary.ticked.show { display: block; }
 #editComo .modal-dialog button.close { position: absolute; top: 1rem; right: 1rem; }
-#editComo .modal-body .disable-checkbox { background: #ddd; cursor: not-allowed; }
+#editComo .modal-body .disable-checkbox { cursor: not-allowed; }
 #editComo .modal-body .disable-checkbox:hover { cursor: not-allowed; }
 
 .poce_drug_msg { border: 1px dashed #c50084; display: table-cell; margin-bottom: 1rem; padding: 2rem; }
@@ -60,7 +60,7 @@
 #como-1 .material-icons { font-size: 30px; }
 #como-1 svg.co-morbidity-icon-pink { top: 3px; position: relative; }
 #como-1 .add-como-icon-and-text { display: inline-block; background-color: #c50084; color: #fff; padding: 6px; border-radius: 5px; float: left; }
-#como-1 .add-como-icon-and-text .add.unchecked, #como-1 .add-como-icon-and-text .added.unchecked, #como-1 .add-como-icon-and-text .non-como-content.hide { display: none; }
+#como-1 .add-como-icon-and-text .add.unchecked, #como-1 .add-como-icon-and-text .added.unchecked { display: none; }
 #como-1 .add-como-icon-and-text .add, #como-1 .add-como-icon-and-text .add.checked, #como-1 .add-como-icon-and-text .added.checked { display: inline-block; position: relative; left: -4px; top: -2px; }
 #como-1 .add-como-icon-and-text .add:hover { text-decoration: underline; cursor: pointer; }
 #como-1 .add-como-icon-and-text path, #como-1 .add-como-icon-and-text g g g circle { fill: #fff; }
@@ -228,7 +228,7 @@
 
 .co-morbidity-icon-pink polygon { fill: #C50084; }
 
-.non-como-content.hide, .browser-update-bar-hide, .hide, .panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink { display: none; }
+.non-como-content.hide, .browser-update-bar-hide, .hide, .panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, .panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink, .treatment-table .panel-group .panel-content .non-como-content.hide { display: none; }
 
 .material-icons svg.co-morbidity-icon-pink { height: 30px; }
 
@@ -240,7 +240,7 @@ div[class*="-como-content"] { margin: 1rem 0; }
 
 .treatment-table .panel-group[class*="-como-content"], .treatment-table .panel-group div[class*="-como-content"] { display: none; }
 
-.treatment-table .panel-group div[class*="-como-content"].show-como, .treatment-table .panel-group[class*="-como-content"].show-como { display: block; }
+.treatment-table .panel-group div[class*="-como-content"].show-como, .treatment-table .panel-group[class*="-como-content"].show-como, .treatment-table .panel-group .non-como-content.show, .treatment-table .panel-group .panel-content .non-como-content { display: block; }
 
 #poce-contents [class*="-como-content"] { padding: 1rem !important; border: 1px dashed #c50084; background-color: #f8e0f0; margin: 1rem 0; }
 

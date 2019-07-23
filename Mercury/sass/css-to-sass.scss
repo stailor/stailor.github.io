@@ -88,7 +88,6 @@
         right: 1rem;
     }
     .modal-body .disable-checkbox {
-        background: #ddd;
         cursor: not-allowed;
         
         &:hover {
@@ -314,7 +313,7 @@
         border-radius: 5px;
         float: left;
     
-        .add.unchecked, .added.unchecked, .non-como-content.hide {
+        .add.unchecked, .added.unchecked {
             display: none;
         }
         .add, .add.checked, .added.checked {
@@ -1101,7 +1100,8 @@
 .browser-update-bar-hide, 
 .hide, 
 .panel-title .txtwrap.no-icon .material-icons svg.co-morbidity-icon-pink, 
-.panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink {
+.panel-title .title-02.no-icon .material-icons svg.co-morbidity-icon-pink,
+.treatment-table .panel-group .panel-content .non-como-content.hide {
     display: none;
 }
 .material-icons svg.co-morbidity-icon-pink {
@@ -1135,7 +1135,9 @@ div[class*="-como-content"] {
 }
 // WHEN SHOW COMO CLASS IS ADDED BY THE JS, DISPLAY THAT COMO CONTENT
 .treatment-table .panel-group div[class*="-como-content"].show-como, 
-.treatment-table .panel-group[class*="-como-content"].show-como {
+.treatment-table .panel-group[class*="-como-content"].show-como,
+.treatment-table .panel-group .non-como-content.show,
+.treatment-table .panel-group .panel-content .non-como-content {
     display:block;
 }
 #poce-contents [class*="-como-content"] {
