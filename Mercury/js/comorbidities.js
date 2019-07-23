@@ -163,19 +163,36 @@ $(function() {
             $('.warning-asthma').hide();
             $('#editComo input#Asthma').prop("disabled", false);
             $('#editComo  input#Asthma').parent().css('cursor','pointer');
+            
+            // $('label[for="COPD"]').hover(function() {
+            //     $('label[for="COPD"] span.custom-control-description').css('text-decoration','line-through');
+            //     $('#editComo input#COPD').addClass('disable-checkbox');
+            //     $('#editComo input#COPD').attr("disabled", true);
+            //     $('#editComo input#COPD').parent().css('cursor','not-allowed');
+            // });
         }
         // IF JUST COPD IS CHECKED UNDISABLE ASTHMA
         if (($(copd).prop("checked") === true) && ($(asthma).prop("checked") === false)) {
             $('.warning-asthma').hide();
             $('#editComo input#Asthma').attr("disabled", false);
             $('#editComo input#Asthma').parent().css('cursor','pointer');
+
+            // $('label[for="Asthma"]').hover(function() {
+            //     $('label[for="Asthma"] span.custom-control-description').css('text-decoration','line-through');
+            //     $('#editComo input#Asthma').addClass('disable-checkbox');
+            //     $('#editComo input#Asthma').attr("disabled", true);
+            //     $('#editComo input#Asthma').parent().css('cursor','not-allowed');
+            // });
         }
         // IF BOTH ARE UNCHECKED UNDISABLE BOTH
         if (($(copd).prop("checked") === false) && ($(asthma).prop("checked") === false)) {
             $('.warning-asthma').hide();
             $('#editComo input#Asthma').attr("disabled", false);
+            // $('#editComo input#COPD').attr("disabled", false);
+            // $('label[for="Asthma"] span.custom-control-description').css('text-decoration','none');
             $('#editComo input#Asthma').parent().css('cursor','pointer');
         }
+
     });
   });
   // Grab the topic title from the H1 tag and drop it into the modal para
